@@ -20,9 +20,9 @@
             "content_max_width": 780,
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "Tell your story",
-            "title": "Slide title",
-            "heading_tag": "h0",
+            "subheading": "VENTE D'AUTOMNE",
+            "title": "Économisez et soyez heureux !",
+            "heading_tag": "h1",
             "button_text": "",
             "button_link": "",
             "text_color": "#ffffff",
@@ -74,6 +74,22 @@
         "background_gradient": "linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)"
       }
     },
+    "scrolling_text_YH7jgj": {
+      "type": "scrolling-text",
+      "name": "Scrolling text",
+      "settings": {
+        "full_width": true,
+        "text": "VENTE D'AUTOMNE - ÉCONOMISEZ JUSQU'À 70 %",
+        "text_size": "xsmall",
+        "text_style": "fill",
+        "scrolling_mode": "auto",
+        "scrolling_speed": 10,
+        "background": "#1a1a1a",
+        "background_gradient": "",
+        "text_color": "#f0f0f0",
+        "text_gradient": ""
+      }
+    },
     "custom_liquid_DmAXtm": {
       "type": "custom-liquid",
       "name": "Custom Liquid",
@@ -85,22 +101,6 @@
         "background": "",
         "background_gradient": "",
         "text_color": ""
-      }
-    },
-    "scrolling_text_YH7jgj": {
-      "type": "scrolling-text",
-      "name": "Scrolling text",
-      "settings": {
-        "full_width": true,
-        "text": "VENTE D'ÉTÉ - ÉCONOMISEZ JUSQU'À 70 %",
-        "text_size": "xsmall",
-        "text_style": "fill",
-        "scrolling_mode": "auto",
-        "scrolling_speed": 10,
-        "background": "#1a1a1a",
-        "background_gradient": "",
-        "text_color": "#f0f0f0",
-        "text_gradient": ""
       }
     },
     "collection-list": {
@@ -698,8 +698,8 @@
   },
   "order": [
     "slideshow",
-    "custom_liquid_DmAXtm",
     "scrolling_text_YH7jgj",
+    "custom_liquid_DmAXtm",
     "collection-list",
     "featured-collection",
     "impact-text",
