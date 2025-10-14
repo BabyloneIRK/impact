@@ -1,0 +1,293 @@
+{% comment %}
+  Velia - Product Hero (simple)
+  - À utiliser sur le template produit (product.json)
+  - Utilise le produit du template (objet 'product')
+  - Metafields attendus (facultatif) :
+      product.metafields.reviews.rating (Decimal 0-5)
+      product.metafields.reviews.count  (Integer)
+{% endcomment %}
+
+<section id="velia-hero" class="velia">
+  <style>
+    .velia{--accent:#A5AE8A;--star:#FFC857;--muted:#6B7280;--border:#E5E7EB;--bg:#FAF9F6;--ok:#44C767}
+    .velia *{box-sizing:border-box}
+    .velia .wrap{max-width:1220px;margin:0 auto;padding:24px}
+    .velia .grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+    .velia .panel{background:#fff;border:1px solid var(--border);border-radius:14px}
+    .velia .media{background:var(--bg);padding:16px}
+    .velia .stage{border-radius:12px;overflow:hidden;display:flex;align-items:center;justify-content:center;min-height:520px}
+    .velia .thumbs{display:grid;grid-auto-flow:column;gap:10px;margin-top:12px;overflow:auto;padding-bottom:6px}
+    .velia .thumbs img{width:90px;height:90px;object-fit:cover;border-radius:10px;border:1px solid var(--border);cursor:pointer}
+
+    .velia .title{font-size:22px;font-weight:700;margin:4px 0 8px}
+    .velia .subtitle{color:#374151;line-height:1.5;margin-bottom:14px}
+    .velia .rating{display:flex;align-items:center;gap:8px;color:#111827;font-weight:600}
+    .velia .rating .stars svg{width:16px;height:16px;color:var(--star)}
+    .velia .rating small{color:#6B7280;font-weight:500}
+
+    .velia .bundle{border:1px solid var(--border);border-radius:12px;overflow:hidden}
+    .velia .bundle .hdr{font-size:12px;letter-spacing:.08em;color:#6B7280;text-align:center;border-bottom:1px solid var(--border);padding:10px 12px;font-weight:700}
+    .velia .opt{display:flex;align-items:center;gap:12px;padding:12px;border-top:1px solid var(--border);cursor:pointer}
+    .velia .opt:first-child{border-top:none}
+    .velia .opt.is-active{outline:2px solid var(--accent);background:#F7F8F3}
+    .velia .opt .img{width:56px;height:40px;background:#F3F4F6;border:1px solid var(--border);border-radius:8px}
+    .velia .opt .txt{flex:1}
+    .velia .opt .txt b{display:block}
+    .velia .opt .badge{font-size:10px;font-weight:700;border-radius:999px;border:1px solid var(--border);padding:2px 6px;margin-left:6px;color:#6B7280;background:#fff}
+    .velia .opt .price{font-weight:800;margin-left:auto;text-align:right}
+    .velia .opt .price s{color:#9CA3AF;font-weight:500;display:block;font-size:12px;line-height:1}
+
+    .velia .sub{border:1px dashed var(--border);border-radius:12px;padding:12px;margin:12px 0 8px;background:#fff}
+    .velia .sub label{display:flex;gap:10px;align-items:flex-start;cursor:pointer}
+    .velia .sub small{color:#6B7280}
+
+    .velia .ship{display:flex;align-items:center;gap:8px;color:#111827;margin:8px 0}
+    .velia .dot{width:8px;height:8px;background:#29C46D;border-radius:999px;display:inline-block}
+
+    .velia .cta{background:var(--accent);border:none;color:#fff;width:100%;padding:14px;border-radius:10px;font-weight:800;letter-spacing:.02em}
+    .velia .guarantee{display:flex;align-items:center;gap:10px;margin-top:10px;color:#374151;border:1px solid var(--border);border-radius:10px;padding:10px}
+    .velia .avatars{display:flex;align-items:center;gap:8px;margin-top:10px}
+    .velia .avatars img{width:28px;height:28px;border-radius:999px;border:2px solid #fff;box-shadow:0 0 0 1px var(--border)}
+    .velia .pill{font-size:13px;background:#EEF3E3;color:#2F3E1D;border-radius:999px;padding:6px 10px;font-weight:700}
+
+    @media (max-width:980px){
+      .velia .grid{grid-template-columns:1fr;gap:18px}
+      .velia .stage{min-height:360px}
+    }
+  </style>
+
+  <div class="wrap">
+    <div class="grid">
+
+      <!-- Colonne gauche - Galerie -->
+      <div class="panel media">
+        <div class="stage">
+          {% assign main = product.featured_media | default: product.media.first %}
+          {% if main %}
+            <img id="velia-main" src="{{ main | image_url: width: 900 }}" alt="{{ product.title | escape }}" style="width:100%;height:auto;display:block;">
+          {% else %}
+            <div style="padding:80px;color:#9CA3AF;">No media</div>
+          {% endif %}
+        </div>
+        {% if product.media.size > 1 %}
+          <div class="thumbs" id="velia-thumbs">
+            {% for m in product.media %}
+              <img data-src="{{ m | image_url: width: 900 }}" src="{{ m | image_url: width: 180 }}" alt="{{ product.title | escape }} thumbnail {{ forloop.index }}">
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+
+      <!-- Colonne droite - Infos / Form -->
+      <div class="panel" style="padding:16px 16px 18px;">
+        {% assign rating = product.metafields.reviews.rating | default: 4.8 %}
+{% assign rcount = product.metafields.reviews.count  | default: 20000 %}
+
+<div class="rating">
+  <span class="stars" aria-label="{{ rating }}/5">
+    {% assign full = rating | floor %}
+    {% assign half = 0 %}
+    {% assign next = full | plus: 1 %}
+
+    {% if rating > full and rating < next %}
+      {% assign t75 = full | plus: 0.75 %}
+      {% assign t25 = full | plus: 0.25 %}
+      {% if rating >= t75 %}
+        {% assign full = full | plus: 1 %}
+      {% elsif rating >= t25 %}
+        {% assign half = 1 %}
+      {% endif %}
+    {% endif %}
+
+    {% assign empty = 5 | minus: full | minus: half %}
+
+    {% for i in (1..full) %}
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.431 8.2 1.193-5.934 5.787 1.402 8.168L12 18.896l-7.336 3.87 1.402-8.168L.132 9.211l8.2-1.193z"/></svg>
+    {% endfor %}
+    {% if half == 1 %}
+      <svg viewBox="0 0 24 24">
+        <defs><linearGradient id="vh"><stop offset="50%" stop-color="var(--star)"/><stop offset="50%" stop-color="#E5E7EB"/></linearGradient></defs>
+        <path fill="url(#vh)" d="M12 .587l3.668 7.431 8.2 1.193-5.934 5.787 1.402 8.168L12 18.896l-7.336 3.87 1.402-8.168L.132 9.211l8.2-1.193z"/>
+      </svg>
+    {% endif %}
+    {% for i in (1..empty) %}
+      <svg viewBox="0 0 24 24" style="color:#E5E7EB"><path d="M12 .587l3.668 7.431 8.2 1.193-5.934 5.787 1.402 8.168L12 18.896l-7.336 3.87 1.402-8.168L.132 9.211l8.2-1.193z"/></svg>
+    {% endfor %}
+  </span>
+
+  <span>{{ rating }}/5</span>
+  <small>({{ rcount }}+ Reviews)</small>
+</div>
+
+
+        <h1 class="title">{{ product.title }}</h1>
+        {% if product.description != blank %}
+          <div class="subtitle">
+            {{ product.description | strip_html | truncate: 220 }}
+          </div>
+        {% endif %}
+
+        <!-- Packs -->
+        <div class="bundle">
+          <div class="hdr">BUNDLE DEALS END TONIGHT</div>
+
+          {% comment %}
+            Hypothèse simple : les 3 premières variantes = 1 pack / 2 pack / 4 pack
+            Tu peux renommer les titres de variantes pour correspondre.
+          {% endcomment %}
+
+          {% assign v1 = product.variants[0] %}
+          {% assign v2 = product.variants[1] %}
+          {% assign v3 = product.variants[2] %}
+
+          <label class="opt js-variant" data-vid="{{ v1.id }}">
+            <div class="img"></div>
+            <div class="txt">
+              <b>{{ v1.title }}</b>
+              <small>1 month’s supply</small>
+            </div>
+            <div class="price">
+              {{ v1.price | money }}
+              {% if v1.compare_at_price > v1.price %}
+                <s>{{ v1.compare_at_price | money }}</s>
+              {% endif %}
+            </div>
+          </label>
+
+          <label class="opt js-variant" data-vid="{{ v2.id }}">
+            <div class="img"></div>
+            <div class="txt">
+              <b>{{ v2.title }} <span class="badge">MOST POPULAR</span></b>
+              <small>2 months’ supply</small>
+            </div>
+            <div class="price">
+              {{ v2.price | money }}
+              {% if v2.compare_at_price > v2.price %}
+                <s>{{ v2.compare_at_price | money }}</s>
+              {% endif %}
+            </div>
+          </label>
+
+          <label class="opt js-variant" data-vid="{{ v3.id }}">
+            <div class="img"></div>
+            <div class="txt">
+              <b>{{ v3.title }} <span class="badge">BEST VALUE</span></b>
+              <small>4 months’ supply</small>
+            </div>
+            <div class="price">
+              {{ v3.price | money }}
+              {% if v3.compare_at_price > v3.price %}
+                <s>{{ v3.compare_at_price | money }}</s>
+              {% endif %}
+            </div>
+          </label>
+        </div>
+
+        <!-- Subscribe & Save -->
+        <div class="sub">
+          <label>
+            <input id="velia-sub" type="checkbox">
+            <div>
+              <b>Subscribe &amp; Save 20%</b><br>
+              <small>Monthly refills | Cancel anytime | Free shipping</small>
+            </div>
+          </label>
+        </div>
+
+        <!-- Shipping ETA -->
+        <div class="ship"><span class="dot"></span> Ships by <span id="velia-ship-date" style="font-weight:700;margin-left:4px;"></span></div>
+
+        <!-- Form Add to Cart -->
+        <form method="post" action="/cart/add" id="velia-form">
+          <input type="hidden" name="id" id="velia-variant-id" value="{{ product.selected_or_first_available_variant.id }}">
+          <button class="cta" type="submit">ADD TO CART</button>
+        </form>
+
+        <!-- Guarantee -->
+        <div class="guarantee">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2l7 4v6c0 5-3.5 9-7 10-3.5-1-7-5-7-10V6l7-4z" stroke="#9CA3AF" stroke-width="1.5"/><path d="M8 12l2.5 2.5L16 9" stroke="#29C46D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div>Less than 1% of our customers claim our 30-day money-back guarantee</div>
+        </div>
+
+        <!-- Social proof -->
+        <div class="avatars">
+          <img src="https://i.pravatar.cc/48?img=11" alt="">
+          <img src="https://i.pravatar.cc/48?img=22" alt="">
+          <img src="https://i.pravatar.cc/48?img=33" alt="">
+          <img src="https://i.pravatar.cc/48?img=44" alt="">
+          <span class="pill">More than 123,000 happy customers</span>
+        </div>
+
+        <!-- JSON-LD AggregateRating (SEO) -->
+        <script type="application/ld+json">
+        {
+          "@context":"https://schema.org",
+          "@type":"Product",
+          "name":"{{ product.title | escape }}",
+          "sku":"{{ product.selected_or_first_available_variant.sku | escape }}",
+          "aggregateRating":{
+            "@type":"AggregateRating",
+            "ratingValue":"{{ rating }}",
+            "reviewCount":"{{ rcount }}"
+          }
+        }
+        </script>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Thumbs swap
+    (function(){
+      var m = document.getElementById('velia-main');
+      var t = document.getElementById('velia-thumbs');
+      if(m && t){
+        t.querySelectorAll('img').forEach(function(img){
+          img.addEventListener('click', function(){ m.src = img.dataset.src; });
+        })
+      }
+    })();
+
+    // Variant selector (radio-like on cards)
+    (function(){
+      var cards = document.querySelectorAll('.velia .js-variant');
+      var input = document.getElementById('velia-variant-id');
+      function setActive(el){
+        cards.forEach(c => c.classList.remove('is-active'));
+        el.classList.add('is-active');
+        input.value = el.getAttribute('data-vid');
+      }
+      // default = first available
+      var def = Array.from(cards).find(c => c.getAttribute('data-vid') === input.value) || cards[0];
+      if(def) setActive(def);
+      cards.forEach(c => c.addEventListener('click', function(){ setActive(c); }));
+    })();
+
+    // Ship date = J+2
+    (function(){
+      var el = document.getElementById('velia-ship-date');
+      if(!el) return;
+      var d = new Date(); d.setDate(d.getDate()+2);
+      var opt = { weekday: undefined, month: 'short', day: 'numeric' };
+      el.textContent = d.toLocaleDateString(undefined, opt);
+    })();
+
+    // Optional: block submit if no variant (edge cases)
+    document.getElementById('velia-form')?.addEventListener('submit', function(e){
+      var v = document.getElementById('velia-variant-id')?.value;
+      if(!v){ e.preventDefault(); alert('Sélectionne un pack.'); }
+    });
+  </script>
+</section>
+
+{% schema %}
+{
+  "name": "Velia Product Hero",
+  "settings": [],
+  "blocks": [],
+  "presets": [
+    { "name": "Velia Product Hero" }
+  ]
+}
+{% endschema %}
+
