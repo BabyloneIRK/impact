@@ -182,7 +182,7 @@
         "badge_Rr73MN": {
           "type": "badge",
           "settings": {
-            "title": "Sensitive Skin Approved",
+            "title": "Peaux sensibles approuvé",
             "icon_image": "shopify://shop_images/Capture_d_ecran_2025-10-08_a_18.07.14-Photoroom.png",
             "icon_svg": ""
           }
@@ -190,7 +190,7 @@
         "badge_DPp988": {
           "type": "badge",
           "settings": {
-            "title": "Cruelty Free",
+            "title": "Sans cruauté",
             "icon_image": "shopify://shop_images/Capture_d_ecran_2025-10-08_a_18.07.28-Photoroom.png",
             "icon_svg": ""
           }
@@ -198,7 +198,7 @@
         "badge_Di4J9r": {
           "type": "badge",
           "settings": {
-            "title": "Fast Shipping",
+            "title": "Livraison rapide",
             "icon_image": "shopify://shop_images/Capture_d_ecran_2025-10-08_a_18.07.57-Photoroom.png",
             "icon_svg": ""
           }
@@ -206,7 +206,7 @@
         "badge_tmmpEU": {
           "type": "badge",
           "settings": {
-            "title": "Easy Returns",
+            "title": "Retours faciles",
             "icon_image": "shopify://shop_images/Capture_d_ecran_2025-10-08_a_18.10.25-Photoroom.png",
             "icon_svg": ""
           }
@@ -228,9 +228,9 @@
         "gap": 28,
         "image_position": "image-left",
         "image": "shopify://shop_images/ChatGPT_Image_11_oct._2025_a_19_10_50.png",
-        "kicker": "Our philosophy",
-        "heading": "Meet the team",
-        "richtext": "<p>Behind Velia is a small, passionate team of creators and skincare enthusiasts who believe that beauty should feel easy, honest and empowering.</p>",
+        "kicker": "Notre philosophie",
+        "heading": "Notre équipe",
+        "richtext": "<p>Derrière Velia, une petite équipe passionnée de créatrices et d’expertes beauté œuvre chaque jour pour offrir aux femmes des soins à la fois doux, efficaces et bienveillants. Nous croyons qu’une peau belle et apaisée commence par la confiance et la simplicité.</p>",
         "button_label": "Découvrir Velia",
         "button_link": "",
         "icon_style": "none",
