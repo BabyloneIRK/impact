@@ -24,7 +24,7 @@
             "icon_background": "",
             "icon_color": "#c1c3ac",
             "title": "Livraison gratuite",
-            "content": ""
+            "content": "<p>Livraison offerte à votre domicile</p>"
           }
         },
         "customer-support": {
@@ -37,7 +37,7 @@
             "icon_background": "#ffffff",
             "icon_color": "#c1c3ac",
             "title": "Service client 7j/7",
-            "content": ""
+            "content": "<p>Service client réactif et attentionné, disponible 7j/7.</p>"
           }
         },
         "discount": {
