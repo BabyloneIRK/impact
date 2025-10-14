@@ -426,6 +426,22 @@
         "accordion_background": "",
         "accordion_text_color": ""
       }
+    },
+    "scrolling_text_98EFU6": {
+      "type": "scrolling-text",
+      "name": "Scrolling text",
+      "settings": {
+        "full_width": true,
+        "text": "Qualité premium - Paiements sécurisés - Garantie satisfaite ou remboursée 30 jours",
+        "text_size": "xsmall",
+        "text_style": "fill",
+        "scrolling_mode": "auto",
+        "scrolling_speed": 4,
+        "background": "#c1c3ac",
+        "background_gradient": "",
+        "text_color": "",
+        "text_gradient": ""
+      }
     }
   },
   "order": [
@@ -437,6 +453,7 @@
     "custom_liquid_xqU6qr",
     "velia_badges_team_yBGpj8",
     "featured-product",
-    "faq"
+    "faq",
+    "scrolling_text_98EFU6"
   ]
 }
