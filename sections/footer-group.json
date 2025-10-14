@@ -110,6 +110,7 @@
         "newsletter",
         "links"
       ],
+      "disabled": true,
       "custom_css": [],
       "settings": {
         "show_social_media": true,
@@ -120,10 +121,24 @@
         "show_country_name": true,
         "show_locale_selector": true
       }
+    },
+    "custom_liquid_KHWTTz": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
     "text-with-icons",
-    "footer"
+    "footer",
+    "custom_liquid_KHWTTz"
   ]
 }
