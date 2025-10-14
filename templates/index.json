@@ -176,10 +176,10 @@
         "text_color": ""
       }
     },
-    "velia_about_badges_7q7y6i": {
-      "type": "velia-about-badges",
+    "velia_badges_team_yBGpj8": {
+      "type": "velia-badges-team",
       "blocks": {
-        "badge_qeeNXP": {
+        "badge_Rr73MN": {
           "type": "badge",
           "settings": {
             "title": "Sensitive Skin Approved",
@@ -187,7 +187,7 @@
             "icon_svg": ""
           }
         },
-        "badge_78mKd3": {
+        "badge_DPp988": {
           "type": "badge",
           "settings": {
             "title": "Cruelty Free",
@@ -195,7 +195,7 @@
             "icon_svg": ""
           }
         },
-        "badge_TaRcaY": {
+        "badge_Di4J9r": {
           "type": "badge",
           "settings": {
             "title": "Fast Shipping",
@@ -203,7 +203,7 @@
             "icon_svg": ""
           }
         },
-        "badge_DBUHXe": {
+        "badge_tmmpEU": {
           "type": "badge",
           "settings": {
             "title": "Easy Returns",
@@ -213,16 +213,16 @@
         }
       },
       "block_order": [
-        "badge_qeeNXP",
-        "badge_78mKd3",
-        "badge_TaRcaY",
-        "badge_DBUHXe"
+        "badge_Rr73MN",
+        "badge_DPp988",
+        "badge_Di4J9r",
+        "badge_tmmpEU"
       ],
-      "name": "Velia • Badges + Team",
+      "name": "Badges + Team",
       "settings": {
         "bg": "#C1C3AC",
         "card_bg": "#FFFFFF",
-        "text_color": "#1C1C1C",
+        "text_color": "#111111",
         "muted_color": "#4B4B4B",
         "radius": 24,
         "gap": 28,
@@ -232,7 +232,9 @@
         "heading": "Meet the team",
         "richtext": "<p>Behind Velia is a small, passionate team of creators and skincare enthusiasts who believe that beauty should feel easy, honest and empowering.</p>",
         "button_label": "Découvrir Velia",
-        "button_link": ""
+        "button_link": "",
+        "icon_style": "none",
+        "icon_bg_color": "#FFFFFF"
       }
     },
     "collection-list": {
@@ -810,7 +812,7 @@
     "featured-collection",
     "rich_text_KXGtTr",
     "custom_liquid_xqU6qr",
-    "velia_about_badges_7q7y6i",
+    "velia_badges_team_yBGpj8",
     "collection-list",
     "impact-text",
     "image-with-text-overlay",
