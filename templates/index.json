@@ -176,17 +176,63 @@
         "text_color": ""
       }
     },
-    "custom_liquid_GkDAp6": {
-      "type": "custom-liquid",
-      "name": "Custom Liquid",
+    "velia_about_badges_7q7y6i": {
+      "type": "velia-about-badges",
+      "blocks": {
+        "badge_qeeNXP": {
+          "type": "badge",
+          "settings": {
+            "title": "Sensitive Skin Approved",
+            "icon_image": "shopify://shop_images/Capture_d_ecran_2025-10-08_a_18.07.14-Photoroom.png",
+            "icon_svg": ""
+          }
+        },
+        "badge_78mKd3": {
+          "type": "badge",
+          "settings": {
+            "title": "Cruelty Free",
+            "icon_image": "shopify://shop_images/Capture_d_ecran_2025-10-08_a_18.07.28-Photoroom.png",
+            "icon_svg": ""
+          }
+        },
+        "badge_TaRcaY": {
+          "type": "badge",
+          "settings": {
+            "title": "Fast Shipping",
+            "icon_image": "shopify://shop_images/Capture_d_ecran_2025-10-08_a_18.07.57-Photoroom.png",
+            "icon_svg": ""
+          }
+        },
+        "badge_DBUHXe": {
+          "type": "badge",
+          "settings": {
+            "title": "Easy Returns",
+            "icon_image": "shopify://shop_images/Capture_d_ecran_2025-10-08_a_18.10.25-Photoroom.png",
+            "icon_svg": ""
+          }
+        }
+      },
+      "block_order": [
+        "badge_qeeNXP",
+        "badge_78mKd3",
+        "badge_TaRcaY",
+        "badge_DBUHXe"
+      ],
+      "name": "Velia • Badges + Team",
       "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "liquid": "<div style=\"display: flex; justify-content: space-between; background-color: #f0f5f3; padding: 30px; border-radius: 10px;\">\n  <!-- Section 1: Icon and Title -->\n  <div style=\"text-align: center; flex: 1;\">\n    <img src=\"ton-icone-1-url\" alt=\"Icon 1\" style=\"width: 50px; height: 50px;\"/>\n    <h3 style=\"font-size: 18px; color: #333;\">Sensitive Skin Approved</h3>\n  </div>\n  \n  <!-- Section 2: Icon and Title -->\n  <div style=\"text-align: center; flex: 1;\">\n    <img src=\"ton-icone-2-url\" alt=\"Icon 2\" style=\"width: 50px; height: 50px;\"/>\n    <h3 style=\"font-size: 18px; color: #333;\">Cruelty Free</h3>\n  </div>\n\n  <!-- Section 3: Icon and Title -->\n  <div style=\"text-align: center; flex: 1;\">\n    <img src=\"ton-icone-3-url\" alt=\"Icon 3\" style=\"width: 50px; height: 50px;\"/>\n    <h3 style=\"font-size: 18px; color: #333;\">Fast Shipping</h3>\n  </div>\n\n  <!-- Section 4: Icon and Title -->\n  <div style=\"text-align: center; flex: 1;\">\n    <img src=\"ton-icone-4-url\" alt=\"Icon 4\" style=\"width: 50px; height: 50px;\"/>\n    <h3 style=\"font-size: 18px; color: #333;\">Easy Returns</h3>\n  </div>\n</div>\n\n<!-- Meet the Team Section -->\n<div style=\"display: flex; margin-top: 50px;\">\n  <div style=\"flex: 1; padding-right: 20px;\">\n    <img src=\"ton-image-de-equipe-url\" alt=\"Team Image\" style=\"width: 100%; border-radius: 10px;\"/>\n  </div>\n  <div style=\"flex: 1;\">\n    <h2 style=\"font-size: 24px; color: #333;\">Meet the team</h2>\n    <p style=\"font-size: 16px; color: #666;\">Behind Velia is a small, passionate team of creators, product developers, and skincare enthusiasts who believe that beauty should feel easy, honest, and empowering.</p>\n  </div>\n</div>",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
+        "bg": "#C1C3AC",
+        "card_bg": "#FFFFFF",
+        "text_color": "#1C1C1C",
+        "muted_color": "#4B4B4B",
+        "radius": 24,
+        "gap": 28,
+        "image_position": "image-left",
+        "image": "shopify://shop_images/ChatGPT_Image_11_oct._2025_a_19_10_50.png",
+        "kicker": "Our philosophy",
+        "heading": "Meet the team",
+        "richtext": "<p>Behind Velia is a small, passionate team of creators and skincare enthusiasts who believe that beauty should feel easy, honest and empowering.</p>",
+        "button_label": "Découvrir Velia",
+        "button_link": ""
       }
     },
     "collection-list": {
@@ -764,7 +810,7 @@
     "featured-collection",
     "rich_text_KXGtTr",
     "custom_liquid_xqU6qr",
-    "custom_liquid_GkDAp6",
+    "velia_about_badges_7q7y6i",
     "collection-list",
     "impact-text",
     "image-with-text-overlay",
