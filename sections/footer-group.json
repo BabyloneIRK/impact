@@ -110,6 +110,7 @@
         "newsletter",
         "links"
       ],
+      "custom_css": [],
       "settings": {
         "show_social_media": true,
         "show_payment_icons": true,
