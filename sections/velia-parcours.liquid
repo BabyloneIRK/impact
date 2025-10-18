@@ -1,0 +1,111 @@
+{% comment %}
+  Section: Parcours produit (timeline + image)
+  Compatible: Online Store 2.0 (sections everywhere)
+  Filename suggestion: section-velia-parcours.liquid
+{% endcomment %}
+
+<section class="velia-journey" aria-label="Parcours du produit">
+  <div class="vj-container">
+    <div class="vj-left">
+      <h2 class="vj-title">{{ section.settings.heading | escape }}</h2>
+      {% if section.settings.subheading != blank %}
+        <p class="vj-sub">{{ section.settings.subheading }}</p>
+      {% endif %}
+
+      <ol class="vj-timeline" role="list">
+        {% for block in section.blocks %}
+          <li class="vj-step" {{ block.shopify_attributes }}>
+            <div class="vj-dot" aria-hidden="true"></div>
+            <div class="vj-badge">{{ block.settings.badge }}</div>
+            <h3 class="vj-step-title">{{ block.settings.title }}</h3>
+            <p class="vj-step-text">{{ block.settings.text }}</p>
+          </li>
+        {% endfor %}
+      </ol>
+    </div>
+
+    <div class="vj-right">
+      {% if section.settings.image != blank %}
+        {%- assign img = section.settings.image -%}
+        <picture>
+          <img
+            srcset="{{ img | image_url: width: 480 }} 480w,
+                    {{ img | image_url: width: 768 }} 768w,
+                    {{ img | image_url: width: 1024 }} 1024w,
+                    {{ img | image_url: width: 1440 }} 1440w"
+            sizes="(max-width: 900px) 100vw, 50vw"
+            src="{{ img | image_url: width: 1024 }}"
+            alt="{{ section.settings.image_alt | escape }}"
+            loading="lazy"
+            class="vj-image" />
+        </picture>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<style>
+  .velia-journey {padding: clamp(28px, 4vw, 56px) 0;}
+  .vj-container {max-width: 1200px; margin: 0 auto; padding: 0 16px; display: grid; gap: 32px; grid-template-columns: 1.2fr 1fr; align-items: start;}
+  .vj-title {font-size: clamp(28px, 3.2vw, 40px); line-height: 1.15; margin: 0 0 8px;}
+  .vj-sub {color: rgba(0,0,0,.7); margin: 0 0 24px;}
+  .vj-timeline {position: relative; list-style: none; margin: 8px 0 0; padding: 0 0 0 24px;}
+  .vj-timeline::before {content: ""; position: absolute; left: 11px; top: 4px; bottom: 4px; width: 2px; background: {{ section.settings.line_color }};}
+  .vj-step {position: relative; margin: 28px 0;}
+  .vj-dot {position: absolute; left: -2px; top: 2px; width: 18px; height: 18px; border-radius: 999px; background: {{ section.settings.accent_color }}22; box-shadow: 0 0 0 4px {{ section.settings.accent_color }}11 inset;}
+  .vj-badge {display: inline-block; font-size: 12px; line-height: 1; padding: 6px 10px; border-radius: 999px; background: {{ section.settings.accent_color }}1A; color: {{ section.settings.accent_color }}; font-weight: 600; margin-left: 12px;}
+  .vj-step-title {margin: 10px 0 6px; font-size: clamp(18px, 2.2vw, 22px);} 
+  .vj-step-text {margin: 0; color: rgba(0,0,0,.8);} 
+  .vj-image {width: 100%; height: auto; border-radius: 16px; display: block;}
+  
+  @media (max-width: 900px) {
+    .vj-container {grid-template-columns: 1fr;}
+    .vj-right {order: -1;}
+    .vj-timeline {padding-left: 20px;}
+    .vj-timeline::before {left: 9px;}
+    .vj-badge {margin-left: 10px;}
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Parcours produit",
+  "tag": "section",
+  "class": "section-velia-parcours",
+  "settings": [
+    {"type": "text", "id": "heading", "label": "Titre", "default": "Votre parcours vers une peau sans poils"},
+    {"type": "textarea", "id": "subheading", "label": "Sous‑titre", "default": "Ce à quoi vous pouvez vous attendre avec une utilisation régulière de notre nouveau sérum botanique."},
+    {"type": "image_picker", "id": "image", "label": "Image à droite"},
+    {"type": "text", "id": "image_alt", "label": "Texte alternatif de l'image", "default": "Modèles tenant le produit"},
+    {"type": "color", "id": "accent_color", "label": "Couleur d’accent", "default": "#9C4DFF"},
+    {"type": "color", "id": "line_color", "label": "Couleur de la ligne", "default": "#E5D4FF"}
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Étape",
+      "settings": [
+        {"type": "text", "id": "badge", "label": "Badge (ex: 1 semaine)", "default": "1 semaine"},
+        {"type": "text", "id": "title", "label": "Titre", "default": "Peau et poils plus doux"},
+        {"type": "textarea", "id": "text", "label": "Texte", "default": "La repousse devient moins piquante et la peau plus apaisée. Le sérum est rapidement absorbé et aide à calmer l'irritation après l'application."}
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Parcours produit",
+      "blocks": [
+        {"type": "step", "settings": {"badge": "1 semaine", "title": "Peau et poils plus doux", "text": "La repousse devient moins piquante et la peau plus apaisée. Le sérum s'absorbe vite et calme l'irritation après l'application."}},
+        {"type": "step", "settings": {"badge": "2 semaines", "title": "Poils plus fins", "text": "Les poils repoussent plus fins et plus clairs. Vous espacez progressivement l'épilation car il y a simplement moins de poils tenaces."}},
+        {"type": "step", "settings": {"badge": "1 mois", "title": "Poils presque invisibles", "text": "Les zones autrefois épaisses deviennent plus lisses, avec peu d'entretien."}},
+        {"type": "step", "settings": {"badge": "3 mois", "title": "Confiance retrouvée", "text": "Seuls quelques duvets gérables restent. Moins d'anxiété liée à l'épilation quotidienne."}},
+        {"type": "step", "settings": {"badge": "6 mois", "title": "Liberté durable", "text": "Les follicules sont visiblement affaiblis. La peau reste lisse avec un effort minimal, loin du cycle sans fin de l'épilation."}}
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+{% javascript %}
+  // Aucun JS requis pour la version de base. Ajoutez votre tracking si besoin ici.
+{% endjavascript %}
