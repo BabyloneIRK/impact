@@ -1,16 +1,17 @@
 {% comment %}
-  Section: Parcours produit (timeline + image)
-  Compatible: Online Store 2.0 (sections everywhere)
-  Filename suggestion: section-velia-parcours.liquid
+  Section: Parcours produit (timeline + image centrée)
+  Version modifiée — image centrée et titre aligné en haut
 {% endcomment %}
 
 <section class="velia-journey" aria-label="Parcours du produit">
   <div class="vj-container">
     <div class="vj-left">
-      <h2 class="vj-title">{{ section.settings.heading | escape }}</h2>
-      {% if section.settings.subheading != blank %}
-        <p class="vj-sub">{{ section.settings.subheading }}</p>
-      {% endif %}
+      <div class="vj-header">
+        <h2 class="vj-title">{{ section.settings.heading | escape }}</h2>
+        {% if section.settings.subheading != blank %}
+          <p class="vj-sub">{{ section.settings.subheading }}</p>
+        {% endif %}
+      </div>
 
       <ol class="vj-timeline" role="list">
         {% for block in section.blocks %}
@@ -37,7 +38,7 @@
             src="{{ img | image_url: width: 1024 }}"
             alt="{{ section.settings.image_alt | escape }}"
             loading="lazy"
-            class="vj-image" />
+            class="vj-image centered" />
         </picture>
       {% endif %}
     </div>
@@ -47,29 +48,30 @@
 <style>
   .velia-journey {padding: clamp(28px, 4vw, 56px) 0;}
   .vj-container {max-width: 1200px; margin: 0 auto; padding: 0 16px; display: grid; gap: 32px; grid-template-columns: 1.2fr 1fr; align-items: start;}
-  .vj-title {font-size: clamp(28px, 3.2vw, 40px); line-height: 1.15; margin: 0 0 8px;}
-  .vj-sub {color: rgba(0,0,0,.7); margin: 0 0 24px;}
-  .vj-timeline {position: relative; list-style: none; margin: 8px 0 0; padding: 0 0 0 24px;}
+  .vj-header {margin-bottom: 24px;}
+  .vj-title {font-size: clamp(30px, 3.5vw, 42px); line-height: 1.2; margin: 0; text-align: left;}
+  .vj-sub {color: rgba(0,0,0,.7); margin: 8px 0 24px; text-align: left;}
+  .vj-timeline {position: relative; list-style: none; margin: 0; padding: 0 0 0 24px;}
   .vj-timeline::before {content: ""; position: absolute; left: 11px; top: 4px; bottom: 4px; width: 2px; background: {{ section.settings.line_color }};}
   .vj-step {position: relative; margin: 28px 0;}
   .vj-dot {position: absolute; left: -2px; top: 2px; width: 18px; height: 18px; border-radius: 999px; background: {{ section.settings.accent_color }}22; box-shadow: 0 0 0 4px {{ section.settings.accent_color }}11 inset;}
   .vj-badge {display: inline-block; font-size: 12px; line-height: 1; padding: 6px 10px; border-radius: 999px; background: {{ section.settings.accent_color }}1A; color: {{ section.settings.accent_color }}; font-weight: 600; margin-left: 12px;}
   .vj-step-title {margin: 10px 0 6px; font-size: clamp(18px, 2.2vw, 22px);} 
   .vj-step-text {margin: 0; color: rgba(0,0,0,.8);} 
-  .vj-image {width: 100%; height: auto; border-radius: 16px; display: block;}
-  
+  .vj-image {width: 100%; height: auto; border-radius: 16px; display: block; margin: 0 auto;}
+  .vj-right {display: flex; align-items: center; justify-content: center;}
+
   @media (max-width: 900px) {
     .vj-container {grid-template-columns: 1fr;}
     .vj-right {order: -1;}
-    .vj-timeline {padding-left: 20px;}
-    .vj-timeline::before {left: 9px;}
-    .vj-badge {margin-left: 10px;}
+    .vj-image {max-width: 400px; margin: 0 auto;}
+    .vj-title, .vj-sub {text-align: center;}
   }
 </style>
 
 {% schema %}
 {
-  "name": "Parcours produit",
+  "name": "Parcours produit (centré)",
   "tag": "section",
   "class": "section-velia-parcours",
   "settings": [
@@ -81,31 +83,12 @@
     {"type": "color", "id": "line_color", "label": "Couleur de la ligne", "default": "#E5D4FF"}
   ],
   "blocks": [
-    {
-      "type": "step",
-      "name": "Étape",
-      "settings": [
-        {"type": "text", "id": "badge", "label": "Badge (ex: 1 semaine)", "default": "1 semaine"},
-        {"type": "text", "id": "title", "label": "Titre", "default": "Peau et poils plus doux"},
-        {"type": "textarea", "id": "text", "label": "Texte", "default": "La repousse devient moins piquante et la peau plus apaisée. Le sérum est rapidement absorbé et aide à calmer l'irritation après l'application."}
-      ]
-    }
+    {"type": "step", "name": "Étape", "settings": [
+      {"type": "text", "id": "badge", "label": "Badge (ex: 1 semaine)", "default": "1 semaine"},
+      {"type": "text", "id": "title", "label": "Titre", "default": "Peau et poils plus doux"},
+      {"type": "textarea", "id": "text", "label": "Texte", "default": "La repousse devient moins piquante et la peau plus apaisée. Le sérum s'absorbe vite et calme l'irritation après l'application."}
+    ]}
   ],
-  "presets": [
-    {
-      "name": "Parcours produit",
-      "blocks": [
-        {"type": "step", "settings": {"badge": "1 semaine", "title": "Peau et poils plus doux", "text": "La repousse devient moins piquante et la peau plus apaisée. Le sérum s'absorbe vite et calme l'irritation après l'application."}},
-        {"type": "step", "settings": {"badge": "2 semaines", "title": "Poils plus fins", "text": "Les poils repoussent plus fins et plus clairs. Vous espacez progressivement l'épilation car il y a simplement moins de poils tenaces."}},
-        {"type": "step", "settings": {"badge": "1 mois", "title": "Poils presque invisibles", "text": "Les zones autrefois épaisses deviennent plus lisses, avec peu d'entretien."}},
-        {"type": "step", "settings": {"badge": "3 mois", "title": "Confiance retrouvée", "text": "Seuls quelques duvets gérables restent. Moins d'anxiété liée à l'épilation quotidienne."}},
-        {"type": "step", "settings": {"badge": "6 mois", "title": "Liberté durable", "text": "Les follicules sont visiblement affaiblis. La peau reste lisse avec un effort minimal, loin du cycle sans fin de l'épilation."}}
-      ]
-    }
-  ]
+  "presets": [{"name": "Parcours produit (centré)"}]
 }
 {% endschema %}
-
-{% javascript %}
-  // Aucun JS requis pour la version de base. Ajoutez votre tracking si besoin ici.
-{% endjavascript %}
