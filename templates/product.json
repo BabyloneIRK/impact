@@ -447,6 +447,67 @@
         "background_gradient": "",
         "text_color": ""
       }
+    },
+    "faq_r7UpJ4": {
+      "type": "faq",
+      "blocks": {
+        "item_FcpKe4": {
+          "type": "item",
+          "settings": {
+            "title": "À quelle fréquence dois-je l’utiliser ?",
+            "content": "<p>Pour de meilleurs résultats, utilisez-le 2 à 3 fois par semaine sur une peau nettoyée. Une utilisation plus fréquente peut entraîner une sur-exfoliation. Beaucoup d’utilisateurs considèrent le « jour d’exfoliation » comme un soin hebdomadaire agréable.</p>"
+          }
+        },
+        "item_Qiqbc7": {
+          "type": "item",
+          "settings": {
+            "title": "Quels résultats puis-je attendre et quand ?",
+            "content": "<p><strong>Immédiatement :</strong> texture plus lisse, pores plus nets et sensation de peau débarrassée des cellules mortes.</p><p><strong>Après 2 semaines :</strong> des études cliniques montrent une réduction des points blancs, de la production de sébum, du nombre de pores et de la rugosité de la peau.</p>"
+          }
+        },
+        "item_qEUymj": {
+          "type": "item",
+          "settings": {
+            "title": "Quelles sont les politiques d’expédition et de retour ?",
+            "content": "<p>Nous traitons les commandes sous 1 à 2 jours ouvrés. Après expédition, le délai de livraison estimé est de<strong> 7 à 10 jours ouvrés</strong> selon votre localisation.<br/><br/></p>"
+          }
+        },
+        "item_cafiPa": {
+          "type": "item",
+          "settings": {
+            "title": "Est-il adapté aux peaux sensibles ou sujettes à l’acné ?",
+            "content": "<p>Le mélange de PHA et d’actifs à base de riz est conçu pour minimiser les irritations, mais il contient tout de même des acides exfoliants. Faites un test sur votre mâchoire 24 heures avant la première utilisation.<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_FcpKe4",
+        "item_Qiqbc7",
+        "item_qEUymj",
+        "item_cafiPa"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "FAQ",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "Our customer support is available Monday to Friday: 8am-8:30pm.",
+        "answer_time": "Average answer time: 24h",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
     }
   },
   "order": [
@@ -458,6 +519,7 @@
     "before_after_image_ecg6HF",
     "rich_text_JRpRgw",
     "custom_liquid_LzxRLW",
-    "custom_liquid_4M9H6U"
+    "custom_liquid_4M9H6U",
+    "faq_r7UpJ4"
   ]
 }
