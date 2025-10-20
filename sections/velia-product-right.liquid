@@ -1,0 +1,276 @@
+{% assign p = product %}
+
+<section id="velia-right-{{ section.id }}" class="velia-right">
+  <div class="velia-card">
+
+    <!-- HEADER -->
+    <div class="velia-header">
+      {% if section.settings.show_rating and p.metafields.reviews.rating.value %}
+        <div class="velia-stars">
+          ⭐ {{ p.metafields.reviews.rating.value | round: 1 }}/5
+          {% if p.metafields.reviews.rating_count %} | {{ p.metafields.reviews.rating_count }} avis {% endif %}
+        </div>
+      {% endif %}
+      <h1 class="velia-title">{{ p.title }}</h1>
+      {% if section.settings.kicker != blank %}
+        <p class="velia-kicker">{{ section.settings.kicker }}</p>
+      {% endif %}
+    </div>
+
+    <!-- PRICE -->
+    {% assign sel = p.selected_or_first_available_variant %}
+    <div class="velia-price">
+      <span class="current">{{ sel.price | money }}</span>
+      {% if sel.compare_at_price and sel.compare_at_price > sel.price %}
+        <span class="compare">{{ sel.compare_at_price | money }}</span>
+      {% endif %}
+    </div>
+
+    <!-- STOCK -->
+    <div class="velia-stock">
+      {% if sel.available %}
+        <span class="dot dot--in"></span> En stock
+      {% else %}
+        <span class="dot dot--out"></span> Rupture
+      {% endif %}
+    </div>
+
+    <!-- FORM -->
+    <form method="post" action="/cart/add" id="velia-form-{{ section.id }}" class="velia-form" data-product="{{ p.id }}">
+      <input type="hidden" name="id" value="{{ sel.id }}">
+
+      {% if section.settings.enable_packs and p.variants.size > 1 %}
+        <div class="velia-packs">
+          <div class="velia-pack-title">{{ section.settings.pack_title }}</div>
+          <div class="velia-pack-grid">
+            {% for v in p.variants %}
+              <label class="pack-opt {% unless v.available %}is-disabled{% endunless %}">
+                <input type="radio" name="id" value="{{ v.id }}" {% if v.id == sel.id %}checked{% endif %} {% unless v.available %}disabled{% endunless %}>
+                <div class="pack-box">
+                  <div class="pack-name">{{ v.title }}</div>
+                  <div class="pack-price">
+                    {{ v.price | money }}
+                    {% if v.compare_at_price and v.compare_at_price > v.price %}
+                      <span class="pack-compare">{{ v.compare_at_price | money }}</span>
+                    {% endif %}
+                  </div>
+                  {% unless v.available %}<div class="pack-oos">Épuisé</div>{% endunless %}
+                </div>
+              </label>
+            {% endfor %}
+          </div>
+        </div>
+      {% else %}
+        {% if p.options_with_values.size > 0 %}
+          {% for option in p.options_with_values %}
+            <div class="velia-option">
+              <div class="opt-label">{{ option.name }}</div>
+              <div class="opt-values">
+                <select name="options[{{ option.name }}]">
+                  {% for value in option.values %}
+                    <option value="{{ value }}" {% if option.selected_value == value %}selected{% endif %}>{{ value }}</option>
+                  {% endfor %}
+                </select>
+              </div>
+            </div>
+          {% endfor %}
+        {% endif %}
+      {% endif %}
+
+      <div class="velia-qty">
+        <label for="qty-{{ section.id }}">Qté</label>
+        <div class="qty-box">
+          <button type="button" class="qty-btn" data-act="minus">−</button>
+          <input id="qty-{{ section.id }}" name="quantity" value="1" inputmode="numeric">
+          <button type="button" class="qty-btn" data-act="plus">+</button>
+        </div>
+      </div>
+
+      <button type="submit" class="velia-atc" {% unless sel.available %}disabled{% endunless %}>
+        {{ section.settings.cta_label }}
+      </button>
+
+      {% if section.settings.show_secure_bar %}
+        <div class="velia-guarantee">{{ section.settings.secure_text }}</div>
+      {% endif %}
+    </form>
+
+    <!-- BENEFICES -->
+    {% if section.blocks.size > 0 %}
+      <div class="velia-benefits">
+        <div class="benefits-title">{{ section.settings.benefits_title }}</div>
+        <ul>
+          {% for block in section.blocks %}
+            {% if block.type == 'benefit' %}
+              <li>{{ block.settings.emoji }} {{ block.settings.text }}</li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+
+    <!-- VIDEOS -->
+    {% assign video_blocks = section.blocks | where: 'type', 'video' %}
+    {% if video_blocks.size > 0 %}
+      <div class="velia-videos">
+        {% for block in video_blocks %}
+          <figure class="velia-video">
+            {% if block.settings.url contains '.mp4' or block.settings.url contains '.webm' %}
+              <video playsinline muted controls {% if block.settings.autoplay %}autoplay loop{% endif %} {% if block.settings.poster %}poster="{{ block.settings.poster | image_url: width: 800 }}"{% endif %}>
+                <source src="{{ block.settings.url }}" type="video/{{ block.settings.url | split: '.' | last }}">
+              </video>
+            {% else %}
+              <iframe src="{{ block.settings.url | replace: 'watch?v=', 'embed/' }}" loading="lazy" allowfullscreen></iframe>
+            {% endif %}
+            {% if block.settings.caption != blank %}<figcaption>{{ block.settings.caption }}</figcaption>{% endif %}
+          </figure>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+  </div>
+</section>
+
+<style>
+  .velia-right{max-width:640px;margin:0 auto}
+  .velia-card{background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:16px;padding:20px;box-shadow:0 8px 24px rgba(0,0,0,.04)}
+  .velia-title{font-size:28px;line-height:1.2;margin:4px 0 6px;font-weight:800}
+  .velia-kicker{color:#667085;font-size:14px;margin-bottom:8px}
+  .velia-stars{font-size:13px;color:#475467;margin-bottom:6px}
+  .velia-price{display:flex;gap:10px;align-items:baseline;margin:8px 0 6px}
+  .velia-price .current{font-size:24px;font-weight:800}
+  .velia-price .compare{text-decoration:line-through;color:#98A2B3}
+  .velia-stock{font-size:13px;color:#475467;margin-bottom:10px}
+  .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;vertical-align:middle}
+  .dot--in{background:#22c55e}.dot--out{background:#ef4444}
+
+  .velia-form{display:grid;gap:14px}
+  .velia-packs{border:1px solid rgba(0,0,0,.06);border-radius:12px;padding:12px}
+  .velia-pack-title{font-weight:700;margin-bottom:8px}
+  .velia-pack-grid{display:grid;grid-template-columns:1fr;gap:10px}
+  .pack-opt{display:block}
+  .pack-opt input{display:none}
+  .pack-box{border:1px solid rgba(0,0,0,.08);border-radius:12px;padding:10px;display:flex;justify-content:space-between;align-items:center}
+  .pack-opt input:checked + .pack-box{border-color:#8AA86E;box-shadow:0 0 0 3px rgba(138,168,110,.2)}
+  .is-disabled .pack-box{opacity:.5}
+  .pack-name{font-weight:700}
+  .pack-price{font-weight:700}
+  .pack-compare{margin-left:6px;color:#98A2B3;text-decoration:line-through}
+  .pack-oos{font-size:12px;color:#ef4444;margin-left:8px}
+
+  .velia-option .opt-label{font-weight:700;margin-bottom:6px}
+  .velia-option select{width:100%}
+
+  .velia-qty{display:flex;align-items:center;gap:10px}
+  .qty-box{display:flex;align-items:center;border:1px solid rgba(0,0,0,.1);border-radius:10px;overflow:hidden}
+  .qty-btn{background:#F3F4F6;border:0;width:36px;height:36px;font-size:20px;line-height:1}
+  .velia-qty input{width:50px;text-align:center;border:0;height:36px}
+
+  .velia-atc{background:#8AA86E;color:#fff;border:0;border-radius:12px;height:48px;font-weight:800}
+  .velia-atc[disabled]{opacity:.5}
+
+  .velia-guarantee{background:#ECF4E7;border:1px solid #DDE7D4;border-radius:10px;padding:10px;text-align:center;font-size:12px;color:#315343}
+
+  .velia-benefits{margin-top:12px}
+  .benefits-title{font-weight:800;margin-bottom:6px}
+  .velia-benefits ul{list-style:none;padding:0;margin:0;display:grid;gap:6px}
+  .velia-benefits li{font-size:14px}
+
+  .velia-videos{margin-top:16px;display:grid;gap:12px}
+  .velia-video video,.velia-video iframe{width:100%;aspect-ratio:16/9;border-radius:12px;border:1px solid rgba(0,0,0,.06);overflow:hidden}
+  .velia-video figcaption{font-size:12px;color:#667085;margin-top:4px}
+
+  @media(min-width:990px){
+    .velia-pack-grid{grid-template-columns:1fr 1fr}
+  }
+</style>
+
+<script>
+  (function(){
+    const wrap = document.getElementById('velia-right-{{ section.id }}');
+    if(!wrap) return;
+
+    // Qty
+    const qtyInput = wrap.querySelector('input[name="quantity"]');
+    wrap.querySelectorAll('.qty-btn').forEach(btn=>{
+      btn.addEventListener('click', ()=>{
+        let v = parseInt(qtyInput.value || 1, 10);
+        if(btn.dataset.act === 'plus') v++;
+        if(btn.dataset.act === 'minus') v = Math.max(1, v-1);
+        qtyInput.value = v;
+      });
+    });
+
+    // Packs -> update prix/comparatif
+    const priceBox = wrap.querySelector('.velia-price .current');
+    const compareBox = wrap.querySelector('.velia-price .compare');
+    const variants = {{ p.variants | json }};
+
+    wrap.querySelectorAll('.pack-opt input').forEach(r=>{
+      r.addEventListener('change', ()=>{
+        const v = variants.find(x => x.id == r.value);
+        if(!v) return;
+        if(priceBox) priceBox.textContent = Shopify.formatMoney(v.price, "{{ shop.money_format }}");
+        if(compareBox){
+          if(v.compare_at_price && v.compare_at_price > v.price){
+            compareBox.textContent = Shopify.formatMoney(v.compare_at_price, "{{ shop.money_format }}");
+            compareBox.style.display = 'inline';
+          } else {
+            compareBox.style.display = 'none';
+          }
+        }
+      });
+    });
+
+    // Sélecteurs standard -> synchroniser variante
+    const selects = wrap.querySelectorAll('.velia-option select');
+    if(selects.length){
+      selects.forEach(sel=> sel.addEventListener('change', syncVariant));
+      function syncVariant(){
+        const options = Array.from(selects).map(s => s.value);
+        const match = variants.find(v => options.every((opt, i) => v['option'+(i+1)] == opt));
+        if(!match) return;
+        wrap.querySelector('input[name="id"]').value = match.id;
+        if(priceBox) priceBox.textContent = Shopify.formatMoney(match.price, "{{ shop.money_format }}");
+      }
+    }
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Velia • Product Right",
+  "settings": [
+    { "type": "text", "id": "kicker", "label": "Sous-titre (kicker)", "default": "Get Glowing, Brighter Skin in Just 7 Days" },
+    { "type": "checkbox", "id": "show_rating", "label": "Afficher la note (metafields.reviews)", "default": true },
+    { "type": "checkbox", "id": "enable_packs", "label": "Utiliser les packs/variantes en cartes", "default": true },
+    { "type": "text", "id": "pack_title", "label": "Titre des packs", "default": "Choisis ton pack" },
+    { "type": "text", "id": "cta_label", "label": "Libellé bouton", "default": "AJOUTER AU PANIER" },
+    { "type": "checkbox", "id": "show_secure_bar", "label": "Afficher la barre garantie", "default": true },
+    { "type": "text", "id": "secure_text", "label": "Texte garantie", "default": "Peau plus nette garantie — ou remboursé" },
+    { "type": "text", "id": "benefits_title", "label": "Titre bénéfices", "default": "Bénéfices prouvés" }
+  ],
+  "blocks": [
+    {
+      "type": "benefit",
+      "name": "Bénéfice",
+      "settings": [
+        { "type": "text", "id": "emoji", "label": "Icône/Emoji", "default": "✨" },
+        { "type": "text", "id": "text", "label": "Texte", "default": "Clarté & resserrement des pores après une utilisation" }
+      ]
+    },
+    {
+      "type": "video",
+      "name": "Vidéo",
+      "settings": [
+        { "type": "url", "id": "url", "label": "URL vidéo (MP4/WebM, YouTube ou Vimeo)" },
+        { "type": "image_picker", "id": "poster", "label": "Poster (facultatif pour MP4/WebM)" },
+        { "type": "checkbox", "id": "autoplay", "label": "Autoplay + loop (MP4/WebM)", "default": false },
+        { "type": "text", "id": "caption", "label": "Légende (facultatif)" }
+      ]
+    }
+  ],
+  "max_blocks": 20,
+  "presets": [{ "name": "Velia • Product Right" }]
+}
+{% endschema %}
