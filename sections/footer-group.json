@@ -81,6 +81,46 @@
         "drag_cursor_color": "#000000"
       }
     },
+    "rich_text_m9Nhjz": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_CjdapK": {
+          "type": "subheading",
+          "settings": {
+            "text": ""
+          }
+        },
+        "heading_J8PAf4": {
+          "type": "heading",
+          "settings": {
+            "text": "Ne vous fiez pas seulement à notre parole",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_QXBmzE": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Le produit dont <strong>plus de 126 000 clients</strong> ne cessent de parler à leurs amis.</p><p>Not Magic, just Clinical Results<br/><br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_CjdapK",
+        "heading_J8PAf4",
+        "richtext_QXBmzE"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "text-with-icons": {
       "type": "text-with-icons",
       "blocks": {
@@ -156,6 +196,19 @@
         "text_color": ""
       }
     },
+    "custom_liquid_CamzGx": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<!-- === SECTION STATS – VELIA === -->\n<section id=\"velia-stats\" class=\"velia-stats\">\n  <h2 class=\"vs-title\">Transformez votre peau en 2 semaines</h2>\n  <p class=\"vs-sub\">Des améliorations visibles dès la première utilisation</p>\n\n  <div class=\"vs-grid\">\n    <ul class=\"vs-list\">\n      <li class=\"vs-item\">\n        <span class=\"vs-icon\" aria-hidden=\"true\">\n          <svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"currentColor\"><path d=\"M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-1.1 14.2-4.2-4.2 1.4-1.4 2.8 2.8 5.8-5.8 1.4 1.4-7.2 7.2z\"/></svg>\n        </span>\n        <span class=\"vs-chip\"><strong>Relief des pores</strong> : <span class=\"vs-num\">–85,9&nbsp;%</span></span>\n      </li>\n      <li class=\"vs-item\">\n        <span class=\"vs-icon\" aria-hidden=\"true\">\n          <svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"currentColor\"><path d=\"M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-1.1 14.2-4.2-4.2 1.4-1.4 2.8 2.8 5.8-5.8 1.4 1.4-7.2 7.2z\"/></svg>\n        </span>\n        <span class=\"vs-chip\"><strong>Profondeur des pores</strong> : <span class=\"vs-num\">–34,5&nbsp;%</span></span>\n      </li>\n    </ul>\n\n    <ul class=\"vs-list\">\n      <li class=\"vs-item\">\n        <span class=\"vs-icon\" aria-hidden=\"true\">\n          <svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"currentColor\"><path d=\"M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-1.1 14.2-4.2-4.2 1.4-1.4 2.8 2.8 5.8-5.8 1.4 1.4-7.2 7.2z\"/></svg>\n        </span>\n        <span class=\"vs-chip\"><strong>Nombre de pores</strong> : <span class=\"vs-num\">–73,8&nbsp;%</span></span>\n      </li>\n      <li class=\"vs-item\">\n        <span class=\"vs-icon\" aria-hidden=\"true\">\n          <svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"currentColor\"><path d=\"M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-1.1 14.2-4.2-4.2 1.4-1.4 2.8 2.8 5.8-5.8 1.4 1.4-7.2 7.2z\"/></svg>\n        </span>\n        <span class=\"vs-chip\"><strong>Surface des pores</strong> : <span class=\"vs-num\">–28,7&nbsp;%</span></span>\n      </li>\n    </ul>\n  </div>\n\n  <p class=\"vs-sub vs-sub--spaced\">Améliorations significatives après 2 semaines d’utilisation régulière</p>\n\n  <div class=\"vs-grid\">\n    <ul class=\"vs-list\">\n      <li class=\"vs-item\">\n        <span class=\"vs-icon\" aria-hidden=\"true\">\n          <svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"currentColor\"><path d=\"M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-1.1 14.2-4.2-4.2 1.4-1.4 2.8 2.8 5.8-5.8 1.4 1.4-7.2 7.2z\"/></svg>\n        </span>\n        <span class=\"vs-chip\"><strong>Points blancs</strong> : <span class=\"vs-num\">–92,7&nbsp;%</span></span>\n      </li>\n      <li class=\"vs-item\">\n        <span class=\"vs-icon\" aria-hidden=\"true\">\n          <svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"currentColor\"><path d=\"M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-1.1 14.2-4.2-4.2 1.4-1.4 2.8 2.8 5.8-5.8 1.4 1.4-7.2 7.2z\"/></svg>\n        </span>\n        <span class=\"vs-chip\"><strong>Exfoliation de la peau</strong> : <span class=\"vs-num\">+37,3&nbsp;%</span></span>\n      </li>\n    </ul>\n\n    <ul class=\"vs-list\">\n      <li class=\"vs-item\">\n        <span class=\"vs-icon\" aria-hidden=\"true\">\n          <svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"currentColor\"><path d=\"M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-1.1 14.2-4.2-4.2 1.4-1.4 2.8 2.8 5.8-5.8 1.4 1.4-7.2 7.2z\"/></svg>\n        </span>\n        <span class=\"vs-chip\"><strong>Sébum (huile) des pores</strong> : <span class=\"vs-num\">–69,4&nbsp;%</span></span>\n      </li>\n      <li class=\"vs-item\">\n        <span class=\"vs-icon\" aria-hidden=\"true\">\n          <svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"currentColor\"><path d=\"M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-1.1 14.2-4.2-4.2 1.4-1.4 2.8 2.8 5.8-5.8 1.4 1.4-7.2 7.2z\"/></svg>\n        </span>\n        <span class=\"vs-chip\"><strong>Texture de la peau (rugosité)</strong> : <span class=\"vs-num\">–25,2&nbsp;%</span></span>\n      </li>\n    </ul>\n  </div>\n</section>\n\n<style>\n  /* Scope fort pour éviter les conflits du thème */\n  #velia-stats{--chip:#e5e1d3;--text:#222;--muted:#6b6b6b;background:#ece7d6;padding:28px 14px;border-radius:14px}\n  #velia-stats .vs-title{margin:0 0 8px;text-align:center;font-weight:800;font-size:34px;line-height:1.1;color:var(--text)}\n  #velia-stats .vs-sub{margin:0 auto 18px;text-align:center;font-weight:700;display:inline-block;background:var(--chip);padding:6px 10px;border-radius:6px;color:var(--text)}\n  #velia-stats .vs-sub--spaced{margin-top:24px}\n\n  #velia-stats .vs-grid{display:grid;grid-template-columns:1fr;gap:14px;max-width:1100px;margin:0 auto 10px}\n  #velia-stats .vs-list{list-style:none;margin:0;padding:0;display:grid;gap:10px}\n  #velia-stats .vs-item{display:flex;align-items:center;gap:10px;color:var(--text)}\n  #velia-stats .vs-icon{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:999px;background:#111;color:#fff;flex:0 0 26px}\n  #velia-stats .vs-chip{background:var(--chip);padding:6px 10px;border-radius:6px;display:inline-block}\n  #velia-stats .vs-num{font-weight:800}\n\n  @media (min-width: 900px){\n    #velia-stats .vs-grid{grid-template-columns:1fr 1fr;gap:24px}\n    #velia-stats{padding:36px 24px}\n    #velia-stats .vs-title{font-size:42px}\n  }\n</style>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -211,7 +264,9 @@
     "custom_liquid_UBrYgL",
     "rich_text_pJQbgY",
     "before_after_image_DXmPRR",
+    "rich_text_m9Nhjz",
     "text-with-icons",
+    "custom_liquid_CamzGx",
     "footer",
     "custom_liquid_KHWTTz"
   ]
