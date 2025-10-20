@@ -434,6 +434,19 @@
         "background_gradient": "",
         "text_color": ""
       }
+    },
+    "custom_liquid_4M9H6U": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<!-- === VELIA – Bloc \"Un futur tout en douceur\" (centré) === -->\n<section id=\"velia-smooth\" class=\"velia-smooth\">\n  <h2 class=\"vsf-title\">Un futur tout en douceur</h2>\n\n  <ul class=\"vsf-list\" role=\"list\">\n    <li class=\"vsf-row\">\n      <div class=\"vsf-badge\" aria-hidden=\"true\" data-value=\"95\">\n        <span>95%</span>\n      </div>\n      <p class=\"vsf-text\">\n        Les utilisateurs ont constaté une peau <strong>instantanément plus lisse</strong> dès la première utilisation.\n      </p>\n    </li>\n\n    <li class=\"vsf-row\">\n      <div class=\"vsf-badge\" aria-hidden=\"true\" data-value=\"94\">\n        <span>94%</span>\n      </div>\n      <p class=\"vsf-text\">\n        Les clients ont observé une <strong>réduction visible</strong> des <strong>pores obstrués</strong>.\n      </p>\n    </li>\n\n    <li class=\"vsf-row\">\n      <div class=\"vsf-badge\" aria-hidden=\"true\" data-value=\"90\">\n        <span>90%</span>\n      </div>\n      <p class=\"vsf-text\">\n        Ont trouvé leur peau <strong>plus lumineuse</strong> et <strong>plus uniforme</strong> en une semaine.\n      </p>\n    </li>\n  </ul>\n\n  <p class=\"vsf-note\">*Résultats basés sur les retours clients</p>\n</section>\n\n<style>\n  /* === Style global Velia centré === */\n  #velia-smooth{\n    --bg:#E9EDDF;          /* vert doux Velia */\n    --line:#DADFCC;        /* séparateurs */\n    --text:#1F1F1F;\n    --muted:#6B6B6B;\n    --green:#7BA06F;       /* vert Velia */\n    --ring:#E5ECD8;        /* fond cercle */\n    background:var(--bg);\n    color:var(--text);\n    padding: 28px 14px;\n    border-radius:14px;\n    text-align:center;\n  }\n\n  #velia-smooth .vsf-title{\n    font:800 28px/1.2 \"Inter\", sans-serif;\n    margin:0 0 18px;\n  }\n\n  #velia-smooth .vsf-list{\n    list-style:none;\n    margin:0 auto;\n    padding:0;\n    display:flex;\n    flex-direction:column;\n    align-items:center;\n    gap:22px;\n    max-width:700px;\n  }\n\n  #velia-smooth .vsf-row{\n    display:flex;\n    flex-direction:column;\n    align-items:center;\n    justify-content:center;\n    gap:10px;\n    border-bottom:1px solid var(--line);\n    padding-bottom:18px;\n    width:100%;\n  }\n\n  #velia-smooth .vsf-row:last-child{\n    border-bottom:none;\n  }\n\n  /* Badge cercle */\n  #velia-smooth .vsf-badge{\n    --size:60px;\n    width:var(--size);\n    height:var(--size);\n    border-radius:50%;\n    background:\n      conic-gradient(var(--green) calc(var(--p, 0) * 1%), transparent 0),\n      var(--ring);\n    display:grid;\n    place-items:center;\n    font:800 16px/1 \"Inter\", sans-serif;\n    color:var(--green);\n    position:relative;\n  }\n\n  #velia-smooth .vsf-badge::after{\n    content:\"\";\n    position:absolute;\n    inset:5px;\n    border-radius:50%;\n    background:var(--bg);\n  }\n\n  #velia-smooth .vsf-badge > span{\n    position:relative;\n    z-index:1;\n  }\n\n  #velia-smooth .vsf-text{\n    margin:0;\n    font:500 16px/1.5 \"Inter\", sans-serif;\n    max-width:480px;\n  }\n\n  #velia-smooth .vsf-note{\n    margin:24px auto 0;\n    font:500 13px/1.4 \"Inter\", sans-serif;\n    color:var(--muted);\n  }\n\n  @media (min-width:900px){\n    #velia-smooth{padding:40px 24px;}\n    #velia-smooth .vsf-title{font-size:32px;}\n    #velia-smooth .vsf-badge{--size:70px;font-size:17px;}\n  }\n</style>\n\n<script>\n  (function(){\n    var root = document.getElementById('velia-smooth');\n    if(!root || root.dataset.ready) return; root.dataset.ready = \"1\";\n    root.querySelectorAll('.vsf-badge').forEach(function(b){\n      var v = parseInt(b.getAttribute('data-value') || '0', 10);\n      b.style.setProperty('--p', Math.max(0, Math.min(100, v)));\n    });\n  })();\n</script>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
@@ -444,6 +457,7 @@
     "rich_text_WDwVpg",
     "before_after_image_ecg6HF",
     "rich_text_JRpRgw",
-    "custom_liquid_LzxRLW"
+    "custom_liquid_LzxRLW",
+    "custom_liquid_4M9H6U"
   ]
 }
