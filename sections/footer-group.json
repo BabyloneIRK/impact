@@ -13,6 +13,7 @@
   "sections": {
     "custom_liquid_UBrYgL": {
       "type": "custom-liquid",
+      "disabled": true,
       "name": "Custom Liquid",
       "settings": {
         "full_width": true,
@@ -44,6 +45,7 @@
         "subheading_3REnLz",
         "richtext_Mcykjt"
       ],
+      "disabled": true,
       "name": "Rich text",
       "settings": {
         "full_width": true,
@@ -56,6 +58,7 @@
     },
     "before_after_image_DXmPRR": {
       "type": "before-after-image",
+      "disabled": true,
       "name": "Before/after image",
       "settings": {
         "full_width": true,
@@ -111,6 +114,7 @@
         "heading_J8PAf4",
         "richtext_QXBmzE"
       ],
+      "disabled": true,
       "name": "Rich text",
       "settings": {
         "full_width": true,
@@ -198,6 +202,7 @@
     },
     "custom_liquid_CamzGx": {
       "type": "custom-liquid",
+      "disabled": true,
       "name": "Custom Liquid",
       "settings": {
         "full_width": true,
