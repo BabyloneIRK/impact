@@ -24,6 +24,36 @@
         "text_color": ""
       }
     },
+    "rich_text_pJQbgY": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_3REnLz": {
+          "type": "subheading",
+          "settings": {
+            "text": ""
+          }
+        },
+        "richtext_Mcykjt": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Les résultats peuvent varier d’une personne à l’autre, car chaque peau est unique.<br/>Bien que les résultats ne soient pas garantis, nous offrons une <strong>garantie satisfait ou remboursé sous 30 jours</strong>.<br/>Aimez-le ou retournez-le, sans tracas.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_3REnLz",
+        "richtext_Mcykjt"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "text-with-icons": {
       "type": "text-with-icons",
       "blocks": {
@@ -152,6 +182,7 @@
   },
   "order": [
     "custom_liquid_UBrYgL",
+    "rich_text_pJQbgY",
     "text-with-icons",
     "footer",
     "custom_liquid_KHWTTz"
