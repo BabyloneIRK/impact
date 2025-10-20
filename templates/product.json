@@ -15,17 +15,32 @@
         "liquid_gwhCJM": {
           "type": "liquid",
           "settings": {
-            "liquid": "<div class=\"velia-social-proof\">\n  <div class=\"vsp-stars\" aria-label=\"4.7 sur 5\">\n    <!-- 5 étoiles SVG -->\n    <svg viewBox=\"0 0 24 24\" class=\"star\"><path d=\"M12 .9l3.09 6.26 6.91 1.01-5 4.87 1.18 6.88L12 16.9l-6.18 3.26L7 13.04 2 8.17l6.91-1.01L12 .9z\"/></svg>\n    <svg viewBox=\"0 0 24 24\" class=\"star\"><path d=\"M12 .9l3.09 6.26 6.91 1.01-5 4.87 1.18 6.88L12 16.9l-6.18 3.26L7 13.04 2 8.17l6.91-1.01L12 .9z\"/></svg>\n    <svg viewBox=\"0 0 24 24\" class=\"star\"><path d=\"M12 .9l3.09 6.26 6.91 1.01-5 4.87 1.18 6.88L12 16.9l-6.18 3.26L7 13.04 2 8.17l6.91-1.01L12 .9z\"/></svg>\n    <svg viewBox=\"0 0 24 24\" class=\"star\"><path d=\"M12 .9l3.09 6.26 6.91 1.01-5 4.87 1.18 6.88L12 16.9l-6.18 3.26L7 13.04 2 8.17l6.91-1.01L12 .9z\"/></svg>\n    <svg viewBox=\"0 0 24 24\" class=\"star\"><path d=\"M12 .9l3.09 6.26 6.91 1.01-5 4.87 1.18 6.88L12 16.9l-6.18 3.26L7 13.04 2 8.17l6.91-1.01L12 .9z\"/></svg>\n  </div>\n\n  {% assign rating = product.metafields.reviews.rating.value | default: 4.7 %}\n  <div class=\"vsp-text\">\n    <strong>{{ rating | round: 1 }}</strong> | Approuvé par <strong>126,000+</strong> clients\n  </div>\n</div>\n\n<style>\n  .velia-social-proof{\n    display:flex;align-items:center;gap:8px;flex-wrap:wrap;\n    background:#F5F7EC; /* vert ultra doux */\n    border:1px solid #E3EAD7;border-radius:999px;padding:8px 12px;margin:8px 0 12px;\n  }\n  .velia-social-proof .vsp-stars{display:flex;gap:4px}\n  .velia-social-proof .star{width:16px;height:16px;fill:#F5C04A} /* or #FFC24B */\n  .velia-social-proof .vsp-text{font-size:14px;color:#1F2937}\n  @media (min-width: 750px){\n    .velia-social-proof{margin-top:-4px}\n    .velia-social-proof .vsp-text{font-size:15px}\n  }\n</style>"
+            "liquid": "<div class=\"velia-social-proof\">\n  <div class=\"vsp-stars\" aria-label=\"4.7 sur 5\">\n    <!-- 5 étoiles SVG -->\n    <svg viewBox=\"0 0 24 24\" class=\"star\"><path d=\"M12 .9l3.09 6.26 6.91 1.01-5 4.87 1.18 6.88L12 16.9l-6.18 3.26L7 13.04 2 8.17l6.91-1.01L12 .9z\"/></svg>\n    <svg viewBox=\"0 0 24 24\" class=\"star\"><path d=\"M12 .9l3.09 6.26 6.91 1.01-5 4.87 1.18 6.88L12 16.9l-6.18 3.26L7 13.04 2 8.17l6.91-1.01L12 .9z\"/></svg>\n    <svg viewBox=\"0 0 24 24\" class=\"star\"><path d=\"M12 .9l3.09 6.26 6.91 1.01-5 4.87 1.18 6.88L12 16.9l-6.18 3.26L7 13.04 2 8.17l6.91-1.01L12 .9z\"/></svg>\n    <svg viewBox=\"0 0 24 24\" class=\"star\"><path d=\"M12 .9l3.09 6.26 6.91 1.01-5 4.87 1.18 6.88L12 16.9l-6.18 3.26L7 13.04 2 8.17l6.91-1.01L12 .9z\"/></svg>\n    <svg viewBox=\"0 0 24 24\" class=\"star\"><path d=\"M12 .9l3.09 6.26 6.91 1.01-5 4.87 1.18 6.88L12 16.9l-6.18 3.26L7 13.04 2 8.17l6.91-1.01L12 .9z\"/></svg>\n  </div>\n\n  {% assign rating = product.metafields.reviews.rating.value | default: 4.7 %}\n  <div class=\"vsp-text\">\n    <strong>{{ rating | round: 1 }}</strong> | Approuvé par <strong>126&nbsp;000+</strong> clients\n  </div>\n</div>\n\n<style>\n  .velia-social-proof{\n    display:flex;\n    align-items:center;\n    gap:8px;\n    flex-wrap:wrap;\n    background:#E9EDDF; /* vert doux Velia */\n    border:1px solid #D8E0CE; /* bordure légèrement plus foncée */\n    border-radius:999px;\n    padding:8px 12px;\n    margin:8px 0 12px;\n  }\n  .velia-social-proof .vsp-stars{\n    display:flex;\n    gap:4px;\n  }\n  .velia-social-proof .star{\n    width:16px;\n    height:16px;\n    fill:#F8C84A; /* jaune doré harmonieux */\n  }\n  .velia-social-proof .vsp-text{\n    font-size:14px;\n    color:#1F1F1F; /* texte foncé lisible */\n    font-weight:500;\n  }\n  @media (min-width:750px){\n    .velia-social-proof{margin-top:-4px;}\n    .velia-social-proof .vsp-text{font-size:15px;}\n  }\n</style>"
           }
         },
         "title": {
           "type": "title",
+          "disabled": true,
           "settings": {
             "heading_tag": "h2"
           }
         },
+        "liquid_7wj4MW": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<!-- === Bloc Titre + Prix Velia (police Inter / Impact) === -->\n<div class=\"velia-hero-text\">\n  <h2 class=\"velia-hero-title\">Obtenez une peau plus lumineuse et éclatante<br>en seulement 7&nbsp;jours</h2>\n  <div class=\"velia-hero-price\">\n    {{ product.selected_or_first_available_variant.price | money }}\n  </div>\n</div>\n\n<style>\n  .velia-hero-text{\n    text-align:left;\n    margin: 8px 0 16px;\n    font-family: \"Inter\", sans-serif; /* police du thème Impact */\n  }\n\n  /* Titre noir */\n  .velia-hero-title{\n    font-size: 24px;\n    font-weight: 800;\n    line-height: 1.2;\n    color:#1F1F1F;\n    margin:0 0 4px;\n    letter-spacing:-0.3px;\n  }\n\n  /* Prix vert Velia */\n  .velia-hero-price{\n    --velia-green:#7BA06F;\n    font-size: 30px;\n    font-weight: 800;\n    color:var(--velia-green);\n    line-height:1.1;\n  }\n\n  @media (min-width:768px){\n    .velia-hero-title{font-size:28px;}\n    .velia-hero-price{font-size:34px;}\n  }\n</style>\n\n<script>\n(function(){\n  var el = document.querySelector('.velia-hero-price');\n  if(!el || el.dataset.ready) return; el.dataset.ready=\"1\";\n\n  function fmt(cents){\n    try{ return Shopify.formatMoney(cents, \"{{ shop.money_format | replace: '\"', '\\\"' }}\"); }\n    catch(e){\n      var v = (parseInt(cents,10)/100).toFixed(2).replace('.', ',');\n      return v+\" {{ shop.currency }}\";\n    }\n  }\n\n  function setPrice(variant){\n    if(!variant) return;\n    el.textContent = fmt(variant.price);\n  }\n\n  document.addEventListener('product:variant-change', function(e){\n    if(e.detail && e.detail.variant) setPrice(e.detail.variant);\n  });\n\n  var form=document.querySelector('form[action=\"/cart/add\"]');\n  if(form){\n    form.addEventListener('change', function(){\n      var id=form.querySelector('[name=\"id\"]')?.value;\n      if(!id)return;\n      var product={{ product | json }};\n      var variant=(product.variants||[]).find(v=>String(v.id)===String(id));\n      if(variant)setPrice(variant);\n    });\n  }\n})();\n</script>"
+          }
+        },
+        "liquid_WbzhXn": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "liquid": "<!-- Prix solo style Velia -->\n<div id=\"velia-hero-price\"\n     class=\"velia-hero-price\"\n     aria-live=\"polite\">\n  {{ product.selected_or_first_available_variant.price | money }}\n</div>\n\n<style>\n  /* Couleur & style du prix \"gros vert\" */\n  #velia-hero-price{\n    --velia-green:#7BA06F;   /* vert du prix (modifie au besoin) */\n    font-size: 32px;         /* légèrement réduit (avant 36px) */\n    line-height: 1.1;\n    font-weight: 800;\n    color: var(--velia-green);\n    margin-top: 6px;\n    margin-bottom: 6px;\n    letter-spacing: .2px;\n  }\n  @media (min-width: 992px){\n    #velia-hero-price{ font-size: 36px; } /* avant 40px */\n  }\n</style>\n\n<script>\n(function(){\n  var el = document.getElementById('velia-hero-price');\n  if(!el || el.dataset.ready) return; el.dataset.ready = \"1\";\n\n  function fmt(cents){\n    try{ return Shopify.formatMoney(cents, \"{{ shop.money_format | replace: '\"', '\\\"' }}\"); }\n    catch(e){\n      var v = (parseInt(cents,10) / 100).toFixed(2).replace('.', ',');\n      return v + \" {{ shop.currency }}\";\n    }\n  }\n\n  function setPrice(variant){\n    if(!variant) return;\n    el.textContent = fmt(variant.price);\n  }\n\n  document.addEventListener('product:variant-change', function(e){\n    if(e.detail && e.detail.variant) setPrice(e.detail.variant);\n  });\n\n  var form = document.querySelector('form[action=\"/cart/add\"]');\n  if(form){\n    form.addEventListener('change', function(){\n      var id = form.querySelector('[name=\"id\"]')?.value;\n      if(!id) return;\n      var product = {{ product | json }};\n      var variant = (product.variants || []).find(v => String(v.id) === String(id));\n      if(variant) setPrice(variant);\n    });\n  }\n})();\n</script>"
+          }
+        },
         "price_3qGN67": {
           "type": "price",
+          "disabled": true,
           "settings": {
             "show_taxes_notice": false
           }
@@ -204,6 +219,8 @@
       "block_order": [
         "liquid_gwhCJM",
         "title",
+        "liquid_7wj4MW",
+        "liquid_WbzhXn",
         "price_3qGN67",
         "badges",
         "liquid_KPfjYW",
