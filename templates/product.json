@@ -24,14 +24,26 @@
             "heading_tag": "h2"
           }
         },
+        "price_3qGN67": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
         "badges": {
           "type": "badges",
           "settings": {}
         },
-        "price": {
-          "type": "price",
+        "liquid_KPfjYW": {
+          "type": "liquid",
           "settings": {
-            "show_taxes_notice": false
+            "liquid": "<div class=\"velia-divider\" role=\"heading\" aria-level=\"2\">\n  <span>Choisis ton pack</span>\n</div>\n\n<style>\n  .velia-divider{\n    display:flex;align-items:center;gap:12px;\n    margin:18px 0 14px;\n  }\n  .velia-divider::before,\n  .velia-divider::after{\n    content:\"\";flex:1;height:1px;\n    background:rgba(0,0,0,.18); /* ligne */\n  }\n  .velia-divider span{\n    font-weight:800;\n    font-size:16px;\n    letter-spacing:.02em;\n    line-height:1;\n    white-space:nowrap;\n  }\n  @media(min-width: 750px){\n    .velia-divider{margin:22px 0 16px}\n    .velia-divider span{font-size:17px}\n  }\n</style>"
+          }
+        },
+        "liquid_K4E4Ej": {
+          "type": "liquid",
+          "settings": {
+            "liquid": ""
           }
         },
         "rating": {
@@ -44,12 +56,9 @@
           "type": "payment_terms",
           "settings": {}
         },
-        "separator": {
-          "type": "separator",
-          "settings": {}
-        },
         "description": {
           "type": "description",
+          "disabled": true,
           "settings": {
             "icon": "none",
             "icon_width": 20,
@@ -86,11 +95,12 @@
       "block_order": [
         "liquid_gwhCJM",
         "title",
+        "price_3qGN67",
         "badges",
-        "price",
+        "liquid_KPfjYW",
+        "liquid_K4E4Ej",
         "rating",
         "payment_terms",
-        "separator",
         "description",
         "variant_picker",
         "quantity_selector",
