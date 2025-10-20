@@ -59,12 +59,6 @@
           "disabled": true,
           "settings": {}
         },
-        "liquid_ffw8U6": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<div class=\"velia-split\">\n  <!-- Colonne principale (garde ton contenu existant à gauche) -->\n  <div class=\"vs-left\">\n    {%- comment -%}\n      Laisse vide si tu veux surtout mettre l'accent sur la colonne droite\n      ou garde ici ton texte/images de gauche.\n    {%- endcomment -%}\n  </div>\n\n  <!-- Colonne droite (sidebar sticky) -->\n  <aside class=\"vs-right\">\n    <section class=\"vs-card\">\n      <h3 class=\"vs-title\">Vos avis comptent pour nous ❤️</h3>\n      <!-- ⬇️ COLLE ICI ton code “carrousel vidéo” existant ⬇️ -->\n      <!-- ... video carousel HTML ... -->\n    </section>\n\n    <section class=\"vs-card\">\n      <h3 class=\"vs-title\">Ils partagent leur expérience 💬</h3>\n      <!-- ⬇️ COLLE ICI ton code “carrousel avis” existant ⬇️ -->\n      <!-- ... reviews carousel HTML ... -->\n    </section>\n  </aside>\n</div>\n\n<style>\n  /* ====== Layout 2 colonnes Velia ====== */\n  .velia-split{\n    display:grid;\n    grid-template-columns: 1fr min(480px, 42%);\n    gap:32px;\n    align-items:start;\n  }\n  /* Colonne droite sticky (reste visible au scroll) */\n  .velia-split .vs-right{\n    position:sticky;\n    top:88px;              /* ajuste selon la hauteur de ton header */\n    display:flex;\n    flex-direction:column;\n    gap:18px;\n  }\n\n  /* Cartes propres pour encadrer les blocs */\n  .vs-card{\n    background:#e8efe6;    /* vert sauge clair Velia */\n    border:1px solid #d5dbd3;\n    border-radius:16px;\n    padding:16px;\n  }\n  .vs-title{\n    margin:0 0 10px;\n    font-size:16px;\n    font-weight:700;\n    color:#1d1d1d;\n  }\n\n  /* Pleine largeur des composants internes */\n  .vs-card > *{ width:100%; }\n\n  /* Option bord à bord interne des carrousels si besoin */\n  .vs-card .velia-marquee,\n  .vs-card .vr,\n  .vs-card .video-carousel-container{\n    border-radius:12px;\n  }\n\n  /* Mobile: repasse en 1 colonne et enlève le sticky */\n  @media (max-width: 990px){\n    .velia-split{ grid-template-columns: 1fr; }\n    .velia-split .vs-right{ position:static; }\n  }\n</style>"
-          }
-        },
         "liquid_BFUhxz": {
           "type": "liquid",
           "settings": {
@@ -216,7 +210,6 @@
         "liquid_YbzAre",
         "liquid_PqQrzU",
         "quantity_selector",
-        "liquid_ffw8U6",
         "liquid_BFUhxz",
         "liquid_K4E4Ej",
         "liquid_pbKrFt",
