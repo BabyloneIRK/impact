@@ -146,9 +146,11 @@
             "page": ""
           }
         },
-        "separator_jYPPky": {
-          "type": "separator",
-          "settings": {}
+        "liquid_XCVeFi": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "{%- comment -%} === FULL-BLEED (bord à bord de l’écran) === {%- endcomment -%}\n<div class=\"velia-separator velia-separator--full\" aria-hidden=\"true\"></div>\n\n{%- comment -%} === IN-CONTAINER (garde les marges du thème) ===\n<div class=\"velia-separator\" aria-hidden=\"true\"></div>\n{%- endcomment -%}\n\n<style>\n  /* Réglages rapides */\n  .velia-separator{\n    --color:#000000;   /* couleur de la barre */\n    --height:2px;      /* épaisseur (1–3px conseillé) */\n    --opacity:0.9;     /* 0–1 */\n    --space:18px;      /* marge verticale au-dessus/dessous */\n    height:var(--height);\n    background:var(--color);\n    opacity:var(--opacity);\n    margin:var(--space) 0;\n    border-radius:2px; /* léger arrondi propre */\n  }\n\n  /* Version plein écran (ignore les paddings du thème) */\n  .velia-separator--full{\n    width:100vw;\n    position:relative;\n    left:50%;\n    right:50%;\n    margin-left:-50vw;   /* étire jusqu’aux bords */\n    margin-right:-50vw;\n  }\n\n  /* Optionnel : ultra fin sur mobile */\n  @media (max-width:700px){\n    .velia-separator{ --height:1.5px; --space:14px; }\n  }\n</style>"
+          }
         },
         "liquid_NRPc3f": {
           "type": "liquid",
@@ -219,7 +221,7 @@
         "collapsible_text_9i9giw",
         "collapsible_text_kwz3C8",
         "collapsible_text_cCUTtM",
-        "separator_jYPPky",
+        "liquid_XCVeFi",
         "liquid_NRPc3f",
         "rating",
         "payment_terms",
