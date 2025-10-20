@@ -101,8 +101,48 @@
           "settings": {
             "icon": "none",
             "icon_width": 20,
-            "title": "Title",
-            "content": "<p>Share some content to your customers about your products.</p>",
+            "title": "Pourquoi le duo au riz est différent",
+            "content": "<p>La plupart des produits se concentrent sur des solutions rapides — décapant la peau, la desséchant, ou offrant des résultats qui disparaissent rapidement.</p><p>Le <strong>Duo d’Ampoules de Riz Mélaxin Olivine Beauty</strong> a été formulé pour agir en profondeur, en alliant la sagesse botanique ancienne à la science dermatologique moderne.<br/><br/>Le résultat ?<br/><br/>Un soin qui ne se contente pas de masquer les problèmes cutanés — il aide à transformer la santé de la peau à la source.</p><h3>Complexe bi-actif <strong>PENTA-RICE™</strong></h3><p>Alors que d’autres misent sur des ingrédients uniques, notre complexe exclusif <strong>PENTA-RICE™</strong> associe <strong>640 000 PPM d’eau de son de riz</strong> à la <strong>technologie Pentavitin™</strong>.</p><p>Cette synergie procure une hydratation de 72 heures qui empêche la déshydratation et la dilatation des pores souvent causées par les soins plus agressifs — aidant la peau à paraître plus lisse, les pores visiblement affinés, et non simplement resserrés temporairement.</p><h3>Deux ampoules, deux cibles</h3><p>Plutôt qu’une formule universelle, nous avons conçu un <strong>système duo</strong> :</p><ul><li><br/><strong>Ampoule au Riz Blanc</strong> — pour le soin quotidien, la clarté du teint et le lissage en douceur des points noirs.<br/></li><li><br/><strong>Ampoule au Riz Noir avec Charbon Actif</strong> — pour une détoxification et une purification hebdomadaires en profondeur.<br/></li></ul><p>Ensemble, elles agissent comme un rituel de soin personnalisé, s’adaptant aux besoins de votre peau, au quotidien comme sur le long terme.</p><h3>Pénétration avancée à base d’huile soluble</h3><p>Les formules classiques à base d’eau ont du mal à pénétrer les pores obstrués par le sébum.<br/><br/>Notre mélange exclusif <strong>acide salicylique + huile de riz</strong> agit directement à la source, dans les follicules sébacés, pour dissoudre les impuretés persistantes et désincruster les points noirs.</p><p>Les tests cliniques montrent une <strong>réduction de plus de 80 % des points noirs visibles</strong>, même sur les zones les plus récalcitrantes.</p><h3>Conçu pour les peaux sensibles</h3><p>Contrairement aux rétinoïdes ou aux peelings agressifs qui fragilisent la peau mature ou délicate, notre technologie enzymatique à base de riz exfolie en douceur tout en renforçant la barrière cutanée.</p><p>Cette exfoliation douce se fait <strong>sans irritation, sans rougeur ni sensibilité accrue au soleil</strong>.<br/><br/>Une solution sûre, axée sur les résultats, adaptée à <strong>tous les âges — notamment à partir de 30 ans.</strong></p>",
+            "page": ""
+          }
+        },
+        "collapsible_text_LbphcE": {
+          "type": "collapsible_text",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "title": "Comment utiliser — Pour maximiser les résultats sur les pores",
+            "content": "<h4>🌞 <strong>Éclat du matin — Ampoule au Riz Blanc (tous les jours)</strong></h4><p><strong>Étape 1 :</strong> Commencez sur une peau fraîchement nettoyée et légèrement humide pour optimiser l’absorption.</p><p><strong>Étape 2 :</strong> Déposez 3 à 4 gouttes de l’Ampoule au Riz Blanc sur le bout des doigts.</p><p><strong>Étape 3 :</strong> Tapotez délicatement sur la zone T, le menton et les zones sujettes aux pores visibles — évitez de frotter.</p><p><strong>Étape 4 :</strong> Laissez pénétrer environ une minute avant d’appliquer votre soin hydratant.</p><p><strong>Étape 5 :</strong> Terminez toujours avec une protection solaire SPF 30 ou plus pour préserver les résultats et protéger la peau.</p><h4>🌙 <strong>Routine du soir — Ampoule au Riz Noir (2 à 3 nuits par semaine)</strong></h4><p><strong>Étape 1 :</strong> Effectuez un double nettoyage pour éliminer la crème solaire, le maquillage et les impuretés accumulées pendant la journée.</p><p><strong>Étape 2 :</strong> Appliquez 4 à 5 gouttes uniformément sur le visage, en insistant sur les zones à points noirs ou congestionnées.</p><p><strong>Étape 3 :</strong> Massez doucement avec des mouvements ascendants pendant environ 30 secondes pour activer la formule.</p><p><strong>Étape 4 :</strong> Laissez poser 10 à 15 minutes — parfait pour un moment de détente et de soin.</p><p><strong>Étape 5 :</strong> Rincez à l’eau tiède, puis séchez en tapotant avec une serviette douce.</p><p><strong>Étape 6 :</strong> Terminez avec un sérum hydratant pour sceller l’hydratation et les bienfaits.</p><h4>💡 <strong>Astuces d’experte pour de meilleurs résultats</strong></h4><ul><li><br/><strong>Allez-y en douceur :</strong> Pendant les 1 à 2 premières semaines, utilisez l’Ampoule au Riz Noir une seule fois pour permettre à votre peau de s’adapter.<br/></li><li><br/><strong>Appliquez dans le bon ordre :</strong> Les ampoules doivent toujours être appliquées avant les crèmes ou les huiles.<br/></li><li><br/><strong>Ciblez les zones à problèmes :</strong> Passez un peu plus de temps sur le nez et le menton, zones souvent sujettes aux points noirs.<br/></li><li><br/><strong>Moins, c’est mieux :</strong> Ce sont des formules concentrées — quelques gouttes suffisent amplement.<br/></li><li><br/><strong>Soyez régulière :</strong> Utilisez le Riz Blanc chaque jour et le Riz Noir 2 à 3 fois par semaine pour un teint lisse, clarifié et lumineux.</li></ul>",
+            "page": ""
+          }
+        },
+        "collapsible_text_9i9giw": {
+          "type": "collapsible_text",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "title": "Ingrédients clés",
+            "content": "<p><strong>Complexe PENTA-RICE™ (Extrait d’eau de riz + Pentavitin™)</strong> — Ce puissant duo exfolie en douceur les cellules mortes, régule l’excès de sébum et apporte une hydratation profonde, offrant à la peau un vrai coup d’éclat dès la première utilisation.</p><p><br/><strong>Extrait d’eau de riz</strong> — Naturellement riche en vitamines et minéraux, il adoucit, assouplit et équilibre la peau pour un teint frais et lumineux.<br/></p><p><br/><strong>Pentavitin™</strong> — Connu comme “l’aimant à hydratation”, il procure une hydratation durable, maintenant la peau nourrie et repulpée longtemps après l’exfoliation.<br/></p><p><br/><strong>AHA + BHA</strong> — Exfolie en douceur, désobstrue les pores et accélère le renouvellement cellulaire pour révéler une peau plus lisse, nette et raffinée.<br/></p><p><br/><strong>Niacinamide (Vitamine B3)</strong> — Illumine le teint, unifie la couleur de la peau et affine la texture pour un aspect plus éclatant et homogène.<br/></p><p><br/><strong>Complexe d’Acides Hyaluroniques</strong> — Trois types d’acide hyaluronique agissent ensemble pour hydrater les différentes couches de la peau, lui apportant douceur et élasticité.<br/></p><p><br/><strong>Arbutine</strong> — Aide à atténuer les taches pigmentaires et les décolorations, favorisant un teint uniforme et lumineux.<br/></p><p><br/><strong>Poudre de Charbon Actif</strong> — Purifie et détoxifie les pores en absorbant l’excès de sébum et les impuretés.<br/></p><p><br/><strong>Filtrat de Ferment de Galactomyces</strong> — Ingrédient probiotique qui améliore la clarté, la douceur et la rétention d’hydratation de la peau.<br/></p><p><br/><strong>Extraits Botaniques</strong> — Un mélange de gardénia, malt, racine de tricolor viola, graine de cacao et racine de coptis, pour apaiser, protéger et revitaliser la peau.<br/></p><p><br/><strong>Squalane</strong> — Agent hydratant léger mais ultra nourrissant, qui retient l’hydratation sans laisser de fini gras.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_text_kwz3C8": {
+          "type": "collapsible_text",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "title": "Expédition & Retours",
+            "content": "<p><br/>Nous traitons les commandes sous <strong>1 à 2 jours ouvrés</strong>.<br/><br/>Une fois expédiées, le délai de livraison estimé est de 7<strong> à 10 jours ouvrés</strong>, selon votre lieu de résidence.<br/><br/></p>",
+            "page": ""
+          }
+        },
+        "collapsible_text_cCUTtM": {
+          "type": "collapsible_text",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "title": "Garantie 30 Jours",
+            "content": "<p>Nous sommes convaincus que vous allez adorer notre<strong> Sérum Exfoliant au Riz</strong>, c’est pourquoi nous offrons une <strong>garantie de remboursement de 30 jours</strong>.</p><p>Si le produit ne répond pas entièrement à vos attentes, <strong>vous pouvez le conserver et nous vous rembourserons — sans poser de questions.</strong></p>",
             "page": ""
           }
         },
@@ -164,6 +204,10 @@
         "liquid_MkppzC",
         "liquid_CfGXUa",
         "collapsible_text_FETMdt",
+        "collapsible_text_LbphcE",
+        "collapsible_text_9i9giw",
+        "collapsible_text_kwz3C8",
+        "collapsible_text_cCUTtM",
         "rating",
         "payment_terms",
         "description",
