@@ -146,6 +146,12 @@
             "page": ""
           }
         },
+        "liquid_NRPc3f": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"velia-marquee\" role=\"region\" aria-label=\"Messages importants\">\n  <div class=\"vm-track\">\n    <ul class=\"vm-line\" aria-hidden=\"true\">\n      <li>🧴 Testé dermatologiquement</li>\n      <li>💞 Garantie 30 jours</li>\n      <li>🧪 Cliniquement prouvé</li>\n      <li>⚡ 1 acheté = 1 offert — aujourd’hui seulement !</li>\n    </ul>\n    <!-- duplication pour boucle fluide -->\n    <ul class=\"vm-line\" aria-hidden=\"true\">\n      <li>🧴 Testé dermatologiquement</li>\n      <li>💞 Garantie 30 jours</li>\n      <li>🧪 Cliniquement prouvé</li>\n      <li>⚡ 1 acheté = 1 offert — aujourd’hui seulement !</li>\n    </ul>\n  </div>\n</div>\n\n<style>\n  /* ====== Options rapides ====== */\n  .velia-marquee{\n    --bg:#e8efe6;      /* fond vert sauge */\n    --txt:#1d1d1d;     /* texte */\n    --gap:42px;        /* espace entre items */\n    --speed:28s;       /* vitesse (plus petit = plus rapide) */\n    --pad-y:10px;      /* padding vertical */\n    --pad-x:14px;      /* padding horizontal */\n    position:relative;\n    overflow:hidden;\n    width:100%;\n    background:var(--bg);\n    color:var(--txt);\n    padding:var(--pad-y) var(--pad-x);\n    border-radius:14px;\n  }\n\n  .vm-track{\n    display:flex;\n    gap:var(--gap);\n    align-items:center;\n  }\n\n  .vm-line{\n    display:flex;\n    align-items:center;\n    gap:var(--gap);\n    padding:0;\n    margin:0;\n    list-style:none;\n    white-space:nowrap;\n    will-change:transform;\n    animation:vm-scroll var(--speed) linear infinite;\n  }\n\n  .vm-line li{\n    font-size:16px;\n    font-weight:600;\n    letter-spacing:.2px;\n  }\n\n  /* Pause au survol */\n  .velia-marquee:hover .vm-line{ animation-play-state:paused; }\n\n  /* Accessibilité : si l’utilisateur préfère réduire les animations */\n  @media (prefers-reduced-motion: reduce){\n    .vm-line{ animation: none; }\n  }\n\n  /* Animation continue gauche -> droite (on part de 0 et on translate de 50% car on a 2 listes identiques) */\n  @keyframes vm-scroll{\n    from{ transform:translateX(0); }\n    to{ transform:translateX(-50%); }\n  }\n\n  /* Ajustements mobiles */\n  @media (max-width: 640px){\n    .velia-marquee{ --gap:28px; --pad-y:8px; }\n    .vm-line li{ font-size:14px; font-weight:600; }\n  }\n</style>"
+          }
+        },
         "rating": {
           "type": "rating",
           "settings": {
@@ -209,6 +215,7 @@
         "collapsible_text_9i9giw",
         "collapsible_text_kwz3C8",
         "collapsible_text_cCUTtM",
+        "liquid_NRPc3f",
         "rating",
         "payment_terms",
         "description",

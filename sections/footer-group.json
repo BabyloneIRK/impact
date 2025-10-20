@@ -11,6 +11,22 @@
   "type": "footer",
   "name": "Footer group",
   "sections": {
+    "scrolling_text_xQKULR": {
+      "type": "scrolling-text",
+      "name": "Scrolling text",
+      "settings": {
+        "full_width": true,
+        "text": "Promotion text",
+        "text_size": "xsmall",
+        "text_style": "fill",
+        "scrolling_mode": "auto",
+        "scrolling_speed": 10,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "text_gradient": ""
+      }
+    },
     "text-with-icons": {
       "type": "text-with-icons",
       "blocks": {
@@ -73,6 +89,7 @@
         "discount",
         "payment"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "stack_on_mobile": false,
@@ -137,6 +154,7 @@
     }
   },
   "order": [
+    "scrolling_text_xQKULR",
     "text-with-icons",
     "footer",
     "custom_liquid_KHWTTz"
