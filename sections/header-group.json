@@ -40,9 +40,9 @@
     "header": {
       "type": "header",
       "custom_css": [
-        "&{background:#DCE6D6!important}",
-        "& a,& .header__menu-item,& .header__icon{color:#1F1F1F!important}",
-        "& .cart-count-bubble{background:#7BA06F!important;color:#fff!important}"
+        "& {background: #dce6d6 !important;}",
+        "& a,& .header__menu-item,& .header__icon {color: #1f1f1f !important;}",
+        "& .cart-count-bubble {background: #7ba06f !important; color: #fff !important;}"
       ],
       "settings": {
         "enable_sticky": true,
