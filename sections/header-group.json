@@ -39,6 +39,11 @@
     },
     "header": {
       "type": "header",
+      "custom_css": [
+        "&{background:#DCE6D6!important}",
+        "& a,& .header__menu-item,& .header__icon{color:#1F1F1F!important}",
+        "& .cart-count-bubble{background:#7BA06F!important;color:#fff!important}"
+      ],
       "settings": {
         "enable_sticky": true,
         "hide_on_scroll": false,
@@ -50,7 +55,7 @@
         "secondary_menu": "",
         "menu_open_trigger": "click",
         "opening_from": "bottom",
-        "layout": "logo_left_navigation_center",
+        "layout": "logo_center_navigation_inline",
         "show_social_media": true,
         "show_locale_selector": true,
         "show_country_selector": true,
@@ -58,7 +63,7 @@
         "show_country_name": false,
         "transparent_header_text_color": "#e9eddf",
         "reduce_padding": false,
-        "background_opacity": 100,
+        "background_opacity": 0,
         "background_blur_radius": 0
       }
     }
