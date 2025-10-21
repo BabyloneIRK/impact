@@ -238,6 +238,7 @@
     },
     "scrolling_text_98EFU6": {
       "type": "scrolling-text",
+      "disabled": true,
       "name": "Scrolling text",
       "settings": {
         "full_width": true,
