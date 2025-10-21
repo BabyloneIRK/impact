@@ -50,6 +50,10 @@
     },
     "custom_liquid_KHWTTz": {
       "type": "custom-liquid",
+      "custom_css": [
+        "/* Fond vert qui couvre 100% de la page, sous tout le contenu */#velia-page-green-bg{position:fixed; inset:0; z-index:-1; pointer-events:none; background: linear-gradient(180deg, #8AA86E 0%, #7BA06F 100%);}",
+        "/* Pour éviter une bande claire autour du footer */body{background: transparent !important; }"
+      ],
       "name": "Custom Liquid",
       "settings": {
         "full_width": true,
