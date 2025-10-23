@@ -10115,3 +10115,22 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   display: -webkit-box;
   overflow: hidden;
 }
+/* --- Corrige Kaching Bundles : bouton collé en bas --- */
+.kaching-bundle__sticky-footer,
+.kaching-bundle__floating-footer {
+  display: none !important;
+}
+
+.kaching-bundle .kaching-bundle__footer,
+.kaching-bundle .kaching-bundle__add-to-cart {
+  position: relative !important;
+  bottom: auto !important;
+  left: auto !important;
+  right: auto !important;
+  width: 100% !important;
+  margin: 20px 0 0 !important;
+  display: block !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  text-align: center !important;
+}
