@@ -38,6 +38,10 @@
             "liquid": "<!-- Prix solo style Velia -->\n<div id=\"velia-hero-price\"\n     class=\"velia-hero-price\"\n     aria-live=\"polite\">\n  {{ product.selected_or_first_available_variant.price | money }}\n</div>\n\n<style>\n  /* Couleur & style du prix \"gros vert\" */\n  #velia-hero-price{\n    --velia-green:#7BA06F;   /* vert du prix (modifie au besoin) */\n    font-size: 32px;         /* légèrement réduit (avant 36px) */\n    line-height: 1.1;\n    font-weight: 800;\n    color: var(--velia-green);\n    margin-top: 6px;\n    margin-bottom: 6px;\n    letter-spacing: .2px;\n  }\n  @media (min-width: 992px){\n    #velia-hero-price{ font-size: 36px; } /* avant 40px */\n  }\n</style>\n\n<script>\n(function(){\n  var el = document.getElementById('velia-hero-price');\n  if(!el || el.dataset.ready) return; el.dataset.ready = \"1\";\n\n  function fmt(cents){\n    try{ return Shopify.formatMoney(cents, \"{{ shop.money_format | replace: '\"', '\\\"' }}\"); }\n    catch(e){\n      var v = (parseInt(cents,10) / 100).toFixed(2).replace('.', ',');\n      return v + \" {{ shop.currency }}\";\n    }\n  }\n\n  function setPrice(variant){\n    if(!variant) return;\n    el.textContent = fmt(variant.price);\n  }\n\n  document.addEventListener('product:variant-change', function(e){\n    if(e.detail && e.detail.variant) setPrice(e.detail.variant);\n  });\n\n  var form = document.querySelector('form[action=\"/cart/add\"]');\n  if(form){\n    form.addEventListener('change', function(){\n      var id = form.querySelector('[name=\"id\"]')?.value;\n      if(!id) return;\n      var product = {{ product | json }};\n      var variant = (product.variants || []).find(v => String(v.id) === String(id));\n      if(variant) setPrice(variant);\n    });\n  }\n})();\n</script>"
           }
         },
+        "unlimited_bundles_discounts_embed_all_N6x7FX": {
+          "type": "shopify://apps/unlimited-bundles-discounts/blocks/embed-all/d33d0f48-dee0-42a0-b156-2a5dce91814a",
+          "settings": {}
+        },
         "price_3qGN67": {
           "type": "price",
           "disabled": true,
@@ -221,6 +225,7 @@
         "title",
         "liquid_7wj4MW",
         "liquid_WbzhXn",
+        "unlimited_bundles_discounts_embed_all_N6x7FX",
         "price_3qGN67",
         "badges",
         "liquid_KPfjYW",
