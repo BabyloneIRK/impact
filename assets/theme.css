@@ -10120,3 +10120,16 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 body > pre {
   display: none !important;
 }
+
+/* ===== Supprime les messages d'erreur Kaching visibles ===== */
+pre:has(> script),
+pre:has(> code),
+pre:has(+ script),
+body > pre,
+body > pre:last-of-type {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  pointer-events: none !important;
+}
