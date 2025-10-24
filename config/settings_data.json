@@ -43,9 +43,19 @@
     "checkout_button_color": "#1a1a1a",
     "content_for_index": [],
     "blocks": {
+      "15557474716127144420": {
+        "type": "shopify://apps/kaching-bundles/blocks/app-embed-block/6c637362-a106-4a32-94ac-94dcfd68cdb8",
+        "disabled": false,
+        "settings": {}
+      },
+      "13223602749629917723": {
+        "type": "shopify://apps/kaching-cart/blocks/embed/7705621e-3c0f-4e97-9d29-5c8528b19fb7",
+        "disabled": false,
+        "settings": {}
+      },
       "16477348613150133823": {
         "type": "shopify://apps/unlimited-bundles-discounts/blocks/script-app-block/d33d0f48-dee0-42a0-b156-2a5dce91814a",
-        "disabled": false,
+        "disabled": true,
         "settings": {
           "reload_on_line_item_properties": true,
           "disable_reload_on_cart_update": true,
@@ -56,16 +66,6 @@
           "match_cart_discount_title": false,
           "enable_checkout_trigger_functions": false
         }
-      },
-      "15557474716127144420": {
-        "type": "shopify://apps/kaching-bundles/blocks/app-embed-block/6c637362-a106-4a32-94ac-94dcfd68cdb8",
-        "disabled": false,
-        "settings": {}
-      },
-      "13223602749629917723": {
-        "type": "shopify://apps/kaching-cart/blocks/embed/7705621e-3c0f-4e97-9d29-5c8528b19fb7",
-        "disabled": false,
-        "settings": {}
       }
     }
   },
