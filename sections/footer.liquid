@@ -218,6 +218,26 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
+<script>
+// Supprime le message d'erreur "Kaching Cart custom script error" en bas du site
+document.addEventListener('DOMContentLoaded', () => {
+  const removeKachingError = () => {
+    document.querySelectorAll('pre').forEach(pre => {
+      const txt = pre.textContent || '';
+      if (txt.includes('Kaching Cart custom script error')) {
+        pre.remove();
+      }
+    });
+  };
+
+  // Exécution immédiate + surveillance
+  removeKachingError();
+  const obs = new MutationObserver(removeKachingError);
+  obs.observe(document.body, { childList: true, subtree: true });
+});
+</script>
+
+
 {% schema %}
 {
   "name": "Footer",
