@@ -10115,3 +10115,8 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   display: -webkit-box;
   overflow: hidden;
 }
+
+/* Cache la ligne d'erreur de Kaching en bas de page */
+body > pre {
+  display: none !important;
+}
