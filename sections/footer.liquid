@@ -189,6 +189,35 @@
   </div>
 </div>
 
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  // Surveille l'apparition du bundle Kaching
+  const observer = new MutationObserver(() => {
+    const kachingBundle = document.querySelector('.kaching-bundles-sticky-atc');
+    if (kachingBundle && !document.querySelector('.velia-bundle-atc')) {
+      const newButton = document.createElement('button');
+      newButton.className = 'velia-atc-btn';
+      newButton.innerText = 'AJOUTER AU PANIER';
+      newButton.onclick = () => {
+        const realButton = document.querySelector('.kaching-bundles-sticky-atc button');
+        if (realButton) realButton.click();
+      };
+
+      const wrapper = document.createElement('div');
+      wrapper.className = 'velia-bundle-atc';
+      wrapper.appendChild(newButton);
+
+      const bundleSection = document.querySelector('.kaching-bundles');
+      if (bundleSection) {
+        bundleSection.insertAdjacentElement('afterend', wrapper);
+      }
+    }
+  });
+
+  observer.observe(document.body, { childList: true, subtree: true });
+});
+</script>
+
 {% schema %}
 {
   "name": "Footer",
