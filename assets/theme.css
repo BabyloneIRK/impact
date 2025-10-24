@@ -10134,3 +10134,22 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   box-shadow: none !important;
   text-align: center !important;
 }
+/* --- Fix Kaching Bundle: bouton AJOUTER AU PANIER mal placé --- */
+.kaching-bundle__sticky-footer,
+.kaching-bundle__floating-footer {
+  display: none !important;
+}
+
+.kaching-bundle .kaching-bundle__footer,
+.kaching-bundle .kaching-bundle__add-to-cart {
+  position: relative !important;
+  bottom: auto !important;
+  left: auto !important;
+  right: auto !important;
+  width: 100% !important;
+  display: block !important;
+  background: transparent !important;
+  margin-top: 20px !important;
+  box-shadow: none !important;
+  text-align: center !important;
+}
