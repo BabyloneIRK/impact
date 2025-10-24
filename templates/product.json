@@ -31,7 +31,7 @@
             "liquid": "<!-- === Bloc Titre + Prix Velia (police Inter / Impact) === -->\n<div class=\"velia-hero-text\">\n  <h2 class=\"velia-hero-title\">Obtenez une peau plus lumineuse et éclatante<br>en seulement 7&nbsp;jours</h2>\n  <div class=\"velia-hero-price\">\n    {{ product.selected_or_first_available_variant.price | money }}\n  </div>\n</div>\n\n<style>\n  .velia-hero-text{\n    text-align:left;\n    margin: 8px 0 16px;\n    font-family: \"Inter\", sans-serif; /* police du thème Impact */\n  }\n\n  /* Titre noir */\n  .velia-hero-title{\n    font-size: 24px;\n    font-weight: 800;\n    line-height: 1.2;\n    color:#1F1F1F;\n    margin:0 0 4px;\n    letter-spacing:-0.3px;\n  }\n\n  /* Prix vert Velia */\n  .velia-hero-price{\n    --velia-green:#7BA06F;\n    font-size: 30px;\n    font-weight: 800;\n    color:var(--velia-green);\n    line-height:1.1;\n  }\n\n  @media (min-width:768px){\n    .velia-hero-title{font-size:28px;}\n    .velia-hero-price{font-size:34px;}\n  }\n</style>\n\n<script>\n(function(){\n  var el = document.querySelector('.velia-hero-price');\n  if(!el || el.dataset.ready) return; el.dataset.ready=\"1\";\n\n  function fmt(cents){\n    try{ return Shopify.formatMoney(cents, \"{{ shop.money_format | replace: '\"', '\\\"' }}\"); }\n    catch(e){\n      var v = (parseInt(cents,10)/100).toFixed(2).replace('.', ',');\n      return v+\" {{ shop.currency }}\";\n    }\n  }\n\n  function setPrice(variant){\n    if(!variant) return;\n    el.textContent = fmt(variant.price);\n  }\n\n  document.addEventListener('product:variant-change', function(e){\n    if(e.detail && e.detail.variant) setPrice(e.detail.variant);\n  });\n\n  var form=document.querySelector('form[action=\"/cart/add\"]');\n  if(form){\n    form.addEventListener('change', function(){\n      var id=form.querySelector('[name=\"id\"]')?.value;\n      if(!id)return;\n      var product={{ product | json }};\n      var variant=(product.variants||[]).find(v=>String(v.id)===String(id));\n      if(variant)setPrice(variant);\n    });\n  }\n})();\n</script>"
           }
         },
-        "kaching_bundles_app_block_DUma8Q": {
+        "kaching_bundles_app_block_Mnp63P": {
           "type": "shopify://apps/kaching-bundles/blocks/app-block/6c637362-a106-4a32-94ac-94dcfd68cdb8",
           "settings": {
             "product": "{{product}}"
@@ -228,7 +228,7 @@
         "liquid_gwhCJM",
         "title",
         "liquid_7wj4MW",
-        "kaching_bundles_app_block_DUma8Q",
+        "kaching_bundles_app_block_Mnp63P",
         "liquid_WbzhXn",
         "price_3qGN67",
         "badges",
