@@ -10161,3 +10161,24 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   height: 0 !important;
   pointer-events: none !important;
 }
+/* === Bouton Ajouter au panier Velia (Impact x Kaching) === */
+.velia-bundle-atc {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.velia-atc-btn {
+  background-color: #7BA06F;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 700;
+  padding: 14px 32px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.velia-atc-btn:hover {
+  background-color: #678D5D;
+}
