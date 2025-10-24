@@ -40,8 +40,8 @@
         "button_iF6iqF": {
           "type": "button",
           "settings": {
-            "link": "/cart/add?id=IDDETAVARIANTE&quantity=1",
-            "text": "Achetez",
+            "link": "shopify://products/serum-exfoliant-au-riz",
+            "text": "Ajouter au panier",
             "size": "xl",
             "style": "fill",
             "stretch": true,
