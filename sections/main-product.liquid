@@ -90,9 +90,124 @@
             {%- render 'price-list', product: product, variant: product.selected_or_first_available_variant, form_id: product_form_id -%}
           </div>
 
-          <buy-buttons template="{{ product.template_suffix }}" form="{{ product_form_id }}" force-secondary-button>
-            {%- render 'button', type: 'submit', content: button_label, form: product_form_id, background: buy_buttons_block.settings.atc_button_background, text_color: buy_buttons_block.settings.atc_button_text_color, secondary: true -%}
-          </buy-buttons>
+          <{%- comment -%} VELIA • Bouton d’achat custom — remplace <buy-buttons> {%- endcomment -%}
+<div id="velia-buy-{{ product_form_id }}" class="velia-buy-wrap">
+  <button type="button" class="velia-buy-btn" data-velia-btn>
+    <span data-label>AJOUTER AU PANIER</span>
+    <span class="velia-spinner" data-spinner style="display:none"></span>
+  </button>
+  <div class="velia-buy-msg" data-msg aria-live="polite"></div>
+</div>
+
+<style>
+  #velia-buy-{{ product_form_id }} .velia-buy-btn{
+    --green:#86A771; --green-dark:#6f8f63;
+    width:100%; display:inline-flex; justify-content:center; align-items:center; gap:10px;
+    padding:14px 18px; border-radius:999px; border:none; cursor:pointer;
+    background:var(--green); color:#fff;
+    font:800 16px/1 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+    box-shadow:0 4px 12px rgba(0,0,0,.08); letter-spacing:.2px;
+    transition:transform .06s ease, background .2s ease;
+  }
+  #velia-buy-{{ product_form_id }} .velia-buy-btn:hover{ background:var(--green-dark); }
+  #velia-buy-{{ product_form_id }} .velia-buy-btn:active{ transform:translateY(1px); }
+  #velia-buy-{{ product_form_id }} .velia-buy-btn[disabled]{ opacity:.55; cursor:not-allowed; }
+  #velia-buy-{{ product_form_id }} .velia-spinner{
+    width:18px; height:18px; border-radius:50%; border:2px solid rgba(255,255,255,.45); border-top-color:#fff;
+    animation:velia-spin .8s linear infinite;
+  }
+  @keyframes velia-spin{ to{ transform:rotate(360deg);} }
+  #velia-buy-{{ product_form_id }} .velia-buy-msg{ margin-top:6px; font-size:13px; opacity:.85; }
+</style>
+
+<script>
+(function(){
+  const wrapId = "velia-buy-{{ product_form_id }}";
+  const wrap   = document.getElementById(wrapId);
+  if(!wrap) return;
+
+  const btn     = wrap.querySelector('[data-velia-btn]');
+  const labelEl = wrap.querySelector('[data-label]');
+  const spin    = wrap.querySelector('[data-spinner]');
+  const msg     = wrap.querySelector('[data-msg]');
+
+  // Le formulaire produit visé par ce bloc
+  const form = document.getElementById('{{ product_form_id }}') || wrap.closest('form') || document.querySelector('form[action*="/cart/add"]');
+
+  function getVariantId(){
+    const idEl = form && (form.querySelector('input[name="id"]') || form.querySelector('select[name="id"]'));
+    return idEl ? idEl.value : null;
+  }
+  function getQty(){
+    const q = form && (form.querySelector('input[name="quantity"]') || form.querySelector('select[name="quantity"]'));
+    const v = q ? parseInt(q.value,10) : 1;
+    return isNaN(v) || v<1 ? 1 : v;
+  }
+
+  function state(s, text){
+    if(s==='load'){ btn.disabled = true; spin.style.display='inline-block'; labelEl.textContent = text||'AJOUT…'; msg.textContent=''; }
+    else if(s==='done'){ btn.disabled=false; spin.style.display='none'; labelEl.textContent = text||'AJOUTÉ ✓'; }
+    else if(s==='err'){ btn.disabled=false; spin.style.display='none'; labelEl.textContent='RÉESSAYER'; msg.textContent = text||'Impossible d’ajouter au panier.'; }
+    else { btn.disabled=false; spin.style.display='none'; labelEl.textContent = text||'AJOUTER AU PANIER'; msg.textContent=''; }
+  }
+
+  async function addAJAX(fd){
+    const r = await fetch('/cart/add.js',{ method:'POST', headers:{'Accept':'application/json'}, body:fd, credentials:'same-origin' });
+    if(!r.ok) throw new Error('add failed');
+    return r.json();
+  }
+
+  async function onClick(){
+    const id = getVariantId();
+    if(!id){ state('err','Sélectionne une option'); setTimeout(()=>state('idle'), 1800); return; }
+
+    state('load');
+
+    // on reconstruit FormData pour inclure toutes les propriétés (selling plan, personnalisations…)
+    const fd = new FormData(form);
+    fd.set('id', String(id));
+    fd.set('quantity', String(getQty()));
+
+    try{
+      await addAJAX(fd);
+      state('done');
+
+      // événements utiles
+      document.dispatchEvent(new Event('cart:updated'));
+      document.dispatchEvent(new Event('ajaxCart:updated'));
+
+      // ouvrir Kaching Cart si dispo
+      try{
+        if(window.KachingCart && typeof window.KachingCart.open==='function'){ window.KachingCart.open(); }
+        else if(window.Kaching && typeof window.Kaching.openCart==='function'){ window.Kaching.openCart(); }
+        else if(window.kachingCartDrawer && typeof window.kachingCartDrawer.open==='function'){ window.kachingCartDrawer.open(); }
+      }catch(e){}
+
+      setTimeout(()=>state('idle'), 1500);
+    }catch(e){
+      state('err');
+      setTimeout(()=>state('idle'), 2500);
+    }
+  }
+
+  btn.addEventListener('click', onClick);
+
+  // Désactive si variante indispo
+  const idInput = form && (form.querySelector('input[name="id"]') || form.querySelector('select[name="id"]'));
+  function syncDisabled(){
+    const disabled = idInput && (idInput.disabled || idInput.getAttribute('disabled')!==null);
+    btn.toggleAttribute('disabled', !!disabled);
+    if(disabled) labelEl.textContent = 'RUPTURE DE STOCK';
+  }
+  if(idInput){
+    const obs = new MutationObserver(syncDisabled);
+    obs.observe(idInput, {attributes:true, attributeFilter:['disabled','value']});
+    idInput.addEventListener('change', syncDisabled);
+    syncDisabled();
+  }
+})();
+</script>
+
         </div>
       </product-quick-add>
     {%- endif -%}
