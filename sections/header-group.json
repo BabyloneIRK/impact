@@ -45,7 +45,7 @@
         "& .cart-count-bubble {background: #7ba06f !important; color: #fff !important;}"
       ],
       "settings": {
-        "enable_sticky": true,
+        "enable_sticky": false,
         "hide_on_scroll": true,
         "logo": "{{shop.brand.logo}}",
         "logo_max_width": 120,
