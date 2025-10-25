@@ -25,6 +25,13 @@
             "heading_tag": "h2"
           }
         },
+        "liquid_YWV446": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "liquid": "<div class=\"product-info__block-item\" data-block-id=\"liquid_VAzjmW\" data-block-type=\"liquid\">\n  <div class=\"product-info__liquid\">\n    <div class=\"rating-section\" style=\"margin: -6px 0; cursor: pointer;\" onclick=\"document.getElementById('shopify-section-template--24628408713541__testi_bas_page_jiN7eh').scrollIntoView({ behavior: 'smooth' });\">\n      <div class=\"stars\" style=\"align-items: center;\">\n        <!-- Star Icons -->\n        <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n          <rect x=\"0\" y=\"0\" width=\"24\" height=\"24\" fill=\"#00B67A\"></rect>\n          <path d=\"M12 2l2.4 7.4H22l-6 4.3 2.4 7.4L12 16.8l-6 4.3 2.4-7.4-6-4.3h7.6L12 2z\" fill=\"#fff\"></path>\n        </svg>\n        <!-- Repeat 4 full stars and 1 half/empty as needed -->\n        <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n          <rect x=\"0\" y=\"0\" width=\"24\" height=\"24\" fill=\"#00B67A\"></rect>\n          <path d=\"M12 2l2.4 7.4H22l-6 4.3 2.4 7.4L12 16.8l-6 4.3 2.4-7.4-6-4.3h7.6L12 2z\" fill=\"#fff\"></path>\n        </svg>\n        <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n          <rect x=\"0\" y=\"0\" width=\"24\" height=\"24\" fill=\"#00B67A\"></rect>\n          <path d=\"M12 2l2.4 7.4H22l-6 4.3 2.4 7.4L12 16.8l-6 4.3 2.4-7.4-6-4.3h7.6L12 2z\" fill=\"#fff\"></path>\n        </svg>\n        <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n          <rect x=\"0\" y=\"0\" width=\"24\" height=\"24\" fill=\"#00B67A\"></rect>\n          <path d=\"M12 2l2.4 7.4H22l-6 4.3 2.4 7.4L12 16.8l-6 4.3 2.4-7.4-6-4.3h7.6L12 2z\" fill=\"#fff\"></path>\n        </svg>\n        <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n          <rect x=\"0\" y=\"0\" width=\"12\" height=\"24\" fill=\"#00B67A\"></rect>\n          <rect x=\"12\" y=\"0\" width=\"12\" height=\"24\" fill=\"#D3D3D3\"></rect>\n          <path d=\"M12 2l2.4 7.4H22l-6 4.3 2.4 7.4L12 16.8l-6 4.3 2.4-7.4-6-4.3h7.6L12 2z\" fill=\"#fff\"></path>\n        </svg>\n      </div>\n      <span class=\"rating-text\" style=\"align-self: center;\">Excellent <strong>4.6 | Reviews</strong></span>\n    </div>\n  </div>\n</div>\n\n<style>\n.rating-section {\n  display: flex;\n  align-items: center;\n  gap: 4px;\n  padding: 10px 0;\n  font-family: 'Arial', sans-serif;\n  color: #333;\n  margin: 0;\n  cursor: pointer;\n}\n\n.stars {\n  display: flex;\n  gap: 1px;\n  margin: -5px 0;\n}\n\n.rating-text {\n  font-size: 1em;\n  margin: 3px 0 2px;\n  align-self: center;\n}\n\n@media (max-width: 768px) {\n  .rating-text {\n    font-size: 0.85em;\n    margin: -5px 0;\n  }\n\n  .stars svg {\n    width: 15px;\n    height: 15px;\n    margin: -5px 0;\n  }\n}\n</style>"
+          }
+        },
         "liquid_7wj4MW": {
           "type": "liquid",
           "settings": {
@@ -253,6 +260,7 @@
       "block_order": [
         "liquid_gwhCJM",
         "title",
+        "liquid_YWV446",
         "liquid_7wj4MW",
         "kaching_bundles_app_block_Mnp63P",
         "button_iF6iqF",
