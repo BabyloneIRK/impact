@@ -10133,3 +10133,46 @@ body > pre:last-of-type {
   height: 0 !important;
   pointer-events: none !important;
 }
+
+/* ===== VELIA • Override bouton Ajouter au panier ===== */
+
+/* Cible le bouton d'ajout du bloc Buy buttons sur la page produit */
+.shopify-section--main-product .buy-buttons [type="submit"],
+.shopify-section--main-product form[action*="/cart/add"] [type="submit"][name="add"]{
+  --velia-green:#86A771;
+  --velia-green-dark:#6f8f63;
+  background: var(--velia-green) !important;
+  color:#fff !important;
+  border:none !important;
+  border-radius:999px !important;
+  height:52px !important;
+  padding:0 18px !important;
+  font: 800 16px/1 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif !important;
+  letter-spacing:.2px !important;
+  box-shadow:0 4px 10px rgba(0,0,0,.08) !important;
+  transform: translateZ(0); /* antialiasing */
+}
+
+.shopify-section--main-product .buy-buttons [type="submit"]:hover,
+.shopify-section--main-product form[action*="/cart/add"] [type="submit"][name="add"]:hover{
+  background: var(--velia-green-dark) !important;
+}
+
+/* État désactivé / loading que le thème applique parfois */
+.shopify-section--main-product .buy-buttons [type="submit"][disabled],
+.shopify-section--main-product form[action*="/cart/add"] [type="submit"][name="add"][disabled]{
+  opacity:.55 !important;
+  cursor:not-allowed !important;
+}
+
+/* Masque le lien "Plus de moyens de paiement" si présent */
+.shopify-section--main-product .buy-buttons .shopify-payment-button__more-options{
+  display:none !important;
+}
+
+/* (Optionnel) arrondit le conteneur du bloc si le thème met un cadre */
+.shopify-section--main-product .buy-buttons{
+  border-radius:14px;
+  border:1px solid rgba(0,0,0,.06);
+  padding:8px;
+}
