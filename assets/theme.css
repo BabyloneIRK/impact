@@ -10222,3 +10222,23 @@ body > pre:last-of-type {
   cursor:not-allowed !important;
 }
 
+/* ===== VELIA • Centrage parfait du loader (3 petits points) ===== */
+
+/* règle générale pour le conteneur du bouton */
+.shopify-section--main-product .buy-buttons [type="submit"] .loading-overlay__spinner,
+.shopify-section--main-product form[action*="/cart/add"] [type="submit"][name="add"] .loading-overlay__spinner {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* supprime les marges/offset inutiles du thème */
+.shopify-section--main-product .buy-buttons [type="submit"] .loading-overlay__spinner > *,
+.shopify-section--main-product form[action*="/cart/add"] [type="submit"][name="add"] .loading-overlay__spinner > * {
+  margin: 0 !important;
+}
+
