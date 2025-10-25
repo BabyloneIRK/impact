@@ -10134,45 +10134,47 @@ body > pre:last-of-type {
   pointer-events: none !important;
 }
 
-/* ===== VELIA • Override bouton Ajouter au panier ===== */
+/* ===== VELIA • Finition bouton vert (hover anim + aucun contour) ===== */
 
-/* Cible le bouton d'ajout du bloc Buy buttons sur la page produit */
+/* supprime contour, halo focus et bordure fantôme */
 .shopify-section--main-product .buy-buttons [type="submit"],
-.shopify-section--main-product form[action*="/cart/add"] [type="submit"][name="add"]{
-  --velia-green:#86A771;
-  --velia-green-dark:#6f8f63;
-  background: var(--velia-green) !important;
-  color:#fff !important;
-  border:none !important;
-  border-radius:999px !important;
-  height:52px !important;
-  padding:0 18px !important;
-  font: 800 16px/1 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif !important;
-  letter-spacing:.2px !important;
-  box-shadow:0 4px 10px rgba(0,0,0,.08) !important;
-  transform: translateZ(0); /* antialiasing */
+.shopify-section--main-product form[action*="/cart/add"] [type="submit"][name="add"] {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  position: relative;
+  overflow: hidden; /* nécessaire pour l'effet */
+  z-index: 1;
 }
 
-.shopify-section--main-product .buy-buttons [type="submit"]:hover,
-.shopify-section--main-product form[action*="/cart/add"] [type="submit"][name="add"]:hover{
-  background: var(--velia-green-dark) !important;
+/* Animation verte fluide sur hover */
+.shopify-section--main-product .buy-buttons [type="submit"]::before,
+.shopify-section--main-product form[action*="/cart/add"] [type="submit"][name="add"]::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--velia-green-dark);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s ease;
+  z-index: 0;
+  border-radius: inherit;
 }
 
-/* État désactivé / loading que le thème applique parfois */
-.shopify-section--main-product .buy-buttons [type="submit"][disabled],
-.shopify-section--main-product form[action*="/cart/add"] [type="submit"][name="add"][disabled]{
-  opacity:.55 !important;
-  cursor:not-allowed !important;
+.shopify-section--main-product .buy-buttons [type="submit"]:hover::before,
+.shopify-section--main-product form[action*="/cart/add"] [type="submit"][name="add"]:hover::before {
+  transform: scaleX(1);
 }
 
-/* Masque le lien "Plus de moyens de paiement" si présent */
-.shopify-section--main-product .buy-buttons .shopify-payment-button__more-options{
-  display:none !important;
+.shopify-section--main-product .buy-buttons [type="submit"] span,
+.shopify-section--main-product form[action*="/cart/add"] [type="submit"][name="add"] span {
+  position: relative;
+  z-index: 2;
 }
 
-/* (Optionnel) arrondit le conteneur du bloc si le thème met un cadre */
-.shopify-section--main-product .buy-buttons{
-  border-radius:14px;
-  border:1px solid rgba(0,0,0,.06);
-  padding:8px;
+/* Quand on clique (petit effet pressé) */
+.shopify-section--main-product .buy-buttons [type="submit"]:active,
+.shopify-section--main-product form[action*="/cart/add"] [type="submit"][name="add"]:active {
+  transform: scale(0.98);
 }
+
