@@ -82,6 +82,17 @@
           "type": "badges",
           "settings": {}
         },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
         "liquid_KPfjYW": {
           "type": "liquid",
           "disabled": true,
@@ -237,18 +248,6 @@
             "variant_image_options": "",
             "size_chart_page": ""
           }
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "disabled": true,
-          "settings": {
-            "show_payment_button": true,
-            "show_gift_card_recipient": true,
-            "atc_button_background": "",
-            "atc_button_text_color": "",
-            "payment_button_background": "",
-            "payment_button_text_color": ""
-          }
         }
       },
       "block_order": [
@@ -262,6 +261,7 @@
         "liquid_WbzhXn",
         "price_3qGN67",
         "badges",
+        "buy_buttons",
         "liquid_KPfjYW",
         "liquid_YbzAre",
         "liquid_PqQrzU",
@@ -282,8 +282,7 @@
         "rating",
         "payment_terms",
         "description",
-        "variant_picker",
-        "buy_buttons"
+        "variant_picker"
       ],
       "custom_css": [],
       "settings": {
