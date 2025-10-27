@@ -90,6 +90,86 @@
         "text_gradient": ""
       }
     },
+    "image_link_blocks_q66Pc8": {
+      "type": "image-link-blocks",
+      "blocks": {
+        "item_VNyjhN": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Cosmopolitan-Logo-Nouveau.png",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "#f0f0f0",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_nezFMw": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/VOGUE_LOGO.svg",
+            "stretch_image": false,
+            "link_text": "",
+            "link_url": "",
+            "background": "#f0f0f0",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_z44M9D": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Femme-actuelle-logo-1-960x600.png",
+            "stretch_image": false,
+            "link_text": "",
+            "link_url": "",
+            "background": "#f0f0f0",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_iHbCkp": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Marie_Claire_Magazine_logo_svg.png",
+            "stretch_image": false,
+            "link_text": "",
+            "link_url": "",
+            "background": "#f0f0f0",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "item_VNyjhN",
+        "item_nezFMw",
+        "item_z44M9D",
+        "item_iHbCkp"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "name": "Image link blocks",
+      "settings": {
+        "full_width": true,
+        "block_size": "large",
+        "subheading": "",
+        "title": "Ils parlent de nous",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
     "custom_liquid_DmAXtm": {
       "type": "custom-liquid",
       "custom_css": [],
@@ -134,7 +214,7 @@
         "title": "",
         "content": "",
         "link_url": "",
-        "link_text": "View all",
+        "link_text": "",
         "background": "#e9eddf",
         "background_gradient": "",
         "text_color": "",
@@ -214,6 +294,7 @@
         "item_mhBNMJ",
         "item_VMTdDJ"
       ],
+      "disabled": true,
       "settings": {
         "full_width": false,
         "subheading": "",
@@ -257,6 +338,7 @@
   "order": [
     "slideshow",
     "scrolling_text_YH7jgj",
+    "image_link_blocks_q66Pc8",
     "custom_liquid_DmAXtm",
     "custom_liquid_9z36dL",
     "featured-collection",

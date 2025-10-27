@@ -34,7 +34,7 @@
     "text_font": "din_next_n4",
     "reduce_drawer_animation": true,
     "reduce_menu_animation": true,
-    "heading_apparition": "split_fade",
+    "heading_apparition": "split_clip",
     "product_color_display": "swatch",
     "product_info_alignment": "start",
     "cart_icon": "shopping_basket",
