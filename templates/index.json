@@ -12,28 +12,6 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
-        "slide-1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Capture_d_ecran_2025-10-06_a_14.42.37.png",
-            "mobile_image": "shopify://shop_images/Capture_d_ecran_2025-10-06_a_14.42.37.png",
-            "content_max_width": 780,
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "VENTE D'AUTOMNE",
-            "title": "Économisez et soyez heureux !",
-            "heading_tag": "h1",
-            "button_text": "",
-            "button_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30,
-            "background": "",
-            "background_gradient": ""
-          }
-        },
         "slide-2": {
           "type": "image",
           "settings": {
@@ -58,7 +36,6 @@
         }
       },
       "block_order": [
-        "slide-1",
         "slide-2"
       ],
       "settings": {
@@ -178,7 +155,7 @@
         "full_width": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
-        "liquid": "<div class=\"featured-logos\" style=\"background-color: #F4F4F4; padding: 20px;\">\n  <h2 style=\"text-align: center; font-size: 24px; font-weight: bold;\">Ils parlent de nous</h2>\n  <div class=\"logos\" style=\"display: flex; justify-content: center; gap: 30px; align-items: center; margin-top: 20px;\">\n    <img src=\"https://logo-marque.com/wp-content/uploads/2020/12/Cosmopolitan-Logo-Nouveau.png\" style=\"height: auto; max-width: 200px;\"/>\n    <img src=\"https://upload.wikimedia.org/wikipedia/commons/a/a7/VOGUE_revista_-_logo.png\" alt=\"Vogue\" style=\"height: auto; max-width: 200px;\"/>\n    <img src=\"https://beaubourg-avocats.fr/wp-content/uploads/2022/10/Femme-actuelle-logo-1-1024x512.png\" alt=\"Femme Actuelle\" style=\"height: auto; max-width: 200px;\"/>\n    <img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Marie_Claire_Magazine_logo.svg/1280px-Marie_Claire_Magazine_logo.svg.png\" alt=\"Marie Claire\" style=\"height: auto; max-width: 200px;\"/>\n  </div>\n</div>\n\n<style>\n  .logos img {\n    transition: transform 0.3s ease-in-out;\n  }\n  .logos img:hover {\n    transform: scale(1.1);\n  }\n</style>\n\n<style>\n/* Section presse Velia */\n.logos {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  gap: 40px;\n  flex-wrap: wrap; /* Permet le retour à la ligne sur mobile */\n  margin-top: 20px;\n}\n\n.logos img {\n  max-width: 140px; /* Taille max des logos sur desktop */\n  height: auto;\n  filter: brightness(0) contrast(1); /* Uniformise les couleurs (noir) */\n  opacity: 0.9;\n  transition: opacity 0.3s ease;\n}\n\n.logos img:hover {\n  opacity: 1;\n}\n\n/* Mobile responsive */\n@media (max-width: 768px) {\n  .logos {\n    gap: 24px;\n  }\n\n  .logos img {\n    max-width: 90px; /* réduit légèrement la taille sur mobile */\n  }\n\n  h2 {\n    font-size: 20px !important;\n    text-align: center;\n  }\n}\n</style>",
+        "liquid": "<div class=\"featured-logos\" style=\"background-color: #F4F4F4; padding: 40px 20px;\">\n  <h2 style=\"text-align: center; font-size: 24px; font-weight: bold; color: #111; margin-bottom: 30px;\">\n    Ils parlent de nous\n  </h2>\n\n  <div class=\"logos\" style=\"display: flex; justify-content: center; gap: 40px; align-items: center; flex-wrap: wrap; margin-top: 10px;\">\n    <img src=\"https://logo-marque.com/wp-content/uploads/2020/12/Cosmopolitan-Logo-Nouveau.png\" alt=\"Cosmopolitan\" style=\"height: auto; max-width: 180px; transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; opacity: 0.95;\">\n    <img src=\"https://upload.wikimedia.org/wikipedia/commons/a/a7/VOGUE_revista_-_logo.png\" alt=\"Vogue\" style=\"height: auto; max-width: 180px; transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; opacity: 0.95;\">\n    <img src=\"https://beaubourg-avocats.fr/wp-content/uploads/2022/10/Femme-actuelle-logo-1-1024x512.png\" alt=\"Femme Actuelle\" style=\"height: auto; max-width: 180px; transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; opacity: 0.95;\">\n    <img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Marie_Claire_Magazine_logo.svg/1280px-Marie_Claire_Magazine_logo.svg.png\" alt=\"Marie Claire\" style=\"height: auto; max-width: 180px; transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; opacity: 0.95;\">\n  </div>\n</div>\n\n<style>\n  /* Animation survol */\n  .logos img:hover {\n    transform: scale(1.08);\n    opacity: 1;\n  }\n\n  /* Responsive mobile */\n  @media (max-width: 768px) {\n    .logos {\n      gap: 24px !important;\n    }\n\n    .logos img {\n      max-width: 110px !important;\n    }\n\n    .featured-logos h2 {\n      font-size: 20px !important;\n    }\n  }\n</style>",
         "background": "#e9eddf",
         "background_gradient": "",
         "text_color": ""
