@@ -51,7 +51,7 @@
       "settings": {
         "enable_sticky": false,
         "hide_on_scroll": true,
-        "logo": "shopify://shop_images/9b0841ab-3505-4867-a5cb-dd7b858f10f0__1_-removebg-preview.png",
+        "logo": "shopify://shop_images/9b0841ab-3505-4867-a5cb-dd7b858f10f0_1.webp",
         "logo_max_width": 120,
         "logo_mobile_max_width": 100,
         "menu": "main-menu",
@@ -66,7 +66,7 @@
         "show_country_flag": true,
         "show_country_name": false,
         "transparent_header_text_color": "#000000",
-        "transparent_logo": "shopify://shop_images/9b0841ab-3505-4867-a5cb-dd7b858f10f0.jpg",
+        "transparent_logo": "shopify://shop_images/9b0841ab-3505-4867-a5cb-dd7b858f10f0__1_-removebg-preview.png",
         "reduce_padding": true,
         "background_opacity": 100,
         "background_blur_radius": 0
