@@ -10260,3 +10260,27 @@ body > pre:last-of-type {
   }
 }
 
+/* FORCE HEADER BLANC */
+.header,
+.header-wrapper,
+.shopify-section-header,
+header {
+  background-color: #ffffff !important;
+}
+
+/* enlève toute transparence / overlay */
+.header::before,
+.header-wrapper::before {
+  background-color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+/* sécurité mobile */
+@media (max-width: 768px) {
+  .header,
+  .header-wrapper,
+  header {
+    background-color: #ffffff !important;
+  }
+}
+
