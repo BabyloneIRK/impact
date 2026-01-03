@@ -61,7 +61,7 @@
         "text_style": "fill",
         "scrolling_mode": "auto",
         "scrolling_speed": 10,
-        "background": "#86a771",
+        "background": "#000000",
         "background_gradient": "",
         "text_color": "#f0f0f0",
         "text_gradient": ""
@@ -156,7 +156,7 @@
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
         "liquid": "<div class=\"featured-logos\" style=\"background-color: #F4F4F4; padding: 40px 20px;\">\n  <h2 style=\"text-align: center; font-size: 24px; font-weight: bold; color: #111; margin-bottom: 30px;\">\n    Ils parlent de nous\n  </h2>\n\n  <div class=\"logos\" style=\"display: flex; justify-content: center; gap: 40px; align-items: center; flex-wrap: wrap; margin-top: 10px;\">\n    <img src=\"https://logo-marque.com/wp-content/uploads/2020/12/Cosmopolitan-Logo-Nouveau.png\" alt=\"Cosmopolitan\" style=\"height: auto; max-width: 180px; transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; opacity: 0.95;\">\n    <img src=\"https://upload.wikimedia.org/wikipedia/commons/a/a7/VOGUE_revista_-_logo.png\" alt=\"Vogue\" style=\"height: auto; max-width: 180px; transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; opacity: 0.95;\">\n    <img src=\"https://beaubourg-avocats.fr/wp-content/uploads/2022/10/Femme-actuelle-logo-1-1024x512.png\" alt=\"Femme Actuelle\" style=\"height: auto; max-width: 180px; transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; opacity: 0.95;\">\n    <img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Marie_Claire_Magazine_logo.svg/1280px-Marie_Claire_Magazine_logo.svg.png\" alt=\"Marie Claire\" style=\"height: auto; max-width: 180px; transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; opacity: 0.95;\">\n  </div>\n</div>\n\n<style>\n  /* Animation survol */\n  .logos img:hover {\n    transform: scale(1.08);\n    opacity: 1;\n  }\n\n  /* Responsive mobile */\n  @media (max-width: 768px) {\n    .logos {\n      gap: 24px !important;\n    }\n\n    .logos img {\n      max-width: 110px !important;\n    }\n\n    .featured-logos h2 {\n      font-size: 20px !important;\n    }\n  }\n</style>",
-        "background": "#e9eddf",
+        "background": "#ffffff",
         "background_gradient": "",
         "text_color": ""
       }
@@ -169,7 +169,7 @@
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
         "liquid": "<div class=\"trustpilot-clean\">\n  <h2>\n\nIls ont accepté de partager leurs expériences avec toi.</h2>\n  <div class=\"trustpilot-line\">\n    <span class=\"rating-text\">Excellent</span>\n    <strong class=\"rating-score\">4.6 / 5</strong>\n    <img src=\"https://cdn.shopify.com/s/files/1/0891/4871/9429/files/stars-4.5-trust-pilot.svg?v=1747080316\" alt=\"5 étoiles\" class=\"stars-img\">\n  </div>\n  <div class=\"trustpilot-bottom\">\n    <span>Basé sur plus de <strong>+2,800</strong> avis</span>\n    <img src=\"https://cdn.shopify.com/s/files/1/0891/4871/9429/files/trustpilot-svg_klyne.webp?v=1743809609\" alt=\"Trustpilot\" class=\"tp-logo\" loading=\"lazy\">\n  </div>\n</div>\n\n<style>\n.trustpilot-clean {\n  text-align: center;\n  color: #000;\n  margin-bottom: 0 !important;\n  padding-bottom: 0 !important;\n}\n\n.trustpilot-clean h2 {\n  font-size: 22px;\n  font-weight: 700;\n  margin-bottom: 0.8rem;\n  line-height: 1.5;\n}\n\n.trustpilot-line {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  gap: 8px;\n  font-size: 1rem;\n  margin-bottom: 0.5rem;\n}\n\n.rating-text,\n.rating-score {\n  font-size: 1rem;\n  line-height: 1;\n  display: inline-block;\n  vertical-align: middle;\n  margin-top: 2px;\n}\n\n.rating-score {\n  font-weight: bold;\n}\n\n.stars-img {\n  width: 120px;\n  margin-right: 10px;\n  vertical-align: middle;\n}\n\n.trustpilot-bottom {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  gap: 8px;\n  font-size: 0.95rem;\n}\n\n.tp-logo {\n  height: 24px;\n  margin-top: -2px;\n}\n\n.trustpilot-badge-below {\n  margin-top: 12px;\n  text-align: center;\n  background-color: #fef9f5;\n  padding: 1.2rem 1rem;\n}\n\n.trustpilot-badge-below img {\n  max-width: 100%;\n  height: auto;\n}\n</style>",
-        "background": "#e9eddf",
+        "background": "#ffffff",
         "background_gradient": "",
         "text_color": "#eae6d3"
       }
@@ -192,7 +192,7 @@
         "content": "",
         "link_url": "",
         "link_text": "",
-        "background": "#e9eddf",
+        "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
         "heading_color": "",
