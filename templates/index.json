@@ -176,25 +176,8 @@
     },
     "video_hCEEMX": {
       "type": "video",
-      "blocks": {
-        "play_i7CxFz": {
-          "type": "play",
-          "settings": {}
-        },
-        "heading_9BqbEr": {
-          "type": "heading",
-          "settings": {
-            "text": "",
-            "heading_tag": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "play_i7CxFz",
-        "heading_9BqbEr"
-      ],
       "custom_css": [
-        ".media,.media-wrapper,.video,video {background-color: #fff !important;}"
+        "video {background-color: #ffffff;}"
       ],
       "name": "Video",
       "settings": {
@@ -221,6 +204,80 @@
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": "#eae6d3"
+      }
+    },
+    "multi_column_fe3xbh": {
+      "type": "multi-column",
+      "blocks": {
+        "item_i3JfL9": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Celia_1.webp",
+            "column_size": "3",
+            "title": "Celia C.",
+            "heading_tag": "h3",
+            "content": "<p>J’ai toujours eu une peau sujette aux imperfections. Depuis que j’utilise le Peel Shot, je me sens enfin à l’aise pour me prendre en photo à nouveau et je me sens sincèrement bien dans ma peau. </p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_AEDG3Q": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Clients_et_banniere_49.webp",
+            "column_size": "4",
+            "title": "Rebecca B.",
+            "heading_tag": "h4",
+            "content": "<p>J’étais très sceptique et honnêtement inquiète que ce soit une arnaque, mais j’ai décidé de faire confiance aux avis. Et ça fonctionne ! Les peaux mortes sont parties immédiatement. Ma peau est plus lumineuse et beaucoup plus douce. Les pores de mon nez et de mon menton étaient visiblement plus propres dès la première utilisation. Je vais clairement continuer à l’utiliser. </p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_xVJP7c": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_bazWnA": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_i3JfL9",
+        "item_AEDG3Q",
+        "item_xVJP7c",
+        "item_bazWnA"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
       }
     },
     "faq": {
@@ -342,6 +399,7 @@
     "custom_liquid_fFcymG",
     "video_hCEEMX",
     "custom_liquid_9z36dL",
+    "multi_column_fe3xbh",
     "faq",
     "scrolling_text_98EFU6"
   ]
