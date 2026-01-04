@@ -497,17 +497,6 @@
             "manual_deal_block_id": ""
           }
         },
-        "buy_buttons_PrD8K3": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_payment_button": false,
-            "show_gift_card_recipient": true,
-            "atc_button_background": "",
-            "atc_button_text_color": "",
-            "payment_button_background": "",
-            "payment_button_text_color": ""
-          }
-        },
         "liquid_FQE9Ug": {
           "type": "liquid",
           "settings": {
@@ -525,7 +514,18 @@
           "settings": {
             "image": "shopify://shop_images/image-8fb0ac50-40cf-43c8-9a9b-f0db3aab2934.png",
             "alignment": "center",
-            "max_width": 500
+            "max_width": 250
+          }
+        },
+        "buy_buttons_PrD8K3": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
           }
         },
         "liquid_H9XBKF": {
@@ -564,10 +564,10 @@
         "liquid_Hzyben",
         "liquid_HagVAE",
         "kaching_bundles_app_block_WXpYf7",
-        "buy_buttons_PrD8K3",
         "liquid_FQE9Ug",
         "liquid_WYaBVV",
         "image_wWHHBz",
+        "buy_buttons_PrD8K3",
         "liquid_H9XBKF",
         "badges_B7apmM",
         "rating_8XBY6Y",
