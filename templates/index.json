@@ -329,10 +329,11 @@
         "item_gM4Xgj": {
           "type": "item",
           "settings": {
-            "column_size": "3",
-            "title": "Column title",
+            "image": "shopify://shop_images/Clients_et_banniere_41.webp",
+            "column_size": "4",
+            "title": "Kathleen V.",
             "heading_tag": "h4",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "content": "<p>Dès la première utilisation, ma peau était plus lumineuse et plus lisse, et mon maquillage tenait beaucoup mieux. Si vous n’avez pas la peau sensible, l’utiliser plusieurs jours d’affilée ne pose aucun problème ; pour les peaux sensibles, je ne recommande pas une utilisation quotidienne. Le “peluchage” correspond en réalité aux peaux mortes qui se détachent. J’ai choisi l’ampoule au riz blanc (la noire était en rupture de stock). Je recommande vivement.</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
