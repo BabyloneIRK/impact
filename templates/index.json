@@ -380,6 +380,120 @@
         "text_color": ""
       }
     },
+    "featured_product_hcVFPY": {
+      "type": "featured-product",
+      "blocks": {
+        "liquid_3kj7i8": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"tp-mini\">\n  <div class=\"tp-stars\" aria-label=\"Note 4.6 sur 5\">\n    <!-- 5 étoiles (4 pleines + 1 demi par défaut) -->\n    <span class=\"tp-star full\"></span>\n    <span class=\"tp-star full\"></span>\n    <span class=\"tp-star full\"></span>\n    <span class=\"tp-star full\"></span>\n    <span class=\"tp-star half\"></span>\n  </div>\n\n  <a class=\"tp-text\" href=\"https://www.trustpilot.com/review/TON-DOMAINE.com\" target=\"_blank\" rel=\"nofollow noopener\">\n    <strong>Excellent</strong> 4.6 | <span>Reviews</span>\n  </a>\n</div>\n\n<style>\n  .tp-mini{\n    display:flex;\n    align-items:center;\n    gap:10px;\n    margin: 8px 0 14px;\n    line-height: 1;\n  }\n\n  .tp-stars{\n    display:flex;\n    gap:3px;\n  }\n\n  .tp-star{\n    width:16px;\n    height:16px;\n    display:inline-block;\n    border-radius: 3px;\n    background:#00b67a; /* vert trustpilot-like */\n    position:relative;\n  }\n\n  /* icône étoile en \"masque\" */\n  .tp-star::before{\n    content:\"\";\n    position:absolute;\n    inset:2px;\n    background:#fff;\n    clip-path: polygon(\n      50% 0%,\n      61% 35%,\n      98% 35%,\n      68% 57%,\n      79% 91%,\n      50% 70%,\n      21% 91%,\n      32% 57%,\n      2% 35%,\n      39% 35%\n    );\n  }\n\n  /* Demi-étoile (visuel simple) */\n  .tp-star.half{\n    background: linear-gradient(90deg, #00b67a 50%, #e6e6e6 50%);\n  }\n  .tp-star.empty{\n    background:#e6e6e6;\n  }\n\n  .tp-text{\n    font-size: 13px;\n    color:#111;\n    text-decoration:none;\n    display:flex;\n    align-items:center;\n    gap:6px;\n  }\n\n  .tp-text span{\n    text-decoration: underline;\n    text-underline-offset: 2px;\n  }\n\n  .tp-text:hover{\n    opacity: .85;\n  }\n</style>"
+          }
+        },
+        "title_BFQp6J": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h2"
+          }
+        },
+        "badges_B7apmM": {
+          "type": "badges",
+          "settings": {}
+        },
+        "price_9Rnp3t": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "rating_8XBY6Y": {
+          "type": "rating",
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "separator_gLzpDn": {
+          "type": "separator",
+          "settings": {}
+        },
+        "description_aBtnRm": {
+          "type": "description",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "collapse_content": false
+          }
+        },
+        "variant_picker_iDbGNL": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_style": "block",
+            "swatch_selector_style": "swatch",
+            "variant_image_options": "",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector_67kaQ9": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_PrD8K3": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "pickup_availability_XzxPMP": {
+          "type": "pickup_availability",
+          "settings": {}
+        },
+        "kaching_bundles_app_block_WXpYf7": {
+          "type": "shopify://apps/kaching-bundles/blocks/app-block/6c637362-a106-4a32-94ac-94dcfd68cdb8",
+          "settings": {
+            "product": "serum-exfoliant-au-riz",
+            "manual_deal_block_id": ""
+          }
+        }
+      },
+      "block_order": [
+        "liquid_3kj7i8",
+        "title_BFQp6J",
+        "badges_B7apmM",
+        "price_9Rnp3t",
+        "rating_8XBY6Y",
+        "separator_gLzpDn",
+        "description_aBtnRm",
+        "variant_picker_iDbGNL",
+        "quantity_selector_67kaQ9",
+        "buy_buttons_PrD8K3",
+        "pickup_availability_XzxPMP",
+        "kaching_bundles_app_block_WXpYf7"
+      ],
+      "name": "Featured product",
+      "settings": {
+        "full_width": true,
+        "product": "serum-exfoliant-au-riz",
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_left",
+        "mobile_media_size": "expanded",
+        "mobile_carousel_control": "floating_dots",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    },
     "faq": {
       "type": "faq",
       "blocks": {
@@ -500,6 +614,7 @@
     "video_hCEEMX",
     "custom_liquid_9z36dL",
     "multi_column_fe3xbh",
+    "featured_product_hcVFPY",
     "faq",
     "scrolling_text_98EFU6"
   ]
