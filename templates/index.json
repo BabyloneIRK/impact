@@ -238,10 +238,11 @@
         "item_xVJP7c": {
           "type": "item",
           "settings": {
-            "column_size": "3",
-            "title": "Column title",
+            "image": "shopify://shop_images/Clients_et_banniere_38.webp",
+            "column_size": "4",
+            "title": "Shelly T.",
             "heading_tag": "h4",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "content": "<p>De l’or liquide pour les peaux matures ! Je me fiche de comprendre comment ça fonctionne — ça MARCHE, tout simplement. Ma peau est plus douce, plus lisse et plus lumineuse en seulement trois jours. Même ma mère de 70 ans m’a appelée après sa première utilisation pour me dire à quel point sa peau était incroyablement douce !</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -250,10 +251,11 @@
         "item_bazWnA": {
           "type": "item",
           "settings": {
-            "column_size": "3",
-            "title": "Column title",
+            "image": "shopify://shop_images/Clients_et_banniere_36_5f434129-abaa-47fc-82c8-76773f73f722_2.webp",
+            "column_size": "4",
+            "title": "Luana R.",
             "heading_tag": "h4",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "content": "<p>Je n’aurais jamais pensé voir des résultats aussi rapidement. Je recommande ce produit sans hésiter.</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
