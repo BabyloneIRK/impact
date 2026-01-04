@@ -62,8 +62,8 @@
         "scrolling_mode": "auto",
         "scrolling_speed": 10,
         "background": "#000000",
-        "background_gradient": "",
-        "text_color": "#f0f0f0",
+        "background_gradient": "linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(215, 204, 250, 1) 100%, rgba(247, 197, 204, 1) 100%)",
+        "text_color": "#000000",
         "text_gradient": ""
       }
     },
@@ -147,8 +147,68 @@
         "heading_gradient": ""
       }
     },
+    "logo_list_jMgGfY": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_Dq7dqz": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Cosmopolitan-Logo-Nouveau.png",
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "logo_an4JVL": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/VOGUE_LOGO.svg",
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "logo_HqDUNe": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Femme-actuelle-logo-1-960x600.png",
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "logo_DwJLHa": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Marie_Claire_Magazine_logo_svg.png",
+            "logo_width": 120,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_Dq7dqz",
+        "logo_an4JVL",
+        "logo_HqDUNe",
+        "logo_DwJLHa"
+      ],
+      "name": "Logo list",
+      "settings": {
+        "full_width": true,
+        "stack_mobile": true,
+        "title": "Ils parlent de nous",
+        "content": "",
+        "text_alignment": "center",
+        "items_per_row": 5,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
+    },
     "custom_liquid_DmAXtm": {
       "type": "custom-liquid",
+      "disabled": true,
       "custom_css": [],
       "name": "Custom Liquid",
       "settings": {
@@ -161,8 +221,25 @@
         "text_color": ""
       }
     },
+    "image_with_text_overlay_NbgkT9": {
+      "type": "image-with-text-overlay",
+      "name": "Image with text overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/beneficesfinal.webp",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
     "custom_liquid_fFcymG": {
       "type": "custom-liquid",
+      "disabled": true,
       "name": "Custom Liquid",
       "settings": {
         "full_width": false,
@@ -631,7 +708,9 @@
     "slideshow",
     "scrolling_text_YH7jgj",
     "image_link_blocks_q66Pc8",
+    "logo_list_jMgGfY",
     "custom_liquid_DmAXtm",
+    "image_with_text_overlay_NbgkT9",
     "custom_liquid_fFcymG",
     "video_hCEEMX",
     "custom_liquid_9z36dL",
