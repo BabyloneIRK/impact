@@ -260,13 +260,55 @@
             "link_text": "",
             "link_style": "link"
           }
+        },
+        "item_nf3Ly8": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Clients_et_banniere_43.webp",
+            "column_size": "3",
+            "title": "Sarah S.",
+            "heading_tag": "h4",
+            "content": "<p>J’ADORE ce produit ! Les résultats sont immédiats. J’ai commandé deux flacons par erreur, mais au final je suis vraiment contente de l’avoir fait. Il a réellement aidé à éliminer mes points noirs et filaments sébacés. Ma peau est plus nette, plus douce et beaucoup plus propre depuis que je l’utilise. </p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_PfipwY": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Barbara_1.webp",
+            "column_size": "4",
+            "title": "Laura D.",
+            "heading_tag": "h4",
+            "content": "<p>Ça fonctionne vraiment ! J’étais très sceptique au départ, mais j’ai décidé d’essayer. Et à ma grande surprise, ça marche réellement.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_R7Dn77": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Clients_et_banniere_46.webp",
+            "column_size": "4",
+            "title": "Jade A.",
+            "heading_tag": "h4",
+            "content": "<p>J’utilisais auparavant un produit similaire qui coûtait 75 £ et qui asséchait très vite. Celui-ci est bien meilleur : une texture type sérum qui ne sèche pas, beaucoup plus abordable, et ma peau n’a jamais été aussi douce. J’ai de la rosacée et je n’ai ressenti aucune irritation. Je recommande à 100 %.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
         }
       },
       "block_order": [
         "item_i3JfL9",
         "item_AEDG3Q",
         "item_xVJP7c",
-        "item_bazWnA"
+        "item_bazWnA",
+        "item_nf3Ly8",
+        "item_PfipwY",
+        "item_R7Dn77"
       ],
       "name": "Multi-column",
       "settings": {
