@@ -338,6 +338,19 @@
             "link_text": "",
             "link_style": "link"
           }
+        },
+        "item_qVwjWM": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Clients_et_banniere_42.webp",
+            "column_size": "4",
+            "title": "Laura P.",
+            "heading_tag": "h4",
+            "content": "<p>Je ne laisse jamais d’avis, mais ce produit est incroyable. J’en avais entendu parler et j’ai décidé de l’essayer. J’ai pris des photos avant/après, et après seulement trois utilisations, la différence est clairement visible. Je l’adore — il fait exactement ce qu’il promet.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
         }
       },
       "block_order": [
@@ -350,7 +363,8 @@
         "item_R7Dn77",
         "item_wnNdVg",
         "item_NF4cKT",
-        "item_gM4Xgj"
+        "item_gM4Xgj",
+        "item_qVwjWM"
       ],
       "name": "Multi-column",
       "settings": {
