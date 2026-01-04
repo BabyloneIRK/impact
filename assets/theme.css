@@ -10284,3 +10284,34 @@ header {
   }
 }
 
+html, body {
+  background: #fff !important;
+}
+
+#MainContent,
+main,
+.shopify-section,
+.shopify-section-group,
+.shopify-section-group__inner,
+.section,
+.section__inner,
+.section__content,
+.page-width,
+.container {
+  background-color: #fff !important;
+}
+
+/* Impact / thèmes OS 2.0 : variables de couleurs */
+.gradient,
+[class*="color-"],
+[class*="background-"] {
+  background-color: #fff !important;
+  background: #fff !important;
+}
+
+/* Sécurité si un fond est appliqué en image/gradient */
+.shopify-section-group,
+.section,
+#MainContent {
+  background-image: none !important;
+}
