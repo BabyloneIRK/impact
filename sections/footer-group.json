@@ -16,11 +16,20 @@
       "blocks": {
         "newsletter": {
           "type": "newsletter",
+          "disabled": true,
           "settings": {
             "image_width": 150,
             "heading_size": "h3",
             "title": "Sign up for new stories and personal offers",
             "content": ""
+          }
+        },
+        "text_hKPRjJ": {
+          "type": "text",
+          "settings": {
+            "title": "Besoin d'aide ?",
+            "content": "<p><br/>Contactez-nous via le formulaire de notre page <strong>Contact</strong>, ou par email à<br/><br/><strong>support@shop-velia.com</strong></p><p></p><p><strong>Horaires d’ouverture (heure française)</strong> :</p><p>Du lundi au vendredi :<br/><br/>10h–13h & 15h–19h</p><p>Samedi & dimanche :<br/><br/><strong>11h–13h</strong></p>",
+            "enable_follow_on_shop": false
           }
         },
         "links": {
@@ -34,9 +43,9 @@
       },
       "block_order": [
         "newsletter",
+        "text_hKPRjJ",
         "links"
       ],
-      "disabled": true,
       "custom_css": [],
       "settings": {
         "show_social_media": true,
@@ -47,27 +56,9 @@
         "show_country_name": true,
         "show_locale_selector": true
       }
-    },
-    "custom_liquid_KHWTTz": {
-      "type": "custom-liquid",
-      "custom_css": [
-        "/* Fond vert qui couvre 100% de la page, sous tout le contenu */#velia-page-green-bg {position: fixed; inset: 0; z-index: -1; pointer-events: none; background: linear-gradient(180deg, #8aa86e 0%, #7ba06f 100%);}",
-        " /* Pour éviter une bande claire autour du footer */body {background: transparent !important;}"
-      ],
-      "name": "Custom Liquid",
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": true,
-        "remove_horizontal_spacing": true,
-        "liquid": "<!-- ===== VELIA • Footer avec vagues animées ===== -->\n<footer id=\"velia-footer\" aria-label=\"Pied de page\">\n  <!-- Vagues animées -->\n  <div class=\"vf-waves\" aria-hidden=\"true\">\n    <!-- vague 1 -->\n    <svg class=\"vf-wave vf-wave--front\" viewBox=\"0 0 1440 120\" preserveAspectRatio=\"none\">\n      <path d=\"M0,60 C180,110 360,10 540,50 C720,90 900,30 1080,60 C1260,90 1440,60 1440,60 L1440,120 L0,120 Z\"></path>\n    </svg>\n    <!-- vague 2 (derrière) -->\n    <svg class=\"vf-wave vf-wave--back\" viewBox=\"0 0 1440 120\" preserveAspectRatio=\"none\">\n      <path d=\"M0,80 C200,40 360,120 560,80 C760,40 980,100 1180,70 C1320,50 1440,70 1440,70 L1440,120 L0,120 Z\"></path>\n    </svg>\n  </div>\n\n  <div class=\"vf-inner\">\n    <div class=\"vf-cols\">\n      <!-- Col 1 -->\n      <div class=\"vf-col\">\n        <h3 class=\"vf-h\"></h3>\n        <p class=\"vf-p\"><br></p>\n      </div>\n\n      <!-- Col 2 -->\n      <div class=\"vf-col\">\n        <h3 class=\"vf-h\">Questions ou soucis&nbsp;?</h3>\n        <p class=\"vf-p\">Notre équipe support est là pour vous aider 24/7.</p>\n        <p class=\"vf-p\"><strong>Email :</strong> <a href=\"mailto:support@shop-velia.com\">support@shop-velia.com</a></p>\n      </div>\n\n      <!-- Col 3 -->\n      <div class=\"vf-col\">\n        <h3 class=\"vf-h\">Liens rapides</h3>\n        <ul class=\"vf-links\">\n          <li><a href=\"/policies/terms-of-service\">Conditions d’utilisation</a></li>\n          <li><a href=\"/policies/privacy-policy\">Politique de confidentialité</a></li>\n          <li><a href=\"/policies/refund-policy\">Retours & Remboursements</a></li>\n          <li><a href=\"/pages/contact\">Contact</a></li>\n        </ul>\n      </div>\n    </div>\n\n    <div class=\"vf-sep\" role=\"presentation\"></div>\n\n    <!-- Logos de paiement -->\n    <div class=\"vf-pay\">\n      {{ 'apple_pay'         | payment_type_svg_tag }}\n      {{ 'google_pay'        | payment_type_svg_tag }}\n      {{ 'shopify_pay'       | payment_type_svg_tag }}\n      {{ 'paypal'            | payment_type_svg_tag }}\n      {{ 'visa'              | payment_type_svg_tag }}\n      {{ 'master'            | payment_type_svg_tag }}\n      {{ 'american_express'  | payment_type_svg_tag }}\n      {{ 'discover'          | payment_type_svg_tag }}\n    </div>\n\n    <p class=\"vf-copy\">© {{ 'now' | date: '%Y' }}, Velia Skin</p>\n  </div>\n</footer>\n\n<style>\n  /* === Footer vert pleine largeur === */\n  #velia-footer{\n    --sage:#7BA06F;\n    --sage-2:#6A9360;\n    --cream:#F4F2E6;\n    --text:#ffffff;\n    --muted:#E9F0E4;\n    position: relative;\n    width: 100vw;              /* prend toute la largeur */\n    left: 50%;\n    right: 50%;\n    margin-left: -50vw;        /* recentre sur tout l’écran */\n    margin-right: -50vw;\n    color: var(--text);\n    background: linear-gradient(180deg, #8AA86E 0%, var(--sage) 100%);\n    overflow: hidden;\n    padding-top: 40px;\n  }\n\n  /* Vagues */\n  #velia-footer .vf-waves{\n    position:absolute; top:-24px; left:0; right:0; height:80px; z-index:1; pointer-events:none;\n  }\n  #velia-footer .vf-wave{\n    position:absolute; left:0; width:200%; height:100%;\n    animation: vf-slide 22s linear infinite;\n  }\n  #velia-footer .vf-wave path{ fill: rgba(255,255,255,0.12); }\n  #velia-footer .vf-wave--back{ top:8px; opacity:.5; animation-duration: 34s; }\n  #velia-footer .vf-wave--back path{ fill: rgba(255,255,255,0.08); }\n  @keyframes vf-slide{\n    from{ transform: translateX(0); }\n    to  { transform: translateX(-50%); }\n  }\n\n  /* Structure */\n  #velia-footer .vf-inner{ position:relative; z-index:2; padding: 56px 16px 28px; }\n  #velia-footer .vf-cols{\n    max-width: 1200px; margin: 0 auto;\n    display: grid; gap: 24px;\n    grid-template-columns: 1fr;\n  }\n  @media (min-width: 900px){\n    #velia-footer .vf-cols{ grid-template-columns: 1fr 1fr 1fr; }\n  }\n\n  /* Texte */\n  #velia-footer .vf-h{ font-weight:800; font-size: clamp(18px, 2vw, 22px); margin: 0 0 10px; }\n  #velia-footer .vf-p{ margin: 0 0 8px; line-height:1.6; }\n  #velia-footer .vf-links{ list-style:none; padding:0; margin:0; display:grid; gap:8px; }\n  #velia-footer .vf-links a{ color:#F7FFF2; text-decoration:none; font-weight:600; }\n  #velia-footer .vf-links a:hover{ color:var(--muted); text-decoration:underline; }\n\n  .vf-sep{ max-width:1200px; margin:26px auto 16px; height:1px; background:rgba(255,255,255,0.18); }\n\n  .vf-pay{\n    max-width:1200px; margin: 0 auto 10px;\n    display:flex; justify-content:center; gap:12px; flex-wrap:wrap;\n    filter: drop-shadow(0 2px 6px rgba(0,0,0,.15));\n  }\n  .vf-pay svg{ height:26px; transition:transform .2s ease; }\n  .vf-pay svg:hover{ transform:scale(1.08); }\n\n  .vf-copy{ text-align:center; opacity:.9; font-weight:600; margin:0 0 8px; }\n</style>",
-        "background": "#e9eddf",
-        "background_gradient": "",
-        "text_color": "#e9eddf"
-      }
     }
   },
   "order": [
-    "footer",
-    "custom_liquid_KHWTTz"
+    "footer"
   ]
 }
