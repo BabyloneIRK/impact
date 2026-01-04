@@ -299,6 +299,19 @@
             "link_text": "",
             "link_style": "link"
           }
+        },
+        "item_wnNdVg": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Kendra_2.webp",
+            "column_size": "4",
+            "title": "Kendra P.",
+            "heading_tag": "h4",
+            "content": "<p>L’effet nettoyant de cette formule simple est incroyable. J’ai dû passer le produit environ six fois tant il y avait de peaux mortes accumulées. À la sixième application, tout était parfaitement propre. Je vais définitivement l’intégrer à ma routine. Idéal pour les climats secs !</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
         }
       },
       "block_order": [
@@ -308,7 +321,8 @@
         "item_bazWnA",
         "item_nf3Ly8",
         "item_PfipwY",
-        "item_R7Dn77"
+        "item_R7Dn77",
+        "item_wnNdVg"
       ],
       "name": "Multi-column",
       "settings": {
