@@ -193,6 +193,9 @@
         "play_i7CxFz",
         "heading_9BqbEr"
       ],
+      "custom_css": [
+        ".media,.media-wrapper,.video,video {background-color: #fff !important;}"
+      ],
       "name": "Video",
       "settings": {
         "full_width": false,
