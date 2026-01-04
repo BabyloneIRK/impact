@@ -195,16 +195,16 @@
       ],
       "name": "Video",
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "allow_transparent_header": true,
         "autoplay": true,
-        "video_size": "auto",
+        "video_size": "fill",
         "video": "shopify://files/videos/fe3db23f28a34b48b506c1214e5fcc73.HD-1080p-7.2Mbps-66286133.mp4",
         "mobile_video": "shopify://files/videos/fe3db23f28a34b48b506c1214e5fcc73.HD-1080p-7.2Mbps-66286133.mp4",
         "external_video_url": "",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
-        "overlay_opacity": 30
+        "overlay_opacity": 0
       }
     },
     "custom_liquid_9z36dL": {
