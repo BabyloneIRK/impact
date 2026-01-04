@@ -174,9 +174,41 @@
         "text_color": ""
       }
     },
+    "video_hCEEMX": {
+      "type": "video",
+      "blocks": {
+        "play_i7CxFz": {
+          "type": "play",
+          "settings": {}
+        },
+        "heading_9BqbEr": {
+          "type": "heading",
+          "settings": {
+            "text": "",
+            "heading_tag": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "play_i7CxFz",
+        "heading_9BqbEr"
+      ],
+      "name": "Video",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": true,
+        "autoplay": true,
+        "video_size": "auto",
+        "video": "shopify://files/videos/fe3db23f28a34b48b506c1214e5fcc73.HD-1080p-7.2Mbps-66286133.mp4",
+        "mobile_video": "shopify://files/videos/fe3db23f28a34b48b506c1214e5fcc73.HD-1080p-7.2Mbps-66286133.mp4",
+        "external_video_url": "",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
     "custom_liquid_9z36dL": {
       "type": "custom-liquid",
-      "disabled": true,
       "name": "Custom Liquid",
       "settings": {
         "full_width": true,
@@ -305,6 +337,7 @@
     "image_link_blocks_q66Pc8",
     "custom_liquid_DmAXtm",
     "custom_liquid_fFcymG",
+    "video_hCEEMX",
     "custom_liquid_9z36dL",
     "faq",
     "scrolling_text_98EFU6"
