@@ -312,6 +312,19 @@
             "link_text": "",
             "link_style": "link"
           }
+        },
+        "item_NF4cKT": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Clients_et_banniere_40.webp",
+            "column_size": "4",
+            "title": "Jessie L.",
+            "heading_tag": "h4",
+            "content": "<p>J’ai essayé le Peel Shot et il est extrêmement facile à utiliser. Ma peau est toute douce après. J’avais un peu peur qu’il soit trop agressif, mais aucune sensation de brûlure et mon visage n’est pas devenu rouge. Après quelques utilisations, ma peau était plus lumineuse et vraiment plus lisse. Il a aussi aidé à lisser certaines zones rugueuses. J’aime beaucoup le fait que les ingrédients incluent de l’eau de son de riz et de la niacinamide — d’excellents ingrédients naturels.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
         }
       },
       "block_order": [
@@ -322,7 +335,8 @@
         "item_nf3Ly8",
         "item_PfipwY",
         "item_R7Dn77",
-        "item_wnNdVg"
+        "item_wnNdVg",
+        "item_NF4cKT"
       ],
       "name": "Multi-column",
       "settings": {
