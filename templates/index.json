@@ -265,7 +265,7 @@
           "type": "item",
           "settings": {
             "image": "shopify://shop_images/Clients_et_banniere_43.webp",
-            "column_size": "3",
+            "column_size": "4",
             "title": "Sarah S.",
             "heading_tag": "h4",
             "content": "<p>J’ADORE ce produit ! Les résultats sont immédiats. J’ai commandé deux flacons par erreur, mais au final je suis vraiment contente de l’avoir fait. Il a réellement aidé à éliminer mes points noirs et filaments sébacés. Ma peau est plus nette, plus douce et beaucoup plus propre depuis que je l’utilise. </p>",
@@ -325,6 +325,18 @@
             "link_text": "",
             "link_style": "link"
           }
+        },
+        "item_gM4Xgj": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
         }
       },
       "block_order": [
@@ -336,7 +348,8 @@
         "item_PfipwY",
         "item_R7Dn77",
         "item_wnNdVg",
-        "item_NF4cKT"
+        "item_NF4cKT",
+        "item_gM4Xgj"
       ],
       "name": "Multi-column",
       "settings": {
