@@ -511,42 +511,104 @@
         "item_JYkfci": {
           "type": "item",
           "settings": {
-            "row_heading": "NATIVE SHOPIFY PAGE BUILDER",
+            "row_heading": "Risultati immediati (5 minuti)",
             "first_column": "",
             "first_column_image": "shopify://shop_images/svg-check-blanc_1.svg",
             "second_column": "",
             "second_column_image": "shopify://shop_images/svg-close-rouge_1.svg",
             "third_column": "",
+            "third_column_image": "shopify://shop_images/svg-close-rouge_1.svg",
             "four_column": ""
           }
         },
         "item_7zY8c9": {
           "type": "item",
           "settings": {
-            "row_heading": "NO MONTHLY SUBSCRIPTION FEES",
-            "first_column": "Yes",
-            "second_column": "No",
+            "row_heading": "Indolore e senza irritazioni",
+            "first_column": "",
+            "first_column_image": "shopify://shop_images/svg-check-blanc_1.svg",
+            "second_column": "",
+            "second_column_image": "shopify://shop_images/svg-close-rouge_1.svg",
             "third_column": "",
+            "third_column_image": "shopify://shop_images/svg-close-rouge_1.svg",
             "four_column": ""
           }
         },
         "item_ebbeMB": {
           "type": "item",
           "settings": {
-            "row_heading": "200+ HIGHLY CUSTOMISABLE SECTIONS",
-            "first_column": "Yes",
-            "second_column": "No",
+            "row_heading": "Adatto alle pelli sensibili",
+            "first_column": "",
+            "first_column_image": "shopify://shop_images/svg-check-blanc_1.svg",
+            "second_column": "",
+            "second_column_image": "shopify://shop_images/svg-close-rouge_1.svg",
             "third_column": "",
+            "third_column_image": "shopify://shop_images/svg-close-rouge_1.svg",
             "four_column": ""
           }
         },
         "item_BP8QYx": {
           "type": "item",
           "settings": {
-            "row_heading": "THE SLEEKEST LOOKING DESIGNS",
-            "first_column": "Yes",
-            "second_column": "No",
+            "row_heading": "Rimuove in profondità i punti neri",
+            "first_column": "",
+            "first_column_image": "shopify://shop_images/svg-check-blanc_1.svg",
+            "second_column": "",
+            "second_column_image": "shopify://shop_images/svg-close-rouge_1.svg",
             "third_column": "",
+            "third_column_image": "shopify://shop_images/svg-close-rouge_1.svg",
+            "four_column": ""
+          }
+        },
+        "item_7N6VaT": {
+          "type": "item",
+          "settings": {
+            "row_heading": "Adatto all’uso su tutto il corpo",
+            "first_column": "",
+            "first_column_image": "shopify://shop_images/svg-check-blanc_1.svg",
+            "second_column": "",
+            "second_column_image": "shopify://shop_images/svg-close-rouge_1.svg",
+            "third_column": "",
+            "third_column_image": "shopify://shop_images/svg-close-rouge_1.svg",
+            "four_column": ""
+          }
+        },
+        "item_VmJbTf": {
+          "type": "item",
+          "settings": {
+            "row_heading": "Conveniente nel lungo periodo",
+            "first_column": "",
+            "first_column_image": "shopify://shop_images/svg-check-blanc_1.svg",
+            "second_column": "",
+            "second_column_image": "shopify://shop_images/svg-close-rouge_1.svg",
+            "third_column": "",
+            "third_column_image": "shopify://shop_images/svg-close-rouge_1.svg",
+            "four_column": ""
+          }
+        },
+        "item_UQD8PF": {
+          "type": "item",
+          "settings": {
+            "row_heading": "Ingredienti naturali",
+            "first_column": "",
+            "first_column_image": "shopify://shop_images/svg-check-blanc_1.svg",
+            "second_column": "",
+            "second_column_image": "shopify://shop_images/svg-close-rouge_1.svg",
+            "third_column": "",
+            "third_column_image": "shopify://shop_images/svg-close-rouge_1.svg",
+            "four_column": ""
+          }
+        },
+        "item_LchzWE": {
+          "type": "item",
+          "settings": {
+            "row_heading": "Sicuro per un uso frequente",
+            "first_column": "",
+            "first_column_image": "shopify://shop_images/svg-check-blanc_1.svg",
+            "second_column": "",
+            "second_column_image": "shopify://shop_images/svg-close-rouge_1.svg",
+            "third_column": "",
+            "third_column_image": "shopify://shop_images/svg-close-rouge_1.svg",
             "four_column": ""
           }
         }
@@ -555,11 +617,15 @@
         "item_JYkfci",
         "item_7zY8c9",
         "item_ebbeMB",
-        "item_BP8QYx"
+        "item_BP8QYx",
+        "item_7N6VaT",
+        "item_VmJbTf",
+        "item_UQD8PF",
+        "item_LchzWE"
       ],
       "name": "SS - Comparison Table #4",
       "settings": {
-        "heading": "<p><strong>Pourquoi vous ne pourrez plus jamais vous passer de notre Peel Shot</strong></p>",
+        "heading": "<p>Perché non potrai più fare a meno del nostro Peel Shot</p>",
         "heading_custom": false,
         "heading_font": "assistant_n4",
         "heading_size": 56,
@@ -568,7 +634,7 @@
         "heading_align": "center",
         "heading_align_mobile": "center",
         "table_width": 80,
-        "table_columns": 2,
+        "table_columns": 3,
         "table_align": "center",
         "table_mt": 44,
         "table_column_active": "1",
