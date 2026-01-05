@@ -14,22 +14,30 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
+        "message_UG6mn8": {
+          "type": "message",
+          "settings": {
+            "text": "LIVRAISON GRATUITE PARTOUTEN FRANCE",
+            "url": ""
+          }
+        },
         "message": {
           "type": "message",
           "settings": {
-            "text": "OFFRE DE NOUVEL AN - 1 ACHETÉ = 1 OFFERT",
+            "text": "SATISFACTION GARANTIE OU REMBOURSÉ",
             "url": ""
           }
         },
         "message_giHRqW": {
           "type": "message",
           "settings": {
-            "text": "Announce something here",
+            "text": "SOLDES DU NOUVEL AN ! JUSQU’À -50 % — DANS LA LIMITE DES STOCKS DISPONIBLES",
             "url": ""
           }
         }
       },
       "block_order": [
+        "message_UG6mn8",
         "message",
         "message_giHRqW"
       ],
