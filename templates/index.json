@@ -705,10 +705,10 @@
         "second_button_padding_horizontal": 40,
         "second_button_radius": 6,
         "second_button_border_thickness": 2,
-        "table_heading_color": "#2f1718",
+        "table_heading_color": "#2e2e2e",
         "table_heading_active_color": "#ffffff",
-        "table_heading_bg_active_color": "#000000",
-        "table_column_active_bg_color": "#000000",
+        "table_heading_bg_active_color": "#2e2e2e",
+        "table_column_active_bg_color": "#2e2e2e",
         "table_column_active_border_color": "#000000",
         "table_row_border_color": "#000000",
         "table_row_heading_color": "#2f1718",
@@ -808,15 +808,15 @@
         "button_text": "",
         "button_url": "",
         "text_position": "center",
-        "background": "",
+        "background": "#1a1a1a",
         "background_gradient": "",
         "text_color": "",
         "heading_color": "",
         "heading_gradient": "",
         "button_background": "",
         "button_text_color": "",
-        "accordion_background": "",
-        "accordion_text_color": ""
+        "accordion_background": "#2e2e2e",
+        "accordion_text_color": "#ffffff"
       }
     }
   },
