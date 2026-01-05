@@ -15,14 +15,14 @@
         "heading_6Ji9L8": {
           "type": "heading",
           "settings": {
-            "text": "Des pores encombrés à une peau visiblement plus lisse",
+            "text": "Da pori ostruiti a una pelle visibilmente più liscia",
             "heading_tag": "h4"
           }
         },
         "richtext_AbNxXH": {
           "type": "richtext",
           "settings": {
-            "content": "<p><br/>Un rituel coréen délicat qui purifie la peau et affine visiblement le grain de peau.<br/><br/></p>"
+            "content": "<p>Un ritual coreano delicato che purifica la pelle e affina visibilmente la grana della pelle.</p>"
           }
         }
       },
@@ -639,28 +639,28 @@
         "second_button_padding_horizontal": 40,
         "second_button_radius": 6,
         "second_button_border_thickness": 2,
-        "table_heading_color": "#2F1718",
-        "table_heading_active_color": "#FFFFFF",
+        "table_heading_color": "#2f1718",
+        "table_heading_active_color": "#ffffff",
         "table_heading_bg_active_color": "#000000",
         "table_column_active_bg_color": "#000000",
         "table_column_active_border_color": "#000000",
         "table_row_border_color": "#000000",
-        "table_row_heading_color": "#2F1718",
+        "table_row_heading_color": "#2f1718",
         "table_row_text_color": "#ffffff",
         "table_row_active_text_color": "#ffffff",
-        "button_color": "#A8252E",
-        "button_hover_color": "#FFFFFF",
+        "button_color": "#a8252e",
+        "button_hover_color": "#ffffff",
         "button_bg_color": "",
-        "button_bg_hover_color": "#A8252E",
-        "button_border_color": "#A8252E",
-        "button_border_hover_color": "#A8252E",
-        "second_button_color": "#FFFFFF",
-        "second_button_hover_color": "#FFFFFF",
-        "second_button_bg_color": "#A8252E",
+        "button_bg_hover_color": "#a8252e",
+        "button_border_color": "#a8252e",
+        "button_border_hover_color": "#a8252e",
+        "second_button_color": "#ffffff",
+        "second_button_hover_color": "#ffffff",
+        "second_button_bg_color": "#a8252e",
         "second_button_bg_hover_color": "#791119",
-        "second_button_border_color": "#A8252E",
+        "second_button_border_color": "#a8252e",
         "second_button_border_hover_color": "#791119",
-        "heading_color": "#2F1718",
+        "heading_color": "#2f1718",
         "background_color": "#ffffff",
         "background_gradient": "",
         "border_color": "#000000",
