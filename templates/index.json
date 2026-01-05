@@ -662,7 +662,7 @@
         "table_row_padding_horizontal": 16,
         "table_row_padding_horizontal_mobile": 10,
         "table_row_padding_vertical": 16,
-        "table_row_padding_vertical_mobile": 10,
+        "table_row_padding_vertical_mobile": 16,
         "table_row_border_thickness": 1,
         "table_row_heading_image_size": 66,
         "table_row_heading_image_size_mobile": 40,
