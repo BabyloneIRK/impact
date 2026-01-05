@@ -216,7 +216,7 @@
       "name": "Nome",
       "email": "E-mail",
       "message": "Messaggio",
-      "submit": "Invia messaggio",
+      "submit": "Invia",
       "success_message": "Il tuo messaggio è stato inviato."
     }
   },
