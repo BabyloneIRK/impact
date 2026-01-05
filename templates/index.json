@@ -920,7 +920,7 @@
           "settings": {
             "rating": 4.5,
             "text": "Volevo uniformare l’incarnato e avevo iniziato a usare un sapone alla curcuma su una pelle già secca. Senza applicare una crema idratante (uso solo il fondotinta), mi sono ritrovata con delle zone secche evidenti. Questo prodotto invece funziona davvero. Dopo la detersione e l’asciugatura, le zone secche non si vedono più — la pelle morta è sparita. Ho dovuto massaggiare appena: ha iniziato a fare peeling subito, senza alcuna sensazione di bruciore. Vale decisamente l’acquisto.",
-            "author": "Stephanie A.",
+            "author": "Anna A.",
             "verified": "VERIFIED PURCHASE"
           }
         },
@@ -938,7 +938,43 @@
           "settings": {
             "rating": 5,
             "text": "Non lascio mai recensioni — troppo impegnata! L’ho appena usato e… wow. Applicare la mia routine skincare subito dopo è un vero piacere. Risultati immediati, soddisfazione immediata. Ufficialmente adottato. Ragazze, buttatevi — ne avete bisogno.",
-            "author": "Lola L.",
+            "author": "Alice L.",
+            "verified": "VERIFIED PURCHASE"
+          }
+        },
+        "testimonial_FiiwxL": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 4.5,
+            "text": "Adoro questo prodotto. Lo ordinerò di nuovo. Leviga la pelle e rimuove tutte le cellule morte. Dopo una settimana di utilizzo, la mia pelle è fantastica.",
+            "author": "Sarah H.",
+            "verified": "VERIFIED PURCHASE"
+          }
+        },
+        "testimonial_Wgh3qz": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "text": "La mia pelle non è mai stata così ‘perfetta’. Ho inviato l’elenco degli ingredienti a mia sorella (infermiere in chirurgia plastica) per verificare che non ci fosse nulla di dannoso — visto quanto facilmente rimuove la pelle morta, avevo qualche dubbio. Verdetto: ingredienti delicati. Ha persino ordinato un flacone per provarlo anche lei. 10/10.",
+            "author": "Giorgia M.",
+            "verified": "VERIFIED PURCHASE"
+          }
+        },
+        "testimonial_xgxNCY": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "text": "Sono rimasta sinceramente scioccata da quanto funzioni bene! Esfolia delicatamente senza essere aggressivo e si vede letteralmente la pelle morta che si stacca — il mio viso e le mie braccia erano incredibilmente morbidi dopo l’uso. La formula è leggera, non irrita la pelle e lascia una splendida luminosità. Il profumo è pulito e davvero effetto spa. Sicuramente uno dei migliori prodotti esfolianti che abbia mai provato — vale assolutamente l’acquisto.",
+            "author": "Martina P.",
+            "verified": "VERIFIED PURCHASE"
+          }
+        },
+        "testimonial_tgLyq4": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "text": "Ciao! L’ho usato solo una volta finora e lo approvo totalmente!!! Ho notato la differenza subito. Nessun rimpianto per aver acquistato questo prodotto.",
+            "author": "Chiara T.",
             "verified": "VERIFIED PURCHASE"
           }
         }
@@ -959,7 +995,11 @@
         "testimonial_PxDwrr",
         "testimonial_DcyGQm",
         "testimonial_TJtefL",
-        "testimonial_CAFqAz"
+        "testimonial_CAFqAz",
+        "testimonial_FiiwxL",
+        "testimonial_Wgh3qz",
+        "testimonial_xgxNCY",
+        "testimonial_tgLyq4"
       ],
       "name": "SS - Testimonials #7",
       "settings": {
