@@ -977,6 +977,15 @@
             "author": "Chiara T.",
             "verified": "VERIFIED PURCHASE"
           }
+        },
+        "testimonial_46qxpP": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "text": "Davvero incredibile! Lo adoro 🥰 È super efficace — la mia pelle è subito morbida e liscia. Consiglio davvero questo prodotto.",
+            "author": "Ludovica B.",
+            "verified": "VERIFIED PURCHASE"
+          }
         }
       },
       "block_order": [
@@ -999,7 +1008,8 @@
         "testimonial_FiiwxL",
         "testimonial_Wgh3qz",
         "testimonial_xgxNCY",
-        "testimonial_tgLyq4"
+        "testimonial_tgLyq4",
+        "testimonial_46qxpP"
       ],
       "name": "SS - Testimonials #7",
       "settings": {
