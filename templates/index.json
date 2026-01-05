@@ -741,6 +741,83 @@
         "border_thickness": 0,
         "lazy": true
       }
+    },
+    "faq_nwpqWT": {
+      "type": "faq",
+      "blocks": {
+        "item_3apAQF": {
+          "type": "item",
+          "settings": {
+            "title": "Che cos’è VELIA Peel Shot?",
+            "content": "<p><strong>VELIA Peel Shot è un peeling esfoliante enzimatico coreano di nuova generazione, progettato per rimuovere delicatamente le cellule morte, liberare i pori e levigare la texture della pelle in pochi minuti.</strong></p><p><strong>A differenza degli scrub meccanici aggressivi, che possono irritare la pelle, la nostra formula delicata combina acqua di riso e niacinamide per rispettare anche le pelli più sensibili, offrendo al contempo risultati visibili fin dal primo utilizzo.</strong></p><p><strong>VELIA Peel Shot è disponibile in due versioni:</strong></p><ul><li><strong>Riso</strong> – un’opzione delicata, ideale per pelli sensibili o zone più delicate<br/></li><li><strong>Riso nero</strong> – un’opzione più intensiva, pensata per un’esfoliazione profonda e per le irregolarità più ostinate</li></ul>"
+          }
+        },
+        "item_9M87Dq": {
+          "type": "item",
+          "settings": {
+            "title": "How long will it take to get my orders?",
+            "content": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
+          }
+        },
+        "item_NHPUf6": {
+          "type": "item",
+          "settings": {
+            "title": "Any question?",
+            "content": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
+          }
+        },
+        "item_XbnrmL": {
+          "type": "item",
+          "settings": {
+            "title": "Question",
+            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+          }
+        },
+        "item_dQ788R": {
+          "type": "item",
+          "settings": {
+            "title": "Question",
+            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+          }
+        },
+        "item_Lg4dCG": {
+          "type": "item",
+          "settings": {
+            "title": "Question",
+            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_3apAQF",
+        "item_9M87Dq",
+        "item_NHPUf6",
+        "item_XbnrmL",
+        "item_dQ788R",
+        "item_Lg4dCG"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Domande frequenti",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
     }
   },
   "order": [
@@ -752,6 +829,7 @@
     "custom_liquid_9z36dL",
     "multi_column_fe3xbh",
     "featured_product_hcVFPY",
-    "ss_comparison_table_4_9LHHKD"
+    "ss_comparison_table_4_9LHHKD",
+    "faq_nwpqWT"
   ]
 }
