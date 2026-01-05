@@ -752,13 +752,6 @@
             "content": "<p>VELIA Peel Shot è un peeling<strong> esfoliante enzimatico coreano</strong> di nuova generazione, progettato per rimuovere delicatamente le cellule morte, liberare i pori e levigare la texture della pelle in pochi minuti.</p><p>A differenza degli scrub meccanici aggressivi, che possono irritare la pelle, la nostra formula delicata combina acqua di riso e niacinamide per rispettare anche le pelli più sensibili, offrendo al contempo risultati visibili fin dal primo utilizzo.</p><p>VELIA Peel Shot è disponibile in due versioni:</p><ul><li><strong>Riso</strong> – un’opzione delicata, ideale per pelli sensibili o zone più delicate<br/></li><li><strong>Riso nero</strong> – un’opzione più intensiva, pensata per un’esfoliazione profonda e per le irregolarità più ostinate</li></ul>"
           }
         },
-        "item_9M87Dq": {
-          "type": "item",
-          "settings": {
-            "title": "VELIA Peel Shot è adatto alle pelli sensibili?",
-            "content": ""
-          }
-        },
         "item_NHPUf6": {
           "type": "item",
           "settings": {
@@ -797,7 +790,6 @@
       },
       "block_order": [
         "item_3apAQF",
-        "item_9M87Dq",
         "item_NHPUf6",
         "item_XbnrmL",
         "item_dQ788R",
