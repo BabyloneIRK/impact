@@ -12,23 +12,23 @@
     "image_with_text_overlay_qHVjrY": {
       "type": "image-with-text-overlay",
       "blocks": {
-        "subheading_UxWeYz": {
-          "type": "subheading",
-          "settings": {
-            "text": "Un rituel coréen délicat qui purifie la peau et affine visiblement le grain de peau."
-          }
-        },
         "heading_6Ji9L8": {
           "type": "heading",
           "settings": {
             "text": "Des pores encombrés à une peau visiblement plus lisse",
             "heading_tag": "h4"
           }
+        },
+        "richtext_AbNxXH": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p><br/>Un rituel coréen délicat qui purifie la peau et affine visiblement le grain de peau.<br/><br/></p>"
+          }
         }
       },
       "block_order": [
-        "subheading_UxWeYz",
-        "heading_6Ji9L8"
+        "heading_6Ji9L8",
+        "richtext_AbNxXH"
       ],
       "name": "Image with text overlay",
       "settings": {
