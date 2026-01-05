@@ -923,6 +923,24 @@
             "author": "Stephanie A.",
             "verified": "VERIFIED PURCHASE"
           }
+        },
+        "testimonial_TJtefL": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "text": "Libera i pori alla perfezione. Amazon ha rimosso la mia prima recensione, ma questo prodotto è incredibile: nelle foto più vecchie i miei pori erano molto ostruiti; in quelle recenti la pelle è decisamente più pulita. Il mio viso è morbido, liscio e molto meno grasso. Avvertenza per pelli sensibili: se usato troppo frequentemente di seguito, mi ha lasciato la pelle arrossata e quasi indolenzita. Usare con cautela. Nessun ritocco né filtri nelle foto.",
+            "author": "Anissa S.",
+            "verified": "VERIFIED PURCHASE"
+          }
+        },
+        "testimonial_CAFqAz": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "text": "Non lascio mai recensioni — troppo impegnata! L’ho appena usato e… wow. Applicare la mia routine skincare subito dopo è un vero piacere. Risultati immediati, soddisfazione immediata. Ufficialmente adottato. Ragazze, buttatevi — ne avete bisogno.",
+            "author": "Lola L.",
+            "verified": "VERIFIED PURCHASE"
+          }
         }
       },
       "block_order": [
@@ -939,7 +957,9 @@
         "testimonial_yBRYnt",
         "testimonial_hMeY7F",
         "testimonial_PxDwrr",
-        "testimonial_DcyGQm"
+        "testimonial_DcyGQm",
+        "testimonial_TJtefL",
+        "testimonial_CAFqAz"
       ],
       "name": "SS - Testimonials #7",
       "settings": {
