@@ -1,0 +1,332 @@
+{% comment %}
+  VELIA - Comparison Table (dynamic columns + rows)
+  - Add "Products" as blocks (columns)
+  - Add "Rows" as blocks (features/lines)
+  - For each row, set per-column status with a comma list: check,cross,check,...
+{% endcomment %}
+
+<section class="velia-compare" id="velia-compare-{{ section.id }}">
+  <div class="velia-compare__inner page-width">
+    {% if section.settings.heading != blank %}
+      <h2 class="velia-compare__heading">{{ section.settings.heading }}</h2>
+    {% endif %}
+
+    {%- assign product_blocks = section.blocks | where: "type", "product" -%}
+    {%- assign row_blocks = section.blocks | where: "type", "row" -%}
+    {%- assign cols = product_blocks.size -%}
+
+    {% if cols == 0 %}
+      <p>Ajoute au moins 1 bloc “Produit (colonne)”.</p>
+    {% elsif row_blocks.size == 0 %}
+      <p>Ajoute au moins 1 bloc “Ligne (fonctionnalité)”.</p>
+    {% else %}
+
+      <div class="velia-compare__grid"
+           style="--vc-cols: {{ cols }};">
+        <!-- Header Row -->
+        <div class="vc-cell vc-cell--feature vc-cell--header"></div>
+
+        {%- for pb in product_blocks -%}
+          {%- assign col_index = forloop.index -%}
+          {%- assign is_featured = false -%}
+          {%- if section.settings.featured_column == col_index -%}
+            {%- assign is_featured = true -%}
+          {%- endif -%}
+
+          <div class="vc-cell vc-cell--col vc-cell--header {% if is_featured %}is-featured{% endif %}">
+            {% if pb.settings.image != blank %}
+              <img
+                class="vc-col__img"
+                src="{{ pb.settings.image | image_url: width: 320 }}"
+                alt="{{ pb.settings.title | escape }}"
+                loading="lazy">
+            {% endif %}
+            {% if pb.settings.title != blank %}
+              <div class="vc-col__title">{{ pb.settings.title }}</div>
+            {% endif %}
+          </div>
+        {%- endfor -%}
+
+        <!-- Body Rows -->
+        {%- for rb in row_blocks -%}
+          <div class="vc-cell vc-cell--feature">
+            <div class="vc-feature__text">{{ rb.settings.label }}</div>
+          </div>
+
+          {%- assign statuses = rb.settings.statuses | downcase | strip | split: "," -%}
+
+          {%- for pb in product_blocks -%}
+            {%- assign col_index0 = forloop.index0 -%}
+            {%- assign status = statuses[col_index0] | strip -%}
+
+            {%- assign col_index = forloop.index -%}
+            {%- assign is_featured = false -%}
+            {%- if section.settings.featured_column == col_index -%}
+              {%- assign is_featured = true -%}
+            {%- endif -%}
+
+            <div class="vc-cell vc-cell--col {% if is_featured %}is-featured{% endif %}">
+              <div class="vc-icon">
+                {% case status %}
+                  {% when "check" %}
+                    <span class="vc-icon__pill vc-icon__pill--check" aria-label="Oui">
+                      {% render 'velia_icon_check' %}
+                    </span>
+                  {% when "cross" %}
+                    <span class="vc-icon__pill vc-icon__pill--cross" aria-label="Non">
+                      {% render 'velia_icon_cross' %}
+                    </span>
+                  {% when "dash" %}
+                    <span class="vc-icon__pill vc-icon__pill--dash" aria-label="Non applicable">—</span>
+                  {% else %}
+                    <span class="vc-icon__pill vc-icon__pill--dash" aria-label="Non renseigné">—</span>
+                {% endcase %}
+              </div>
+            </div>
+          {%- endfor -%}
+        {%- endfor -%}
+      </div>
+
+    {% endif %}
+  </div>
+</section>
+
+{%- comment -%}
+  Inline SVGs as snippets fallback:
+  We'll create the SVG in this file if snippets don't exist.
+{%- endcomment -%}
+
+{% unless content_for_header contains 'velia_icon_check' %}
+  {% comment %} no-op {% endcomment %}
+{% endunless %}
+
+<style>
+  #velia-compare-{{ section.id }} {
+    --vc-gap: 14px;
+    --vc-line: rgba(0,0,0,.12);
+    --vc-feature-w: {{ section.settings.feature_col_width }}px;
+    --vc-featured-bg: {{ section.settings.featured_bg }};
+    --vc-featured-fg: {{ section.settings.featured_fg }};
+    background: {{ section.settings.bg }};
+    padding: 40px 0;
+  }
+
+  #velia-compare-{{ section.id }} .velia-compare__heading{
+    margin: 0 0 24px;
+    font-size: 34px;
+    line-height: 1.15;
+    font-weight: 800;
+    color: #111;
+  }
+
+  #velia-compare-{{ section.id }} .velia-compare__grid{
+    display: grid;
+    grid-template-columns: var(--vc-feature-w) repeat(var(--vc-cols), minmax(120px, 1fr));
+    gap: 0;
+    border-top: 1px solid var(--vc-line);
+  }
+
+  #velia-compare-{{ section.id }} .vc-cell{
+    padding: 16px 14px;
+    border-bottom: 1px solid var(--vc-line);
+  }
+
+  #velia-compare-{{ section.id }} .vc-cell--header{
+    border-top: none;
+    border-bottom: 1px solid var(--vc-line);
+    padding-top: 0;
+  }
+
+  #velia-compare-{{ section.id }} .vc-cell--feature{
+    display: flex;
+    align-items: center;
+  }
+
+  #velia-compare-{{ section.id }} .vc-feature__text{
+    font-weight: 700;
+    color: #111;
+    font-size: 14px;
+  }
+
+  #velia-compare-{{ section.id }} .vc-cell--col{
+    text-align: center;
+  }
+
+  #velia-compare-{{ section.id }} .vc-cell--col.is-featured{
+    background: var(--vc-featured-bg);
+    color: var(--vc-featured-fg);
+    border-bottom-color: rgba(255,255,255,.18);
+  }
+
+  #velia-compare-{{ section.id }} .vc-cell--col.is-featured .vc-col__title{
+    color: var(--vc-featured-fg);
+  }
+
+  #velia-compare-{{ section.id }} .vc-col__img{
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 12px;
+  }
+
+  #velia-compare-{{ section.id }} .vc-col__title{
+    font-weight: 800;
+    font-size: 13px;
+    color: #111;
+  }
+
+  #velia-compare-{{ section.id }} .vc-icon{
+    display:flex;
+    justify-content:center;
+  }
+
+  #velia-compare-{{ section.id }} .vc-icon__pill{
+    width: 34px;
+    height: 34px;
+    border-radius: 999px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    font-weight: 900;
+    user-select:none;
+  }
+
+  #velia-compare-{{ section.id }} .vc-icon__pill--check{
+    background: #ffffff;
+    border: 2px solid rgba(0,0,0,.10);
+  }
+  #velia-compare-{{ section.id }} .vc-icon__pill--cross{
+    background: #e11d2e;
+    color: #fff;
+  }
+  #velia-compare-{{ section.id }} .vc-icon__pill--dash{
+    background: #f3f4f6;
+    color: #111;
+  }
+
+  #velia-compare-{{ section.id }} .vc-svg{
+    width: 18px;
+    height: 18px;
+    display:block;
+  }
+
+  /* On featured column, keep check/cross visible */
+  #velia-compare-{{ section.id }} .is-featured .vc-icon__pill--check{
+    background: #fff;
+  }
+
+  @media (max-width: 900px){
+    #velia-compare-{{ section.id }} .velia-compare__grid{
+      grid-template-columns: minmax(160px, 1.2fr) repeat(var(--vc-cols), minmax(100px, 1fr));
+    }
+  }
+
+  @media (max-width: 640px){
+    #velia-compare-{{ section.id }} .velia-compare__heading{
+      font-size: 26px;
+    }
+    #velia-compare-{{ section.id }} .vc-col__img{
+      width: 44px; height: 44px;
+    }
+    #velia-compare-{{ section.id }} .vc-icon__pill{
+      width: 30px; height: 30px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "VELIA - Tableau",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Titre",
+      "default": "Pourquoi vous ne pourrez plus jamais vous passer de notre Peel Shot"
+    },
+    {
+      "type": "range",
+      "id": "feature_col_width",
+      "label": "Largeur colonne de gauche (px)",
+      "min": 220,
+      "max": 520,
+      "step": 10,
+      "default": 360
+    },
+    {
+      "type": "color",
+      "id": "bg",
+      "label": "Fond section",
+      "default": "#ffffff"
+    },
+    {
+      "type": "number",
+      "id": "featured_column",
+      "label": "Colonne mise en avant (1 = première colonne produit, 0 = aucune)",
+      "default": 1
+    },
+    {
+      "type": "color",
+      "id": "featured_bg",
+      "label": "Fond colonne mise en avant",
+      "default": "#111111"
+    },
+    {
+      "type": "color",
+      "id": "featured_fg",
+      "label": "Texte colonne mise en avant",
+      "default": "#ffffff"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Produit (colonne)",
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "Image produit" },
+        { "type": "text", "id": "title", "label": "Nom (optionnel)", "default": "VELIA" }
+      ]
+    },
+    {
+      "type": "row",
+      "name": "Ligne (fonctionnalité)",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Texte à gauche",
+          "default": "Résultats instantanés (5 minutes)"
+        },
+        {
+          "type": "text",
+          "id": "statuses",
+          "label": "Statuts (1 par colonne, séparés par des virgules)",
+          "info": "Ex: check,cross,cross | Utilise: check / cross / dash. Le nombre doit correspondre au nombre de colonnes.",
+          "default": "check,cross,cross"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 60,
+  "presets": [
+    {
+      "name": "VELIA comp",
+      "blocks": [
+        { "type": "product" },
+        { "type": "product" },
+        { "type": "product" },
+        { "type": "row" },
+        { "type": "row" },
+        { "type": "row" }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+{% comment %}
+  SVG snippets rendered via 'render' calls above.
+  If you prefer: create snippets with same names, or keep below inline by creating them as snippets.
+{% endcomment %}
