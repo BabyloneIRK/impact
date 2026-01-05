@@ -67,20 +67,26 @@
 
             <div class="vc-cell vc-cell--col {% if is_featured %}is-featured{% endif %}">
               <div class="vc-icon">
-                {% case status %}
-                  {% when "check" %}
-                    <span class="vc-icon__pill vc-icon__pill--check" aria-label="Oui">
-                      {% render 'velia_icon_check' %}
-                    </span>
-                  {% when "cross" %}
-                    <span class="vc-icon__pill vc-icon__pill--cross" aria-label="Non">
-                      {% render 'velia_icon_cross' %}
-                    </span>
-                  {% when "dash" %}
-                    <span class="vc-icon__pill vc-icon__pill--dash" aria-label="Non applicable">—</span>
-                  {% else %}
-                    <span class="vc-icon__pill vc-icon__pill--dash" aria-label="Non renseigné">—</span>
-                {% endcase %}
+                <div class="vc-icon">
+  {% if status == "check" and section.settings.check_image != blank %}
+    <img
+      src="{{ section.settings.check_image | image_url: width: 48 }}"
+      alt="Oui"
+      class="vc-icon-img"
+      loading="lazy"
+    >
+  {% elsif status == "cross" and section.settings.cross_image != blank %}
+    <img
+      src="{{ section.settings.cross_image | image_url: width: 48 }}"
+      alt="Non"
+      class="vc-icon-img"
+      loading="lazy"
+    >
+  {% else %}
+    —
+  {% endif %}
+</div>
+
               </div>
             </div>
           {%- endfor -%}
