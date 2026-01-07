@@ -875,11 +875,15 @@
   }
 
   document.addEventListener('DOMContentLoaded', initTestimonials7);
+  document.addEventListener('DOMContentLoaded', initImagesSlider7);
   
   if (Shopify.designMode) {
      document.addEventListener('shopify:section:unload', initTestimonials7);
      document.addEventListener('shopify:section:load', initTestimonials7);
+     document.addEventListener('shopify:section:unload', initImagesSlider7);
+     document.addEventListener('shopify:section:load', initImagesSlider7);
   }
+</script>
   
 </script>
 
