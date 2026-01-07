@@ -1,3 +1,13 @@
+{% comment %}
+---------------------------------------------------------
+Copyright © 2023 Section Store. All rights reserved.
+Unauthorized copying, modification, distribution, or use
+of this code or any portion of it, is strictly prohibited.
+Violators will be prosecuted to the fullest extent of the law.
+For inquiries or permissions, contact daniel@section.store
+---------------------------------------------------------
+{% endcomment %}
+
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 {%- liquid 
   assign padding_horizontal = section.settings.padding_horizontal
@@ -39,6 +49,7 @@
   assign image_radius = section.settings.image_radius
   assign image_border_color = section.settings.image_border_color
   assign image_ratio = section.settings.image_ratio
+  assign image_style_mobile = section.settings.image_style_mobile
 
   assign testimonials_row = section.settings.testimonials_row
   assign testimonials_row_mobile = section.settings.testimonials_row_mobile
@@ -146,23 +157,13 @@
   }
 
   .testimonials-left-{{ section.id }} {
+    min-width: 0;
+  }
+
+  .images-grid-{{ section.id }} {
     display: grid;
     grid-template-columns: repeat({{ image_row_mobile }}, 1fr);
     gap: {{ image_gap_mobile }}px;
-  }
-
-  .testimonials-image-{{ section.id }} {
-    border-radius: {{ image_radius }}px;
-    border: {{ image_border_thickness }}px solid {{ image_border_color }};
-  }
-
-  .testimonials-image-{{ section.id }} img,
-  .testimonials-image-{{ section.id }} svg {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: {{ image_radius }}px;
   }
 
   .images-slider-{{ section.id }} {
@@ -200,6 +201,20 @@
 
   .images-pagination-{{ section.id }} .swiper-pagination-bullet-active {
     background-color: {{ testimonial_pagination_color }};
+  }
+
+  .testimonials-image-{{ section.id }} {
+    border-radius: {{ image_radius }}px;
+    border: {{ image_border_thickness }}px solid {{ image_border_color }};
+  }
+
+  .testimonials-image-{{ section.id }} img,
+  .testimonials-image-{{ section.id }} svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: {{ image_radius }}px;
   }
 
   .testimonials-image-{{ section.id }} svg {
@@ -343,8 +358,8 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+    display: none !important;
   }
-  
 
   .testimonials-pagination-{{ section.id }} .swiper-pagination-bullet {
     width: 14px;
@@ -385,7 +400,7 @@
       gap: {{ layout_gap }}px;
     }
 
-    .testimonials-left-{{ section.id }} {
+    .images-grid-{{ section.id }} {
       grid-template-columns: repeat({{ image_row }}, 1fr);
       gap: {{ image_gap }}px;
     }
@@ -632,7 +647,6 @@
   </style>
 {% endif %}
 
-
 {% unless hide_images %}
   <style>
     .testimonials-left-{{ section.id }} {
@@ -653,19 +667,37 @@
       
       <div class="testimonials-grid-{{ section.id }}">
         <div class="testimonials-left-{{ section.id }}">
+          <!-- Slider pour les images -->
           <div class="images-slider-{{ section.id }} swiper">
             <div class="swiper-wrapper">
-          {% for block in section.blocks %}
-            {% if block.type == "image" %}
-              <div class="testimonials-image-{{ section.id }}">
-                {% if block.settings.image != blank %}
-                  <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt }}" {% if lazy %}loading="lazy"{% endif %}>
-                {% else %}
-                  {{ 'image' | placeholder_svg_tag }}
+              {% for block in section.blocks %}
+                {% if block.type == "image" %}
+                  <div class="testimonials-image-{{ section.id }} swiper-slide">
+                    {% if block.settings.image != blank %}
+                      <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt }}" {% if lazy %}loading="lazy"{% endif %}>
+                    {% else %}
+                      {{ 'image' | placeholder_svg_tag }}
+                    {% endif %}
+                  </div>
                 {% endif %}
-              </div>
-            {% endif %}
-          {% endfor %}
+              {% endfor %}
+            </div>
+            <div class="images-pagination-{{ section.id }} swiper-pagination"></div>
+          </div>
+          <!-- Grille pour les images -->
+          <div class="images-grid-{{ section.id }}">
+            {% for block in section.blocks %}
+              {% if block.type == "image" %}
+                <div class="testimonials-image-{{ section.id }}">
+                  {% if block.settings.image != blank %}
+                    <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt }}" {% if lazy %}loading="lazy"{% endif %}>
+                  {% else %}
+                    {{ 'image' | placeholder_svg_tag }}
+                  {% endif %}
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
         </div>
         <div class="testimonials-right-{{ section.id }}">
           <div class="testimonials-slider-{{ section.id }} swiper">
@@ -880,7 +912,7 @@
         type: "bullets",
         clickable: true
       }
-    })
+    });
   }
 
   function initImagesSlider7() {
@@ -905,8 +937,6 @@
      document.addEventListener('shopify:section:unload', initImagesSlider7);
      document.addEventListener('shopify:section:load', initImagesSlider7);
   }
-</script>
-  
 </script>
 
 {% schema %}
@@ -1177,7 +1207,7 @@
           }
         ]
       },
-       {
+      {
         "type": "select",
         "id": "image_style_mobile",
         "label": "Images Style - Mobile",
@@ -1819,7 +1849,7 @@
         "label": "Padding sides",
         "default": 5
       },
-      {
+     {
         "type": "range",
         "id": "padding_horizontal_mobile",
         "min": 0,
