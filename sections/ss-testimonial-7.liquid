@@ -613,6 +613,26 @@
   </style>
 {% endif %}
 
+{% if image_style_mobile == "slider" %}
+  <style>
+    .images-slider-{{ section.id }} {
+      display: block !important;
+    }
+    .images-grid-{{ section.id }} {
+      display: none !important;
+    }
+    @media(min-width: 1024px) {
+      .images-slider-{{ section.id }} {
+        display: none !important;
+      }
+      .images-grid-{{ section.id }} {
+        display: grid !important;
+      }
+    }
+  </style>
+{% endif %}
+
+
 {% unless hide_images %}
   <style>
     .testimonials-left-{{ section.id }} {
