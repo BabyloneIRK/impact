@@ -201,7 +201,7 @@
   .images-pagination-{{ section.id }} .swiper-pagination-bullet-active {
     background-color: {{ testimonial_pagination_color }};
   }
-  
+
   .testimonials-image-{{ section.id }} svg {
     background-color: #DDDDDD;
   }
@@ -1203,6 +1203,22 @@
         "unit": "px",
         "label": "Testimonials Gap",
         "default": 12
+      },
+       {
+        "type": "select",
+        "id": "image_style_mobile",
+        "label": "Images Style - Mobile",
+        "default": "grid",
+        "options": [
+          {
+            "label": "Grid",
+            "value": "grid"
+          },
+          {
+            "label": "Slider",
+            "value": "slider"
+          }
+        ]
       },
       {
         "type": "range",
