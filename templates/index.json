@@ -1036,7 +1036,7 @@
         "image_ratio": "square",
         "testimonials_style_mobile": "slider",
         "testimonials_row": "2",
-        "testimonials_row_mobile": "2",
+        "testimonials_row_mobile": "1",
         "testimonials_gap": 12,
         "testimonials_gap_mobile": 12,
         "testimonial_padding_vertical": 12,
