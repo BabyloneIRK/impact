@@ -861,6 +861,19 @@
     })
   }
 
+  function initImagesSlider7() {
+    const slider = new Swiper('.images-slider-{{ section.id }}', {
+      speed: 300,
+      slidesPerView: {{ image_row_mobile }}.3,
+      spaceBetween: {{ image_gap_mobile }},
+      pagination: {
+        el: ".images-pagination-{{ section.id }}",
+        type: "bullets",
+        clickable: true
+      }
+    });
+  }
+
   document.addEventListener('DOMContentLoaded', initTestimonials7);
   
   if (Shopify.designMode) {
