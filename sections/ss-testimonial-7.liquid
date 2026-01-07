@@ -633,6 +633,8 @@
       
       <div class="testimonials-grid-{{ section.id }}">
         <div class="testimonials-left-{{ section.id }}">
+          <div class="images-slider-{{ section.id }} swiper">
+            <div class="swiper-wrapper">
           {% for block in section.blocks %}
             {% if block.type == "image" %}
               <div class="testimonials-image-{{ section.id }}">
