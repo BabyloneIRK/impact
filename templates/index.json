@@ -743,6 +743,13 @@
             "title": "Les poils repoussent-ils plus épais ou plus nombreux ?",
             "content": "<p>Non, c’est un mythe. L’utilisation de la crème dépilatoire visage <strong>Velia®</strong> ne stimule pas la repousse. Au contraire, les poils repoussent souvent plus fins et plus doux. La crème agit uniquement en surface et n’affecte ni le nombre de follicules ni la vitesse de pousse.</p>"
           }
+        },
+        "item_ztnnGq": {
+          "type": "item",
+          "settings": {
+            "title": "Est-elle adaptée aux peaux sensibles ?",
+            "content": "<p>Oui. La crème dépilatoire visage <strong>Velia®</strong> est conçue pour les peaux sensibles et contient des ingrédients apaisants comme l’aloe vera, le bisabolol et le beurre de karité. Un test cutané 24 heures avant utilisation est toutefois recommandé.</p>"
+          }
         }
       },
       "block_order": [
@@ -759,7 +766,8 @@
         "item_C4LFwN",
         "item_TCnahy",
         "item_7pezmG",
-        "item_Mmnc7p"
+        "item_Mmnc7p",
+        "item_ztnnGq"
       ],
       "name": "FAQ",
       "settings": {
