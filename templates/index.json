@@ -413,7 +413,7 @@
         "item_JYkfci": {
           "type": "item",
           "settings": {
-            "row_heading": "Risultati immediati (5 minuti)",
+            "row_heading": "Résultats immédiats (5 minutes)",
             "first_column": "",
             "first_column_image": "shopify://shop_images/svg-check-blanc_1.svg",
             "second_column": "",
@@ -426,7 +426,7 @@
         "item_7zY8c9": {
           "type": "item",
           "settings": {
-            "row_heading": "Indolore e senza irritazioni",
+            "row_heading": "Sans douleur et sans irritation",
             "first_column": "",
             "first_column_image": "shopify://shop_images/svg-check-blanc_1.svg",
             "second_column": "",
@@ -439,7 +439,7 @@
         "item_ebbeMB": {
           "type": "item",
           "settings": {
-            "row_heading": "Adatto alle pelli sensibili",
+            "row_heading": "Convient aux peaux sensibles",
             "first_column": "",
             "first_column_image": "shopify://shop_images/svg-check-blanc_1.svg",
             "second_column": "",
@@ -452,7 +452,7 @@
         "item_BP8QYx": {
           "type": "item",
           "settings": {
-            "row_heading": "Rimuove in profondità i punti neri",
+            "row_heading": "Ingrédients naturels",
             "first_column": "",
             "first_column_image": "shopify://shop_images/svg-check-blanc_1.svg",
             "second_column": "",
@@ -465,7 +465,7 @@
         "item_7N6VaT": {
           "type": "item",
           "settings": {
-            "row_heading": "Adatto all’uso su tutto il corpo",
+            "row_heading": "Sûr pour une utilisation fréquente",
             "first_column": "",
             "first_column_image": "shopify://shop_images/svg-check-blanc_1.svg",
             "second_column": "",
@@ -478,33 +478,7 @@
         "item_VmJbTf": {
           "type": "item",
           "settings": {
-            "row_heading": "Conveniente nel lungo periodo",
-            "first_column": "",
-            "first_column_image": "shopify://shop_images/svg-check-blanc_1.svg",
-            "second_column": "",
-            "second_column_image": "shopify://shop_images/svg-close-rouge_1.svg",
-            "third_column": "",
-            "third_column_image": "shopify://shop_images/svg-close-rouge_1.svg",
-            "four_column": ""
-          }
-        },
-        "item_UQD8PF": {
-          "type": "item",
-          "settings": {
-            "row_heading": "Ingredienti naturali",
-            "first_column": "",
-            "first_column_image": "shopify://shop_images/svg-check-blanc_1.svg",
-            "second_column": "",
-            "second_column_image": "shopify://shop_images/svg-close-rouge_1.svg",
-            "third_column": "",
-            "third_column_image": "shopify://shop_images/svg-close-rouge_1.svg",
-            "four_column": ""
-          }
-        },
-        "item_LchzWE": {
-          "type": "item",
-          "settings": {
-            "row_heading": "Sicuro per un uso frequente",
+            "row_heading": "Rapport qualité-prix",
             "first_column": "",
             "first_column_image": "shopify://shop_images/svg-check-blanc_1.svg",
             "second_column": "",
@@ -521,13 +495,11 @@
         "item_ebbeMB",
         "item_BP8QYx",
         "item_7N6VaT",
-        "item_VmJbTf",
-        "item_UQD8PF",
-        "item_LchzWE"
+        "item_VmJbTf"
       ],
       "name": "SS - Comparison Table #4",
       "settings": {
-        "heading": "<p>Perché non potrai più fare a meno del nostro Peel Shot</p>",
+        "heading": "<p>Pourquoi vous ne pourrez plus vous passer de notre kit d’épilation instantanée</p>",
         "heading_custom": false,
         "heading_font": "assistant_n4",
         "heading_size": 56,
@@ -545,11 +517,11 @@
         "table_heading_image_size": 66,
         "table_heading_image_size_mobile": 40,
         "first_heading": "",
-        "first_heading_image": "shopify://shop_images/imgprod3_f8f3b9f4-4aa3-457b-ad2b-0c4966ad6c2c.webp",
+        "first_heading_image": "shopify://shop_images/53771ab9-a390-4b20-922f-ad603bc38de9.jpg",
         "second_heading": "",
-        "second_heading_image": "shopify://shop_images/scrubs.webp",
+        "second_heading_image": "shopify://shop_images/project-e-beauty-9362-8730123-1-removebg-preview_1.png",
         "third_heading": "",
-        "third_heading_image": "shopify://shop_images/stripsblackheads.webp",
+        "third_heading_image": "shopify://shop_images/home-6-product-01-removebg-preview.png",
         "four_heading": "",
         "table_heading_custom": false,
         "table_heading_font": "assistant_n4",
