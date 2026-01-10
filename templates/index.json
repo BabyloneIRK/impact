@@ -715,6 +715,13 @@
             "title": "Combien de temps faut-il la laisser agir ?",
             "content": "<p>Appliquez une couche épaisse et uniforme et laissez agir <strong>5 minutes</strong>.<br/><br/>Testez ensuite une petite zone :</p><ul><li>Si les poils s’enlèvent facilement, retirez le reste de la crème.<br/></li><li>Sinon, laissez agir jusqu’à <strong>10 minutes maximum</strong>.<br/></li></ul><p>Respectez toujours les instructions et effectuez un test cutané avant la première utilisation.</p>"
           }
+        },
+        "item_C4LFwN": {
+          "type": "item",
+          "settings": {
+            "title": "Est-il sûr de l’utiliser tous les jours ?",
+            "content": "<p>Non. La crème dépilatoire visage <strong>Velia®</strong> n’est pas destinée à un usage quotidien. Pour éviter les irritations, il est recommandé d’attendre au moins <strong>7 jours entre chaque application</strong>. Une utilisation trop fréquente peut provoquer sécheresse, rougeurs ou sensibilité accrue.</p>"
+          }
         }
       },
       "block_order": [
@@ -727,7 +734,8 @@
         "item_FbiQz8",
         "item_iApU7d",
         "item_4jy39f",
-        "item_7k7EKM"
+        "item_7k7EKM",
+        "item_C4LFwN"
       ],
       "name": "FAQ",
       "settings": {
