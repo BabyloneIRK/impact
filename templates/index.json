@@ -729,6 +729,20 @@
             "title": "Enlève-t-elle les poils à la racine ?",
             "content": "<p>Non. La crème ne retire pas le poil à la racine. Elle dissout le poil juste sous la surface de la peau, ce qui en fait une alternative indolore à la cire ou à la pince.<br/><br/>Comme le poil n’est pas arraché, le risque de poils incarnés est réduit.</p>"
           }
+        },
+        "item_7pezmG": {
+          "type": "item",
+          "settings": {
+            "title": "À quelle vitesse les poils repoussent-ils ?",
+            "content": "<p>Les poils recommencent généralement à pousser après <strong>5 à 7 jours</strong>, selon votre cycle de pousse naturel. Le résultat est une peau lisse, sans irritations ni poils incarnés.</p>"
+          }
+        },
+        "item_Mmnc7p": {
+          "type": "item",
+          "settings": {
+            "title": "Les poils repoussent-ils plus épais ou plus nombreux ?",
+            "content": "<p>Non, c’est un mythe. L’utilisation de la crème dépilatoire visage <strong>Velia®</strong> ne stimule pas la repousse. Au contraire, les poils repoussent souvent plus fins et plus doux. La crème agit uniquement en surface et n’affecte ni le nombre de follicules ni la vitesse de pousse.</p>"
+          }
         }
       },
       "block_order": [
@@ -743,7 +757,9 @@
         "item_4jy39f",
         "item_7k7EKM",
         "item_C4LFwN",
-        "item_TCnahy"
+        "item_TCnahy",
+        "item_7pezmG",
+        "item_Mmnc7p"
       ],
       "name": "FAQ",
       "settings": {
