@@ -15,14 +15,14 @@
         "heading_6Ji9L8": {
           "type": "heading",
           "settings": {
-            "text": "Da pori ostruiti a una pelle visibilmente più liscia",
+            "text": "Des poils indésirables à une peau visiblement plus lisse, en un instant",
             "heading_tag": "h4"
           }
         },
         "richtext_AbNxXH": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Un ritual coreano delicato che purifica la pelle e affina visibilmente la grana della pelle.</p>"
+            "content": "<p>Dites adieu aux poils, bonjour à une peau lisse et soyeuse</p>"
           }
         }
       },
@@ -109,7 +109,7 @@
         "logo_HqDUNe": {
           "type": "logo",
           "settings": {
-            "logo": "shopify://shop_images/GRAZIA_logo_header.webp",
+            "logo": "shopify://shop_images/Femme-actuelle-logo-1-960x600.png",
             "logo_width": 120,
             "link": ""
           }
@@ -154,7 +154,7 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
-        "image": "shopify://shop_images/beneficesfinal.webp",
+        "image": "shopify://shop_images/a3324f2f-3568-4f20-9694-c4732045b3ec.jpg",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
@@ -172,9 +172,9 @@
         "full_width": false,
         "allow_transparent_header": true,
         "autoplay": true,
-        "video_size": "fill",
-        "video": "shopify://files/videos/fe3db23f28a34b48b506c1214e5fcc73.HD-1080p-7.2Mbps-66286133.mp4",
-        "mobile_video": "shopify://files/videos/fe3db23f28a34b48b506c1214e5fcc73.HD-1080p-7.2Mbps-66286133.mp4",
+        "video_size": "lg",
+        "video": "shopify://files/videos/Video1.mp4",
+        "mobile_video": "shopify://files/videos/Video1.mp4",
         "external_video_url": "",
         "text_color": "#ffffff",
         "overlay_color": "#000000",

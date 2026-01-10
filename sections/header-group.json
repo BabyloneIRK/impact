@@ -17,21 +17,21 @@
         "message_UG6mn8": {
           "type": "message",
           "settings": {
-            "text": "SPEDIZIONE GRATUITA IN TUTTA ITALIA",
+            "text": "Livraison gratuite dans toute la France",
             "url": ""
           }
         },
         "message": {
           "type": "message",
           "settings": {
-            "text": "SODDISFATTI O RIMBORSATI",
+            "text": "Garantie satisfait ou remboursé",
             "url": ""
           }
         },
         "message_giHRqW": {
           "type": "message",
           "settings": {
-            "text": "SALDI DI CAPODANNO! FINO AL -50% — FINO A ESAURIMENTO SCORTE",
+            "text": "Soldes du Nouvel An ! Jusqu’à -50 % — dans la limite des stocks disponibles",
             "url": ""
           }
         }
