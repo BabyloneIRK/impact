@@ -814,50 +814,84 @@
         "image_FwJKDe": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/img1.jpg"
+            "image": "shopify://shop_images/13.png"
           }
         },
         "image_99fQdr": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/img2.jpg"
+            "image": "shopify://shop_images/hXiSpXLsF.jpg"
           }
         },
         "image_YmnaLj": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/img3.jpg"
+            "image": "shopify://shop_images/w2vhz2LTP.jpg"
           }
         },
         "image_XBmH6h": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/img8.webp"
+            "image": "shopify://shop_images/iopoygugt.png"
           }
         },
         "image_3VygRm": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/img4.jpg"
+            "image": "shopify://shop_images/QTmzO4_nx_03b0047e-5602-4563-aac5-f5b94dd2735f.jpg"
           }
         },
         "image_8YkrXE": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/img5.jpg"
+            "image": "shopify://shop_images/fdsfsdsdffdsdfs.png"
           }
         },
         "image_Ai6CwT": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/img6.jpg"
+            "image": "shopify://shop_images/7qS94Hwufx.jpg"
           }
         },
         "image_QJJm3V": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/img7.webp"
+            "image": "shopify://shop_images/qdsdqsqsdqs.png"
           }
+        },
+        "image_jxteAN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/0dUgZupKZN.jpg"
+          }
+        },
+        "image_VqpypH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/cXTgqbVTQ8.jpg"
+          }
+        },
+        "image_X6CRd3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/gempages_573351839756453089-d815d71a-b73f-4a79-b0fa-e25ea2171b9f.webp"
+          }
+        },
+        "image_HA7hGT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/JULI8d421Q.jpg"
+          }
+        },
+        "image_kLJeGP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/yjO2yBpfJ.jpg"
+          }
+        },
+        "image_nmTKrU": {
+          "type": "image",
+          "settings": {}
         },
         "testimonial_h9U6B7": {
           "type": "testimonial",
@@ -1040,6 +1074,12 @@
         "image_8YkrXE",
         "image_Ai6CwT",
         "image_QJJm3V",
+        "image_jxteAN",
+        "image_VqpypH",
+        "image_X6CRd3",
+        "image_HA7hGT",
+        "image_kLJeGP",
+        "image_nmTKrU",
         "testimonial_h9U6B7",
         "testimonial_TK7TYC",
         "testimonial_yBRYnt",
@@ -1063,7 +1103,7 @@
       "name": "SS - Testimonials #7",
       "settings": {
         "hide_images": true,
-        "heading": "<p><strong>Valutazione 4,6 / 5 su 2.832 recensioni</strong></p>",
+        "heading": "<p>Note de 4,6 / 5 basée sur 2 832 avis</p>",
         "heading_custom": false,
         "heading_font": "josefin_sans_n4",
         "heading_size": 36,
