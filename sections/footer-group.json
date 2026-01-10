@@ -28,7 +28,7 @@
           "type": "text",
           "settings": {
             "title": "Hai bisogno di aiuto?",
-            "content": "<p><strong>Contattaci tramite il modulo presente nella nostra pagina Contatti oppure via e-mail all’indirizzo:</strong><br/><br/>📧 <a><strong>support@shop-velia.com</strong></a></p><h3><strong>Orari di apertura (ora francese):</strong></h3><ul><li><br/><strong>Dal lunedì al venerdì:</strong> 10:00–13:00 e 15:00–19:00<br/></li><li><br/><strong>Sabato e domenica:</strong> 11:00–13:00</li></ul>",
+            "content": "<p><strong>Contactez-nous via le formulaire disponible sur notre page Contact ou par e-mail à l’adresse :</strong><br/><br/>📧 <a><strong>support@shop-velia.com</strong></a></p><p><strong>Horaires d’ouverture (heure française) :</strong></p><ul><li><strong>Du lundi au vendredi :</strong> 10h00 – 13h00 et 15h00 – 19h00<br/></li><li><strong>Samedi et dimanche :</strong> 11h00 – 13h00</li></ul>",
             "enable_follow_on_shop": false
           }
         },
