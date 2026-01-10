@@ -616,6 +616,33 @@
         "lazy": true
       }
     },
+    "before_after_image_kXaYEY": {
+      "type": "before-after-image",
+      "name": "Before/after image",
+      "settings": {
+        "full_width": true,
+        "subheading": "Résultats visibles dès la première utilisation",
+        "title": "",
+        "content": "",
+        "before_image": "shopify://shop_images/Screenshot_2025-07-24_at_13.14.52_800x_8f5641a6-57a9-41a7-8f14-8267b74860e5.webp",
+        "before_image_mobile": "shopify://shop_images/Screenshot_2025-07-24_at_13.14.52_800x_8f5641a6-57a9-41a7-8f14-8267b74860e5.webp",
+        "after_image": "shopify://shop_images/Screenshot_2025-07-24_at_13.14.59_800x_f22cd9e6-2352-4a96-afb0-64c9ad34f57e.webp",
+        "after_image_mobile": "shopify://shop_images/Screenshot_2025-07-24_at_13.14.59_800x_f22cd9e6-2352-4a96-afb0-64c9ad34f57e.webp",
+        "expand_image": false,
+        "text_position": "start",
+        "before_after_text_position": "top",
+        "before_text": "Avant",
+        "after_text": "Après",
+        "drag_initial_position": 50,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "#000000",
+        "before_text_color": "#ffffff",
+        "after_text_color": "#f971b1",
+        "drag_cursor_background": "#f954a1",
+        "drag_cursor_color": "#ffffff"
+      }
+    },
     "faq_nwpqWT": {
       "type": "faq",
       "blocks": {
@@ -1065,6 +1092,7 @@
     "multi_column_fe3xbh",
     "featured_product_hcVFPY",
     "ss_comparison_table_4_9LHHKD",
+    "before_after_image_kXaYEY",
     "faq_nwpqWT",
     "ss_testimonial_7_bRiQWt",
     "text_with_icons_cpTQfX"
