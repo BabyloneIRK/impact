@@ -750,6 +750,20 @@
             "title": "Est-elle adaptée aux peaux sensibles ?",
             "content": "<p>Oui. La crème dépilatoire visage <strong>Velia®</strong> est conçue pour les peaux sensibles et contient des ingrédients apaisants comme l’aloe vera, le bisabolol et le beurre de karité. Un test cutané 24 heures avant utilisation est toutefois recommandé.</p>"
           }
+        },
+        "item_e7zxQ8": {
+          "type": "item",
+          "settings": {
+            "title": "Convient-elle aux peaux à tendance acnéique ?",
+            "content": "<p>La crème est formulée avec des ingrédients apaisants tels que l’aloe vera et le beurre de karité. Elle peut être utilisée sur une acné légère et non inflammée, après un test cutané.<br/><br/>Ne pas appliquer sur des boutons ouverts ou une peau irritée.</p>"
+          }
+        },
+        "item_wiznQb": {
+          "type": "item",
+          "settings": {
+            "title": "Puis-je l’utiliser si je suis diabétique ?",
+            "content": "<p>En cas de diabète, il est recommandé de consulter votre médecin avant d’utiliser une crème dépilatoire, y compris <strong>Velia®</strong>. Le diabète peut rendre la peau plus sensible et plus lente à cicatriser, ce qui peut augmenter le risque d’irritation. Un avis médical est conseillé afin de garantir une utilisation en toute sécurité.</p>"
+          }
         }
       },
       "block_order": [
@@ -767,7 +781,9 @@
         "item_TCnahy",
         "item_7pezmG",
         "item_Mmnc7p",
-        "item_ztnnGq"
+        "item_ztnnGq",
+        "item_e7zxQ8",
+        "item_wiznQb"
       ],
       "name": "FAQ",
       "settings": {
