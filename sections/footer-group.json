@@ -27,7 +27,7 @@
         "text_hKPRjJ": {
           "type": "text",
           "settings": {
-            "title": "Hai bisogno di aiuto?",
+            "title": "Avez-vous besoin d’aide ?",
             "content": "<p><strong>Contactez-nous via le formulaire disponible sur notre page Contact ou par e-mail à l’adresse :</strong><br/><br/>📧 <a><strong>support@shop-velia.com</strong></a></p><p><strong>Horaires d’ouverture (heure française) :</strong></p><ul><li><strong>Du lundi au vendredi :</strong> 10h00 – 13h00 et 15h00 – 19h00<br/></li><li><strong>Samedi et dimanche :</strong> 11h00 – 13h00</li></ul>",
             "enable_follow_on_shop": false
           }
