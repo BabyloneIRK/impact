@@ -684,8 +684,29 @@
         "item_YAx8ag": {
           "type": "item",
           "settings": {
-            "title": "E se non fossi completamente soddisfatto/a di VELIA Peel Shot?",
-            "content": "<p>Siamo certi che amerai <strong>VELIA Peel Shot</strong>. Tuttavia, se per qualsiasi motivo non fossi soddisfatto/a al 100% entro 30 giorni dalla ricezione del tuo ordine, ti basterà contattare il nostro servizio clienti.</p><p>Saremo lieti di assisterti e di trovare la soluzione migliore —<strong> la tua soddisfazione viene sempre al primo posto.</strong></p>"
+            "title": "A-t-elle une odeur ?",
+            "content": "<p>Non ! Contrairement à d’autres crèmes à l’odeur forte et désagréable, celle-ci est formulée avec un parfum doux et frais pour une expérience agréable.</p>"
+          }
+        },
+        "item_FbiQz8": {
+          "type": "item",
+          "settings": {
+            "title": "J’utilise Nair, quelle est la différence ?",
+            "content": "<p>Bien que les deux marques proposent des crèmes dépilatoires, il existe <strong>trois différences clés</strong> :</p><p><strong>Parfum</strong> – Notre parfum se distingue des crèmes dépilatoires classiques au parfum fort.<br/><br/><strong>Tolérance</strong> – Une formule douce, adaptée aux peaux sensibles et testée dermatologiquement.<br/><br/><strong>Efficacité</strong> – Nos crèmes éliminent non seulement le duvet léger, mais aussi les poils épais et résistants, même dans les zones les plus difficiles.</p>"
+          }
+        },
+        "item_iApU7d": {
+          "type": "item",
+          "settings": {
+            "title": "Comment l’utiliser ?",
+            "content": "<p><strong>Test cutané</strong> : Avant chaque utilisation, testez toujours la réaction de votre peau en appliquant la crème dépilatoire visage sur une petite zone à traiter, en suivant les instructions. Si aucune réaction indésirable n’apparaît après 24 heures, vous pouvez procéder à l’application. Une irritation ou une réaction allergique peut survenir chez certaines personnes, même après une utilisation antérieure sans réaction.</p><p>Appliquez une couche épaisse, uniforme et opaque sur une peau propre et sèche à l’aide de l’embout applicateur incliné. Assurez-vous que les poils soient entièrement couverts. Ne frottez pas le produit.<br/><br/>Après 5 minutes, testez une petite zone. Si les poils ne s’enlèvent pas facilement, laissez agir un peu plus longtemps, sans dépasser <strong>10 minutes au total</strong>.<br/><br/>En cas de sensation de brûlure ou d’inconfort, retirez immédiatement la crème.<br/><br/>Retirez le reste de la crème délicatement, à rebrousse-poil, puis rincez abondamment à l’eau. Une fois la peau sèche, appliquez le gel apaisant sur la zone traitée.</p>"
+          }
+        },
+        "item_4jy39f": {
+          "type": "item",
+          "settings": {
+            "title": "Quelle longueur de poils est nécessaire ?",
+            "content": "<p>Il n’y a pas de longueur spécifique requise pour utiliser la crème dépilatoire visage <strong>Velia®</strong>. Elle est efficace sur les poils courts, fins ou à peine visibles, ce qui la rend idéale pour entretenir une peau lisse à tout moment.</p><p>Contrairement à la cire ou aux traitements IPL, qui nécessitent une repousse plus longue ou visible, cette crème permet d’éliminer les poils quand vous le souhaitez, sans période d’attente.</p>"
           }
         }
       },
@@ -695,7 +716,10 @@
         "item_XbnrmL",
         "item_dQ788R",
         "item_Lg4dCG",
-        "item_YAx8ag"
+        "item_YAx8ag",
+        "item_FbiQz8",
+        "item_iApU7d",
+        "item_4jy39f"
       ],
       "name": "FAQ",
       "settings": {
