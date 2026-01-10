@@ -889,10 +889,6 @@
             "image": "shopify://shop_images/yjO2yBpfJ.jpg"
           }
         },
-        "image_nmTKrU": {
-          "type": "image",
-          "settings": {}
-        },
         "testimonial_h9U6B7": {
           "type": "testimonial",
           "settings": {
@@ -1079,7 +1075,6 @@
         "image_X6CRd3",
         "image_HA7hGT",
         "image_kLJeGP",
-        "image_nmTKrU",
         "testimonial_h9U6B7",
         "testimonial_TK7TYC",
         "testimonial_yBRYnt",
