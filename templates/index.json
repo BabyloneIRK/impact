@@ -1206,8 +1206,8 @@
             "icon_background_type": "circle",
             "icon_background": "",
             "icon_color": "",
-            "title": "Spedizione gratuita",
-            "content": "<p>Disponibile solo in Italia</p>"
+            "title": "Livraison gratuite",
+            "content": "<p><br/>Livraison gratuite en France<br/><br/></p>"
           }
         },
         "item_ciFnVY": {
@@ -1219,8 +1219,8 @@
             "icon_background_type": "circle",
             "icon_background": "",
             "icon_color": "",
-            "title": "Servizio clienti disponibile 7 giorni su 7",
-            "content": "<p>Per qualsiasi richiesta, contattaci tramite il nostro modulo di contatto oppure via e-mail all’indirizzo <a>support@shop-velia.com</a></p>"
+            "title": "Service client disponible 7j/7",
+            "content": "<p>Pour toute question, contactez-nous via notre formulaire de contact ou par e-mail à <a>support@shop-velia.com</a></p>"
           }
         },
         "item_m9eG9U": {
@@ -1232,8 +1232,8 @@
             "icon_background_type": "circle",
             "icon_background": "",
             "icon_color": "",
-            "title": "Garanzia di 30 giorni",
-            "content": "<p>Soddisfatti o rimborsati</p>"
+            "title": "Garantie 30 jours satisfait ou remboursé",
+            "content": "<p>Essai sans risque : 30 jours satisfait ou remboursé</p>"
           }
         },
         "item_g4VhUQ": {
@@ -1245,8 +1245,8 @@
             "icon_background_type": "circle",
             "icon_background": "",
             "icon_color": "",
-            "title": "Pagamento sicuro",
-            "content": "<p>Paga in tutta sicurezza con carta di credito o PayPal.</p>"
+            "title": "Paiement 100 % sécurisé",
+            "content": "<p>Paiement sécurisé par carte bancaire ou PayPal</p>"
           }
         }
       },
