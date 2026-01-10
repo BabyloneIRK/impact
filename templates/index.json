@@ -708,6 +708,13 @@
             "title": "Quelle longueur de poils est nécessaire ?",
             "content": "<p>Il n’y a pas de longueur spécifique requise pour utiliser la crème dépilatoire visage <strong>Velia®</strong>. Elle est efficace sur les poils courts, fins ou à peine visibles, ce qui la rend idéale pour entretenir une peau lisse à tout moment.</p><p>Contrairement à la cire ou aux traitements IPL, qui nécessitent une repousse plus longue ou visible, cette crème permet d’éliminer les poils quand vous le souhaitez, sans période d’attente.</p>"
           }
+        },
+        "item_7k7EKM": {
+          "type": "item",
+          "settings": {
+            "title": "Combien de temps faut-il la laisser agir ?",
+            "content": "<p>Appliquez une couche épaisse et uniforme et laissez agir <strong>5 minutes</strong>.<br/><br/>Testez ensuite une petite zone :</p><ul><li>Si les poils s’enlèvent facilement, retirez le reste de la crème.<br/></li><li>Sinon, laissez agir jusqu’à <strong>10 minutes maximum</strong>.<br/></li></ul><p>Respectez toujours les instructions et effectuez un test cutané avant la première utilisation.</p>"
+          }
         }
       },
       "block_order": [
@@ -719,7 +726,8 @@
         "item_YAx8ag",
         "item_FbiQz8",
         "item_iApU7d",
-        "item_4jy39f"
+        "item_4jy39f",
+        "item_7k7EKM"
       ],
       "name": "FAQ",
       "settings": {
