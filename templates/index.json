@@ -181,6 +181,68 @@
         "overlay_opacity": 0
       }
     },
+    "multi_column_aVihKG": {
+      "type": "multi-column",
+      "blocks": {
+        "item_mGMqTq": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/1.png",
+            "column_size": "4",
+            "title": "Conçu pour les poils du visage",
+            "heading_tag": "h6",
+            "content": "<p>Le kit trilogie <strong>Vélia</strong> utilise des ingrédients de qualité cosmétique qui aident à dissoudre même les poils du visage les plus fins et les plus courts, y compris ceux trop petits pour être attrapés à la pince.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_hj9yFU": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/2.png",
+            "column_size": "4",
+            "title": "Ingrédients de qualité médicale",
+            "heading_tag": "h6",
+            "content": "<p>Hygiénique et sûr : contient des ingrédients de qualité médicale, comme l’allantoïne et la vitamine B12, pour aider à prévenir les irritations et protéger les peaux sensibles après l’épilation.<br/><br/></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_k4Jp4a": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/3_f9f71872-32e5-484c-a96e-969e4a6c6ff0.png",
+            "column_size": "4",
+            "title": "Formule brevetée",
+            "heading_tag": "h6",
+            "content": "<p>Douce et efficace : agit au niveau moléculaire pour dissoudre les poils en douceur et éliminer les repousses tenaces, sans agresser la peau.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_mGMqTq",
+        "item_hj9yFU",
+        "item_k4Jp4a"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "custom_liquid_9z36dL": {
       "type": "custom-liquid",
       "name": "Custom Liquid",
@@ -1278,6 +1340,7 @@
     "logo_list_jMgGfY",
     "image_with_text_overlay_NbgkT9",
     "video_hCEEMX",
+    "multi_column_aVihKG",
     "custom_liquid_9z36dL",
     "multi_column_fe3xbh",
     "featured_product_hcVFPY",
