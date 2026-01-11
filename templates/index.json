@@ -154,8 +154,8 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
-        "image": "shopify://shop_images/d9670bf8-b881-4e59-b8de-70be3dfa456b.jpg",
-        "mobile_image": "shopify://shop_images/d9670bf8-b881-4e59-b8de-70be3dfa456b.jpg",
+        "image": "shopify://shop_images/5f9dbae6-1301-4945-ac63-f4bfe026d26d.jpg",
+        "mobile_image": "shopify://shop_images/5f9dbae6-1301-4945-ac63-f4bfe026d26d.jpg",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
@@ -230,6 +230,7 @@
         "item_hj9yFU",
         "item_k4Jp4a"
       ],
+      "disabled": true,
       "name": "Multi-column",
       "settings": {
         "full_width": true,
