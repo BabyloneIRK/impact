@@ -711,36 +711,36 @@
         "item_3apAQF": {
           "type": "item",
           "settings": {
-            "title": "Quels ingrédients composent ce produit ?",
-            "content": "<p>Chez <strong>Velia®</strong>, nous avons exclu les produits chimiques agressifs et les agents irritants afin de créer un produit suffisamment doux, même pour les peaux les plus sensibles.</p><h3>Le processus d’épilation :</h3><p>La crème agit en décomposant la kératine présente dans le poil. La kératine est la protéine qui donne au poil sa structure et sa résistance. La formule de notre crème dissout délicatement cette kératine, affaiblissant le poil et permettant de l’éliminer facilement.<br/><br/>Ce processus laisse la peau lisse et sans poils, sans avoir recours à une épilation douloureuse à la cire ou au rasage.</p><h3>Tous les ingrédients :</h3><p><strong>Thioglycolate</strong> :<br/><br/>Cet ingrédient actif est utilisé dans les produits dépilatoires pour décomposer la structure protéique du poil, l’affaiblir et permettre son élimination facile sans abîmer la peau.</p><p><strong>Eau</strong> :<br/><br/>La base de notre crème – elle permet de mélanger tous les autres ingrédients pour obtenir une texture lisse et facile à appliquer.</p><p><strong>Glycérine & Butylène Glycol</strong> :<br/><br/>De puissants agents hydratants qui aident à retenir l’humidité, laissant la peau douce et lisse même après l’épilation.</p><p><strong>Propylène Glycol</strong> :<br/><br/>Aide la crème à s’étaler facilement sur la peau et permet aux ingrédients actifs d’agir efficacement.</p><p><strong>Carbomer & Triéthanolamine</strong> :<br/><br/>Ces ingrédients donnent à la crème sa texture lisse et soyeuse et aident à équilibrer le pH, ce qui est important pour une action dépilatoire efficace.</p><p><strong>Alcool benzylique & Phénoxyéthanol</strong> :<br/><br/>Ces conservateurs aident à garder la crème fraîche et sûre à utiliser, tout en contribuant légèrement à assouplir le poil pour une élimination facilitée.</p><p><strong>Huile de sésame hydrogénée</strong> :<br/><br/>Après l’épilation, cette huile nourrissante aide à hydrater et apaiser la peau, la laissant douce et confortable.</p><p><strong>Dipotassium Glycyrrhizinate (extrait de réglisse)</strong> :<br/><br/>Issu de la racine de réglisse, cet ingrédient doux aide à réduire les rougeurs et à apaiser la peau.</p><p><strong>Extrait d’Aloe Vera & Extrait de fleur de camomille</strong> :<br/><br/>Connus pour leurs propriétés apaisantes naturelles, ces extraits maintiennent la peau fraîche et confortable pendant et après l’épilation.</p><p><strong>Acide benzoïque</strong> :<br/><br/>Agit comme un conservateur doux pour maintenir la qualité de la crème.</p><p><strong>p-Styrene Ethyl Ketone & Hexyl Glyceride</strong> :<br/><br/>Aident à conditionner la peau et à améliorer la texture de la crème, pour une expérience d’épilation douce et efficace.</p>"
+            "title": "Quelles sont les 3 étapes ?",
+            "content": "<h3><strong>Étape 1 : Gel adoucissant des follicules</strong></h3><p>Appliquez sur la zone à traiter et laissez agir <strong>5 minutes</strong>.<br/><br/>Cette étape aide à assouplir les poils et à préparer les poils résistants à l’épilation.</p><h3><strong>Étape 2 : Crème dépilatoire</strong></h3><p>Appliquez la formule et laissez agir <strong>10 minutes</strong>.<br/><br/>Elle agit directement sur le poil pour faciliter son retrait.</p><h3><strong>Étape 3 : Gel apaisant après-soin</strong></h3><p>Essuyez délicatement les poils éliminés puis appliquez le gel apaisant pour calmer et nourrir la peau.</p><p><strong>Temps total du soin : environ 15 minutes</strong><br/><br/>Pour une peau lisse durable.</p>"
           }
         },
         "item_NHPUf6": {
           "type": "item",
           "settings": {
-            "title": "La crème est-elle vegan et non testée sur les animaux ?",
-            "content": "<p><strong>Absolument !</strong> Notre <strong>Kit d’épilation instantanée</strong> est formulé pour être sûr et efficace pour tous les utilisateurs. Nous nous engageons à créer des produits qui prennent soin de votre peau tout en respectant les animaux.<br/><br/>Chaque kit est soigneusement conçu afin de vous offrir la meilleure qualité possible, tout en respectant nos valeurs <strong>cruelty-free</strong>.<br/><br/></p>"
+            "title": "Est-ce que ça fonctionne pour moi ?",
+            "content": "<p>✔️ Convient aux poils fins et épais<br/><br/>✔️ Convient aux repousses hormonales<br/><br/>✔️ Convient à <strong>tous les types de peau</strong><br/><br/>✔️ Convient à <strong>tous les poils du visage et du cou </strong>(moustache, menton, favoris, sourcils, etc.)<br/><br/><br/></p>"
           }
         },
         "item_XbnrmL": {
           "type": "item",
           "settings": {
-            "title": "La crème provoque-t-elle des brûlures ou des irritations ?",
-            "content": "<p>Non. Elle est spécialement conçue pour être douce pour le visage et adaptée aux peaux sensibles. Contrairement à d’autres crèmes dépilatoires contenant des ingrédients agressifs, cette formule est pensée pour minimiser les irritations et laisser la peau lisse et douce.</p>"
+            "title": "Quels sont les ingrédients ?",
+            "content": "<h3><strong>Étape 1 : Gel adoucissant & apaisant</strong></h3><p><strong>Ingrédients clés :</strong><br/><br/>Panthénol, Niacinamide, Extrait de Portulaca Oleracea, Acide hyaluronique, Sodium hyaluronate, Extrait de Tremella Fuciformis, Extrait de racine de Paeonia Lactiflora, Extrait de fleur de Camomille, Extrait de racine de Chrysanthemum Glabra, Extrait de Centella Asiatica, Extrait de fleur de Lonicera Japonica, Extrait de racine de Scutellaria Baicalensis, Vitamine B12</p><h3><strong>Étape 2 : Crème dépilatoire</strong></h3><p><strong>Ingrédients clés :</strong><br/><br/>Acétate de calcium, Acide thioglycolique, Acétate de tocophéryle (Vitamine E), Allantoïne</p><h3><strong>Étape 3 : Lotion hydratante</strong></h3><p><strong>Ingrédients clés :</strong><br/><br/>Allantoïne, Huile d’olive (Olea Europaea), Huile de jojoba, Panthénol, Sodium hyaluronate, Huile d’écorce de pamplemousse, Extrait de Cynanchum Atratum, Extrait de Tasmannia Lanceolata, Extrait de fleur de safran</p>"
           }
         },
         "item_dQ788R": {
           "type": "item",
           "settings": {
-            "title": "Pourquoi cette crème est-elle différente des autres ?",
-            "content": "<p>Cette crème est spécialement formulée pour les femmes ayant une pilosité faciale liée au SOPK (PCOS), en ciblant les poils plus épais et plus drus que les crèmes classiques ont du mal à éliminer. Elle est également conçue pour être douce sur les peaux sensibles, en réduisant les rougeurs et les irritations.</p>"
+            "title": "Est-ce que la crème provoque des brûlures ou des irritations ?",
+            "content": "<p>Non. La formule est conçue pour être <strong>douce pour le visage</strong> et adaptée aux peaux sensibles.<br/><br/>Contrairement à certaines crèmes dépilatoires classiques, elle est formulée pour limiter les sensations d’inconfort et laisser la peau douce et lisse.</p>"
           }
         },
         "item_Lg4dCG": {
           "type": "item",
           "settings": {
-            "title": "Aide-t-elle à réduire les poils incarnés ?",
-            "content": "<p>Oui. La crème aide à réduire l’apparition des poils incarnés, car elle dissout le poil au lieu de le couper ou de l’arracher. La peau est plus lisse, sans bosses ni marques rouges.</p>"
+            "title": "Le produit est-il vegan & cruelty-free ?",
+            "content": "<p>Oui. Le <strong>Kit Trilogie Vélia</strong> est formulé dans le respect des animaux.</p><p><br/>Nous nous engageons à proposer des produits efficaces, tout en respectant des valeurs cruelty-free.<br/><br/></p>"
           }
         },
         "item_YAx8ag": {
