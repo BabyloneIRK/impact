@@ -746,85 +746,22 @@
         "item_YAx8ag": {
           "type": "item",
           "settings": {
-            "title": "A-t-elle une odeur ?",
-            "content": "<p>Non ! Contrairement à d’autres crèmes à l’odeur forte et désagréable, celle-ci est formulée avec un parfum doux et frais pour une expérience agréable.</p>"
+            "title": "Pourquoi cette crème est différente des crèmes dépilatoires classiques ?",
+            "content": "<p>Elle est spécialement formulée pour les poils du visage, y compris les poils plus épais et difficiles à éliminer.<br/><br/>Sa formule douce est adaptée aux peaux sensibles et aide à limiter les rougeurs et inconforts.</p>"
           }
         },
         "item_FbiQz8": {
           "type": "item",
           "settings": {
-            "title": "J’utilise Nair, quelle est la différence ?",
-            "content": "<p>Bien que les deux marques proposent des crèmes dépilatoires, il existe <strong>trois différences clés</strong> :</p><p><strong>Parfum</strong> – Notre parfum se distingue des crèmes dépilatoires classiques au parfum fort.<br/><br/><strong>Tolérance</strong> – Une formule douce, adaptée aux peaux sensibles et testée dermatologiquement.<br/><br/><strong>Efficacité</strong> – Nos crèmes éliminent non seulement le duvet léger, mais aussi les poils épais et résistants, même dans les zones les plus difficiles.</p>"
+            "title": "Aide-t-elle à réduire les poils incarnés ?",
+            "content": "<p>Oui. En agissant directement sur le poil, la formule contribue à réduire l’apparition des poils incarnés et des irrégularités de la peau.</p><p><em>Pour de meilleurs résultats, nous recommandons une routine adaptée aux peaux sujettes aux poils incarnés.</em></p>"
           }
         },
         "item_iApU7d": {
           "type": "item",
           "settings": {
-            "title": "Comment l’utiliser ?",
-            "content": "<p><strong>Test cutané</strong> : Avant chaque utilisation, testez toujours la réaction de votre peau en appliquant la crème dépilatoire visage sur une petite zone à traiter, en suivant les instructions. Si aucune réaction indésirable n’apparaît après 24 heures, vous pouvez procéder à l’application. Une irritation ou une réaction allergique peut survenir chez certaines personnes, même après une utilisation antérieure sans réaction.</p><p>Appliquez une couche épaisse, uniforme et opaque sur une peau propre et sèche à l’aide de l’embout applicateur incliné. Assurez-vous que les poils soient entièrement couverts. Ne frottez pas le produit.<br/><br/>Après 5 minutes, testez une petite zone. Si les poils ne s’enlèvent pas facilement, laissez agir un peu plus longtemps, sans dépasser <strong>10 minutes au total</strong>.<br/><br/>En cas de sensation de brûlure ou d’inconfort, retirez immédiatement la crème.<br/><br/>Retirez le reste de la crème délicatement, à rebrousse-poil, puis rincez abondamment à l’eau. Une fois la peau sèche, appliquez le gel apaisant sur la zone traitée.</p>"
-          }
-        },
-        "item_4jy39f": {
-          "type": "item",
-          "settings": {
-            "title": "Quelle longueur de poils est nécessaire ?",
-            "content": "<p>Il n’y a pas de longueur spécifique requise pour utiliser la crème dépilatoire visage <strong>Velia®</strong>. Elle est efficace sur les poils courts, fins ou à peine visibles, ce qui la rend idéale pour entretenir une peau lisse à tout moment.</p><p>Contrairement à la cire ou aux traitements IPL, qui nécessitent une repousse plus longue ou visible, cette crème permet d’éliminer les poils quand vous le souhaitez, sans période d’attente.</p>"
-          }
-        },
-        "item_7k7EKM": {
-          "type": "item",
-          "settings": {
-            "title": "Combien de temps faut-il la laisser agir ?",
-            "content": "<p>Appliquez une couche épaisse et uniforme et laissez agir <strong>5 minutes</strong>.<br/><br/>Testez ensuite une petite zone :</p><ul><li>Si les poils s’enlèvent facilement, retirez le reste de la crème.<br/></li><li>Sinon, laissez agir jusqu’à <strong>10 minutes maximum</strong>.<br/></li></ul><p>Respectez toujours les instructions et effectuez un test cutané avant la première utilisation.</p>"
-          }
-        },
-        "item_C4LFwN": {
-          "type": "item",
-          "settings": {
-            "title": "Est-il sûr de l’utiliser tous les jours ?",
-            "content": "<p>Non. La crème dépilatoire visage <strong>Velia®</strong> n’est pas destinée à un usage quotidien. Pour éviter les irritations, il est recommandé d’attendre au moins <strong>7 jours entre chaque application</strong>. Une utilisation trop fréquente peut provoquer sécheresse, rougeurs ou sensibilité accrue.</p>"
-          }
-        },
-        "item_TCnahy": {
-          "type": "item",
-          "settings": {
-            "title": "Enlève-t-elle les poils à la racine ?",
-            "content": "<p>Non. La crème ne retire pas le poil à la racine. Elle dissout le poil juste sous la surface de la peau, ce qui en fait une alternative indolore à la cire ou à la pince.<br/><br/>Comme le poil n’est pas arraché, le risque de poils incarnés est réduit.</p>"
-          }
-        },
-        "item_7pezmG": {
-          "type": "item",
-          "settings": {
-            "title": "À quelle vitesse les poils repoussent-ils ?",
-            "content": "<p>Les poils recommencent généralement à pousser après <strong>5 à 7 jours</strong>, selon votre cycle de pousse naturel. Le résultat est une peau lisse, sans irritations ni poils incarnés.</p>"
-          }
-        },
-        "item_Mmnc7p": {
-          "type": "item",
-          "settings": {
-            "title": "Les poils repoussent-ils plus épais ou plus nombreux ?",
-            "content": "<p>Non, c’est un mythe. L’utilisation de la crème dépilatoire visage <strong>Velia®</strong> ne stimule pas la repousse. Au contraire, les poils repoussent souvent plus fins et plus doux. La crème agit uniquement en surface et n’affecte ni le nombre de follicules ni la vitesse de pousse.</p>"
-          }
-        },
-        "item_ztnnGq": {
-          "type": "item",
-          "settings": {
-            "title": "Est-elle adaptée aux peaux sensibles ?",
-            "content": "<p>Oui. La crème dépilatoire visage <strong>Velia®</strong> est conçue pour les peaux sensibles et contient des ingrédients apaisants comme l’aloe vera, le bisabolol et le beurre de karité. Un test cutané 24 heures avant utilisation est toutefois recommandé.</p>"
-          }
-        },
-        "item_e7zxQ8": {
-          "type": "item",
-          "settings": {
-            "title": "Convient-elle aux peaux à tendance acnéique ?",
-            "content": "<p>La crème est formulée avec des ingrédients apaisants tels que l’aloe vera et le beurre de karité. Elle peut être utilisée sur une acné légère et non inflammée, après un test cutané.<br/><br/>Ne pas appliquer sur des boutons ouverts ou une peau irritée.</p>"
-          }
-        },
-        "item_wiznQb": {
-          "type": "item",
-          "settings": {
-            "title": "Puis-je l’utiliser si je suis diabétique ?",
-            "content": "<p>En cas de diabète, il est recommandé de consulter votre médecin avant d’utiliser une crème dépilatoire, y compris <strong>Velia®</strong>. Le diabète peut rendre la peau plus sensible et plus lente à cicatriser, ce qui peut augmenter le risque d’irritation. Un avis médical est conseillé afin de garantir une utilisation en toute sécurité.</p>"
+            "title": "Est-ce que ça sent fort comme les autres crèmes dépilatoires ?",
+            "content": "<p><br/>Non. Contrairement à de nombreuses crèmes dépilatoires à l’odeur désagréable, cette formule possède une <strong>odeur douce et légère</strong> pour une expérience plus agréable.<br/><br/></p>"
           }
         }
       },
@@ -836,16 +773,7 @@
         "item_Lg4dCG",
         "item_YAx8ag",
         "item_FbiQz8",
-        "item_iApU7d",
-        "item_4jy39f",
-        "item_7k7EKM",
-        "item_C4LFwN",
-        "item_TCnahy",
-        "item_7pezmG",
-        "item_Mmnc7p",
-        "item_ztnnGq",
-        "item_e7zxQ8",
-        "item_wiznQb"
+        "item_iApU7d"
       ],
       "name": "FAQ",
       "settings": {
