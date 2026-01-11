@@ -154,7 +154,7 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
-        "image": "shopify://shop_images/a3324f2f-3568-4f20-9694-c4732045b3ec.jpg",
+        "image": "shopify://shop_images/d9670bf8-b881-4e59-b8de-70be3dfa456b.jpg",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
@@ -276,7 +276,7 @@
         "liquid_3PkKmq": {
           "type": "liquid",
           "settings": {
-            "liquid": "<h1 class=\"product-title-fr\">\n  Vélia<sup class=\"reg\">®</sup> | Kit d’épilation instantanée\n</h1>\n\n<style>\n  .product-title-fr {\n    font-size: 32px;\n    font-weight: 700;\n    line-height: 1.2;\n    margin: 0 0 12px;\n    color: #111;\n    font-family: inherit;\n  }\n\n  .product-title-fr .reg {\n    font-size: 14px;\n    vertical-align: super;\n    margin-left: 2px;\n  }\n\n  @media (max-width: 768px) {\n    .product-title-fr {\n      font-size: 26px;\n    }\n  }\n</style>"
+            "liquid": "<h1 class=\"product-title-fr\">\n  Vélia<sup class=\"reg\">®</sup> | Kit d’épilation en trois étapes\n</h1>\n\n<style>\n  .product-title-fr {\n    font-size: 32px;\n    font-weight: 700;\n    line-height: 1.2;\n    margin: 0 0 12px;\n    color: #111;\n    font-family: inherit;\n  }\n\n  .product-title-fr .reg {\n    font-size: 14px;\n    vertical-align: super;\n    margin-left: 2px;\n  }\n\n  @media (max-width: 768px) {\n    .product-title-fr {\n      font-size: 26px;\n    }\n  }\n</style>"
           }
         },
         "liquid_3kj7i8": {
@@ -391,7 +391,7 @@
       "name": "Featured product",
       "settings": {
         "full_width": true,
-        "product": "kit-d-epilation-instantanee",
+        "product": "kit-d-epilation-en-trois-etapes",
         "desktop_media_width": 55,
         "desktop_media_layout": "carousel_thumbnails_left",
         "mobile_media_size": "expanded",
