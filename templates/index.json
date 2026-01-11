@@ -517,7 +517,7 @@
         "table_heading_image_size": 66,
         "table_heading_image_size_mobile": 40,
         "first_heading": "",
-        "first_heading_image": "shopify://shop_images/53771ab9-a390-4b20-922f-ad603bc38de9.jpg",
+        "first_heading_image": "shopify://shop_images/74a09085-9279-4020-b1ee-8611affedb97.jpg",
         "second_heading": "",
         "second_heading_image": "shopify://shop_images/project-e-beauty-9362-8730123-1-removebg-preview_1.png",
         "third_heading": "",
@@ -814,7 +814,7 @@
         "image_FwJKDe": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/13.png"
+            "image": "shopify://shop_images/54ff5b60-63db-4b77-a6f3-2209f8d15304.jpg"
           }
         },
         "image_99fQdr": {
@@ -832,19 +832,19 @@
         "image_XBmH6h": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/iopoygugt.png"
+            "image": "shopify://shop_images/86e629fd-0e2d-43a7-897e-85ef749b2c5a.jpg"
           }
         },
         "image_3VygRm": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/QTmzO4_nx_03b0047e-5602-4563-aac5-f5b94dd2735f.jpg"
+            "image": "shopify://shop_images/ecec47a0-90cc-4668-92f3-e59e1d36c57d.jpg"
           }
         },
         "image_8YkrXE": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/fdsfsdsdffdsdfs.png"
+            "image": "shopify://shop_images/lQxnSpEEYq.jpg"
           }
         },
         "image_Ai6CwT": {
@@ -856,7 +856,7 @@
         "image_QJJm3V": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/qdsdqsqsdqs.png"
+            "image": "shopify://shop_images/lg05mwf-H.jpg"
           }
         },
         "image_jxteAN": {
@@ -887,6 +887,12 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/yjO2yBpfJ.jpg"
+          }
+        },
+        "image_AdHE78": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/4YLyrLuGW.jpg"
           }
         },
         "testimonial_h9U6B7": {
@@ -1075,6 +1081,7 @@
         "image_X6CRd3",
         "image_HA7hGT",
         "image_kLJeGP",
+        "image_AdHE78",
         "testimonial_h9U6B7",
         "testimonial_TK7TYC",
         "testimonial_yBRYnt",
