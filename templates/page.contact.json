@@ -20,8 +20,8 @@
       "type": "contact",
       "settings": {
         "full_width": true,
-        "subheading": "Contattaci",
-        "title": "Una domanda? Siamo qui per aiutarti.",
+        "subheading": "Contactez-nous",
+        "title": "Une question ? Nous sommes là pour vous aider.",
         "content": "",
         "text_position": "start",
         "contact_form_size": "large",
