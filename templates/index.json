@@ -163,6 +163,32 @@
         "overlay_opacity": 0
       }
     },
+    "rich_text_gWmw8w": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_NqN6Gc": {
+          "type": "heading",
+          "settings": {
+            "text": "La technique zéro repousse",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_NqN6Gc"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "video_hCEEMX": {
       "type": "video",
       "custom_css": [
@@ -1269,6 +1295,7 @@
     "slideshow",
     "logo_list_jMgGfY",
     "image_with_text_overlay_NbgkT9",
+    "rich_text_gWmw8w",
     "video_hCEEMX",
     "multi_column_aVihKG",
     "custom_liquid_9z36dL",
